@@ -1,14 +1,14 @@
 {
-  "vendor": "vtex",
-  "name": "b2b-store-theme",
-  "version": "2.6.2",
+  "vendor": "b2bsrconsultores",
+  "name": "b2bsrconsultores",
+  "version": "0.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
     "docs": "0.x"
   },
-  "mustUpdateAt": "2018-09-05",
+  "mustUpdateAt": "2021-04-01",
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },

@@ -4,11 +4,11 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-computers",
-      "menu-item#category-home-appliance",
-      "menu-item#category-machines",
-      "menu-item#category-personalized",
-      "menu-item#category-tools"
+      "menu-item#category-computers"
+      // "menu-item#category-home-appliance",
+      // "menu-item#category-machines",
+      // "menu-item#category-personalized",
+      // "menu-item#category-tools"
     ]
   },
   "menu-item#category-home-appliance": {
@@ -34,10 +34,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Computers",
+        "href": "/gourmet",
         "noFollow": false,
-        "tagTitle": "Computers",
-        "text": "Computers"
+        "tagTitle": "Gurmet",
+        "text": "Gourmet"
       }
     }
   },

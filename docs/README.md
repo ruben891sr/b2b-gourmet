@@ -1,6 +1,3 @@
-# b2b-gourmet
-Website b2b desarrollado en la plataforma Vtex por SR Consultores
-
 # Store theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
