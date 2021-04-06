@@ -10,7 +10,10 @@
       "rich-text#question",
       "rich-text#link",
       "newsletter"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "shelf#home": {
@@ -69,8 +72,7 @@
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 720,
-      "images": [
-        {
+      "images": [{
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         },
