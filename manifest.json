@@ -56,7 +56,7 @@
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x",
     "vtex.store-form": "0.x",
-    "vtex.search": "1.x",
+    "vtex.search": "2.x",
     "vtex.sku-list": "1.x",
     "vtex.condition-layout": "1.x",
     "vtex.auth-challenge": "1.x",
