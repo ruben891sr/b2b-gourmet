@@ -22,10 +22,14 @@
 
   "product-summary.shelf#home": {
     "children": [
-      "product-summary-name",
       "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
       "product-summary-space",
-      "challenge-block#show-price"
+      "flex-layout.row#prices",
+      "product-installments#summary",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
     ]
   },
 

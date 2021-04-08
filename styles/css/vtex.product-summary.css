@@ -1,3 +1,4 @@
+
 .skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
@@ -21,12 +22,14 @@
   justify-content: start;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .brandName {
   font-weight: 600;
   font-size: 18px;
   color: #2E2E2E;
+  overflow-wrap: break-word;
 }
 
 .container {

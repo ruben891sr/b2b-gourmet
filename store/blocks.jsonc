@@ -40,11 +40,39 @@
 
   "product-summary.shelf#default": {
     "children": [
-      "product-summary-name",
       "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
       "product-summary-space",
-      "challenge-block#mostra-precos"
+      "flex-layout.row#prices",
+      "product-installments#summary",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+      // "stack-layout#prodsum",
+      // "product-summary-space",
+      // "product-summary-name",
+      // "challenge-block#mostra-precos",
+      // "flex-layout.row#prices",
+      // "add-to-cart-button"
     ]
+  },
+
+  "product-summary-name": {
+    "props": {
+      "blockClass": "nombreProdBusqueda"
+    }
+  },
+
+
+  "flex-layout.row#prices": {
+    "children": [
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings"
+    ],
+    "props": {
+      "blockClass": "rowPrices",  
+      "colSizing": "auto"
+    }
   },
 
   "challenge-block#mostra-precos": {
