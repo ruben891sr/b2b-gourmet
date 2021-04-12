@@ -73,7 +73,7 @@
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
-      "login",
+      "login", 
       "minicart.v2"
     ]
   },
@@ -188,10 +188,6 @@
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70"
     }
-  },
-  "minicart.v2": {
-    "props": {
-      "variation": "link"
-    }
   }
 }
+ 

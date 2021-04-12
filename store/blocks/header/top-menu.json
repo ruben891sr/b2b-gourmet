@@ -94,6 +94,37 @@
       }
     }
   },
+  "menu-item#cotizacion": {
+    "props": {
+      "id": "menu-item-cotizacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "Cotizacion",
+        "text": "Cotizacion"
+      }
+    }
+  },
+  "menu-item#quick-order": {
+    "props": {
+      "id": "menu-item-quick-order",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder ",
+        "noFollow": false,
+        "tagTitle": "quick-order",
+        "text": "Quick Order"
+      }
+    }
+  },
+
   "vtex.menu@2.x:menu#institutional": {
     "children": [
       "menu-item#vtex-website"
