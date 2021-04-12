@@ -25,9 +25,11 @@
   width: 100%;
 }
 
+.nameContainer--nombre
+
 .brandName {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 13px;
   color: #2E2E2E;
   overflow-wrap: break-word;
 }

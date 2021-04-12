@@ -71,7 +71,8 @@
     ],
     "props": {
       "blockClass": "rowPrices",  
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "horizontalAlign": "left"
     }
   },
 
@@ -123,7 +124,7 @@
 
   "add-to-cart-button": {
     "props": {
-      "text": "Buy",
+      "text": "Comprar",
       "marginTop": 4,
       "marginBottom": 7
     }
