@@ -27,7 +27,7 @@
   "rich-text#formTitle": {
     "props": {
       "text": "# Become a partner",
-      "textPosition": "CENTER",
+      "textPosition": "CENTER", 
       "blockClass": "title"
     }
   },

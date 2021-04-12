@@ -4,13 +4,97 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-computers"
-      // "menu-item#category-home-appliance",
-      // "menu-item#category-machines",
-      // "menu-item#category-personalized",
-      // "menu-item#category-tools"
+      "menu-item#catalogo",
+      "menu-item#venta-lote",
+      "menu-item#venta-sku",
+      "menu-item#cotizaciones",
+      "menu-item#contacto"
     ]
   },
+
+  "menu-item#catalogo": {
+    "props": {
+      "id": "menu-item-catalogo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "catalogo",
+        "text": "Catálogo"
+      }
+    }
+  },
+
+  "menu-item#venta-lote": {
+    "props": {
+      "id": "menu-item-venta-lote",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "venta-lote",
+        "text": "Venta por lote"
+      }
+    }
+  },
+
+  "menu-item#venta-sku": {
+    "props": {
+      "id": "menu-item-venta-sku",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "venta-sku",
+        "text": "Venta por sku"
+      }
+    }
+  },
+
+  "menu-item#cotizaciones": {
+    "props": {
+      "id": "menu-item-cotizaciones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "cotizaciones",
+        "text": "Cotizaciones"
+      }
+    }
+  },
+
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+
+
+
+
   "menu-item#category-home-appliance": {
     "props": {
       "id": "menu-item-category-home-appliance",

@@ -7,9 +7,9 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
+      // "flex-layout.row#1-desktop",
+      // "flex-layout.row#2-desktop",
+      // "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -17,14 +17,14 @@
   "flex-layout.row#1-desktop": {
     "children": [ "telemarketing" ],
     "props": {
-      "fullWidth": true
+      "fullWidth": false
     }
   },
 
   "flex-layout.row#2-desktop": {
     "children": [ "notification.bar#home" ],
     "props": {
-      "fullWidth": "true"
+      "fullWidth": false
     }
   },
   "notification.bar#home": {
@@ -38,7 +38,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "vtex.menu@2.x:menu#websites",
@@ -65,7 +65,7 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -135,11 +135,11 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "assets/img/logo-gourmet.png",
+      "width": "95"
     }
   },
-  "header-layout.mobile": {
+  "header-layout.mobile": { 
     "children": [ "sticky-layout#1-mobile" ]
   },
   "sticky-layout#1-mobile": {
@@ -157,7 +157,7 @@
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": false
     }
   },
   "drawer": {

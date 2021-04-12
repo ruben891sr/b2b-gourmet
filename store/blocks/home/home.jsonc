@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "list-context.image-list#slider",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
@@ -72,21 +72,28 @@
     }
   },
 
-  "list-context.image-list#demo": {
+  // Desktop - Slider Principal
+  "list-context.image-list#slider": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 550,
+      "blockClass": "sliderImageNew",
       "images": [{
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/img/slider-escri-1.jpg",
+          "mobileImage": "assets/img/slider-escri-1.jpg" 
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/img/slider-escri-2.jpg",
+          "mobileImage": "assets/img/slider-escri-2.jpg"
+        },
+        { 
+          "image": "assets/img/slider-escri-3.jpg",
+          "mobileImage": "assets/img/slider-escri-3.jpg"
         }
       ]
     }
   },
+
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
@@ -99,7 +106,6 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",

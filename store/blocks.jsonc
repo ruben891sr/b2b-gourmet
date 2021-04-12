@@ -198,7 +198,7 @@
       ],
       "props": {
         "blockClass": "header",
-        "fullWidth":true,
+        "fullWidth":false,
         "formFields": [
           {
             "name": "orderType",
