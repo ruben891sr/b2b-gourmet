@@ -1,0 +1,50 @@
+/*Elementos display none*/
+.filter__container--brand {
+    display: none!important;
+}
+
+/*PLP B2B*/
+.filter__container {
+    border-bottom: 1px solid #E1251B;
+}
+.filterMessage {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.filterTitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*ORDENAR POR*/
+.orderByText {
+    color: #000000!important;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.orderByText::after {
+    content: ":";
+    display: inline-block;
+    font-size: 13px;
+}
+
+.filterPopupTitle {
+    position: relative;
+    font-weight: 700;
+    margin-right: 1rem;
+    text-transform: initial;
+    z-index: 1;
+}
+
+.filterPopupTitle::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -55px;
+    background: rgba(64,64,64,.11);
+    border-radius: 3px;
+    width: 85%;
+    height: 24px;
+}
