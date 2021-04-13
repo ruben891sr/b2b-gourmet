@@ -25,7 +25,9 @@
   width: 100%;
 }
 
-.nameContainer--nombre
+.nameContainer--nombre {
+  font-size: 13px;
+}
 
 .brandName {
   font-weight: 600;

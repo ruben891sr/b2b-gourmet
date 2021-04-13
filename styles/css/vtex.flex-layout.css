@@ -71,7 +71,8 @@
 }
 
 .flexCol--orderByCol {
-  align-items: flex-end;
+  align-items: flex-start;
+  margin-left: 4rem;
 }
 
 .flexCol--orderByMobileCol {
@@ -118,6 +119,11 @@
 .flexRowContent--formResellerCompanyBlock .stretchChildrenWidth .flexCol--formResellerCompany {
   height: initial;
 }
+
+
+/*PLP*/
+.flexRowContent--rowSearchBread .stretchChildrenWidth {
+  justify-content: flex-start;
 
 .flexRowContent--row-ventas-por .stretchChildrenWidth:first-child {
   margin-right: .5rem;
