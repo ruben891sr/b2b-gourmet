@@ -10,3 +10,8 @@
 .dontHaveAccount{
     display: none;
 }
+
+.label {
+    text-transform: capitalize;
+    color: #fff;
+}

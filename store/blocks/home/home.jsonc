@@ -3,12 +3,12 @@
     "blocks": [
       "list-context.image-list#slider",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "flex-layout.row#bn-dcto",
+      // "flex-layout.row#deals",
+      "flex-layout.row#shelf-title",
+      "list-context.product-list#home",
+      "flex-layout.row#ventas-por",
+      "flex-layout.row#cotiza",
       "newsletter"
     ],
     "parent": {
@@ -80,13 +80,13 @@
       "blockClass": "sliderImageNew",
       "images": [{
           "image": "assets/img/slider-escri-1.jpg",
-          "mobileImage": "assets/img/slider-escri-1.jpg" 
+          "mobileImage": "assets/img/slider-escri-1.jpg"
         },
         {
           "image": "assets/img/slider-escri-2.jpg",
           "mobileImage": "assets/img/slider-escri-2.jpg"
         },
-        { 
+        {
           "image": "assets/img/slider-escri-3.jpg",
           "mobileImage": "assets/img/slider-escri-3.jpg"
         }
@@ -106,15 +106,48 @@
       "blockClass": "carousel"
     }
   },
+
+
+  // Imagen Promo
+  "flex-layout.row#bn-dcto": {
+    "children": [
+      "image#info-image"
+    ],
+    "props": {
+      "fullWidth": false,
+      "blockClass": "row-bn-dcto",
+      "marginTop": 8,
+      "marginBottom": 8
+    }
+  },
+
+  "image#info-image": {
+    "props": {
+      "src": "assets/img/bn-dcto.jpg",
+      "link": "",
+      "width": "100%",
+      "blockClass": "bn-dcto"
+    }
+  },
+
+
+  //Shelf Home
+  "flex-layout.row#shelf-title": {
+    "children": [
+      "rich-text#shelf-title"
+    ],
+    "props": {
+      "blockClass": "row-shelfTitle"
+    }
+  },
+
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Productos Destacados",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#home"]
-  },
+
   "list-context.product-list#home": {
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products"],
@@ -122,6 +155,7 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
@@ -134,31 +168,83 @@
       "blockClass": "shelf"
     }
   },
-  "info-card#home": {
+
+
+
+  // Ventas por
+  "flex-layout.row#ventas-por": {
+    "children": [
+      "info-card#lote",
+      "info-card#sku"
+    ],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
+      "blockClass": "row-ventas-por",
+      "marginTop": 8
+    }
+  },
+
+  "info-card#lote": {
+    "props": {
+      "id": "info-card-lote",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-venta-lote.jpg",
+      // "headline": "Ventas por lote",
+      "callToActionText": "Ventas por lote",
+      "callToActionUrl": "/quickorder",
+      "blockClass": "info-card-ventas",
       "textAlignment": "center"
     }
   },
 
-  "rich-text#question": {
+  "info-card#sku": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "id": "info-card-sku",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-venta-sku.jpg",
+      // "headline": "Ventas por sku",
+      "callToActionText": "Ventas por sku",
+      "callToActionUrl": "/quickorder",
+      "blockClass": "info-card-ventas",
+      "textAlignment": "center"
     }
   },
 
-  "rich-text#link": {
+
+  // Cotiza
+  "flex-layout.row#cotiza": {
+    "children": [
+      "info-card#cotiza"
+    ],
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "blockClass": "row-cotiza",
+      "marginBottom": 8,
+      "marginTop": 8
+    }
+  },
+
+  "info-card#cotiza": {
+    "props": {
+      "id": "info-card-cotiza",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-cotiza.jpg",
+      "headline": "Cotiza con nosotros",
+      "callToActionText": "Cotiza ahora",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-cotiza",
+      "textAlignment": "center"
+    }
+  },
+
+  // Newsletter
+  "newsletter": {
+    "props":{
+      "label": "Suscríbete a nuestro Newsletter",
+      "submit": "Suscríbete",
+      "placeholder": "Ingrese su dirección de correo electrónico"
     }
   }
+
 }

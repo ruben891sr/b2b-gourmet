@@ -1,0 +1,11 @@
+.openIconContainer {
+    padding: 0;
+}
+
+.openIconContainer :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+.cartIcon {
+    color: #fff;
+}

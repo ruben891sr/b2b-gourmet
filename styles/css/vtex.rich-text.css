@@ -67,6 +67,18 @@
   font-weight: 700;
 }
 
+.wrapper--shelfTitle {
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+
+.heading--shelfTitle {
+  font-size: 1.2em;
+  color: #1f1f1f;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
