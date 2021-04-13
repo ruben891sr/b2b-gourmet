@@ -18,9 +18,11 @@
 }
 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
+  background-image: url(assets/img/bn-newsletter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .newsletter .container {
@@ -69,6 +71,10 @@
   margin: 1rem 0;
 }
 
+.logoContainer {
+  padding: 0;
+}
+
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;
@@ -114,4 +120,113 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.infoCardCallActionContainer--info-card-ventas {
+  margin: 0;
+  padding: 6rem 0;
+}
+
+.infoCardTextContainer--info-card-ventas :global(.vtex-button) {
+  background-color: rgb(0 0 0 / 60%);
+  border: 0;
+  border-radius: 0;
+  padding: 1.5rem 1rem;
+}
+
+.infoCardTextContainer--info-card-ventas :global(.vtex-button__label) {
+  font-weight: 800;
+}
+
+.form {
+  max-width: 100%;
+}
+
+.infoCardHeadline--info-card-cotiza {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  position: relative;
+  padding: 0 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoCardHeadline--info-card-cotiza::after {
+  content: 'Cotiza con nosotros de una manera fácil y rápida';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: #fff;
+  text-transform: initial;
+  top: 110%;
+  width: 100%;
+  font-weight: 500;
+}
+
+.infoCardTextContainer--info-card-cotiza {
+  padding: 4rem 0;
+}
+
+.infoCardCallActionContainer--info-card-cotiza :global(.vtex-button) {
+  border-radius: 0;
+}
+
+.infoCardCallActionContainer--info-card-cotiza :global(.vtex-button__label) {
+  padding: .7rem 3rem;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.newsletter .form .label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  position: relative;
+  padding: 0 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.newsletter .form .label::after {
+  content: 'Cotiza con nosotros de una manera fácil y rápida';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: #fff;
+  text-transform: initial;
+  top: 110%;
+  width: 100%;
+  font-weight: 500;
+}
+
+.newsletter .form .inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+  width: 40vw;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+.newsletter .form .inputGroup :global(.vtex-button) {
+  background-color: #1f1f1f;
+  border-radius: 0;
+}
+
+.newsletter .form .inputGroup :global(.vtex-button__label) {
+  padding: 0 3rem;
+  text-transform: initial;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 80em) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 102rem;
+  }
 }

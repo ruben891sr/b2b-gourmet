@@ -69,13 +69,26 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      // "locale-switcher",
       "login", 
       "minicart.v2"
     ]
+  },
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Entrar"
+    }
   },
 
   "challenge-block#order-config": {
