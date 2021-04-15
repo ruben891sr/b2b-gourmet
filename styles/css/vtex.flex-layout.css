@@ -124,6 +124,7 @@
 /*PLP*/
 .flexRowContent--rowSearchBread .stretchChildrenWidth {
   justify-content: flex-start;
+}
 
 .flexRowContent--row-ventas-por .stretchChildrenWidth:first-child {
   margin-right: .5rem;
@@ -131,4 +132,19 @@
 
 .flexRowContent--row-ventas-por .stretchChildrenWidth:last-child {
   margin-left: .5rem;
+}
+
+/* Footer */
+.flexRow--row-footerMain {
+  background-color: #1f1f1f;
+  padding: 3rem 0;
+}
+
+.flexColChild--col-footerMain {
+  align-items: center;
+  height: auto !important;
+}
+
+.flexCol--col-footerMain {
+  align-items: center;
 }

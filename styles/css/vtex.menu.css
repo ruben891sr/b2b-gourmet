@@ -2,3 +2,17 @@
     margin-left: .7rem;
     margin-right: .7rem;
 }
+
+.menuContainer--footerMainMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.styledLinkContent--menuFooterMainItem {
+    font-size: 14px;
+    color: #fff;
+}
+
+.styledLinkContainer--menuFooterMainItem {
+    padding: 0 0 1.2rem 0;
+}

@@ -79,18 +79,6 @@
     ]
   },
 
-  "login": {
-    "props": {
-      "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Acess Code LOG-IN",
-      "emailPlaceholder": "e-mail",
-      "passwordPlaceholder": "password",
-      "showPasswordVerificationIntoTooltip": true,
-      "showIconProfile": true,
-      "iconLabel": "Entrar"
-    }
-  },
-
   "challenge-block#order-config": {
     "blocks": [
       "challenge-content#order-config",
