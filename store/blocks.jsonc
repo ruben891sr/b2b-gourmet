@@ -13,10 +13,10 @@
   },
 
   "store.account": {
-    "blocks": [ "my-account" ],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
+    "blocks": [ "my-account" ]
+    // "parent": {
+    //   "challenge": "challenge.trade-policy-condition"
+    // }
   },
 
   "store.login": {
@@ -174,10 +174,10 @@
   },
 
   "store.not-found#product": {
-    "blocks": [ "rich-text#not-found" ],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
+    "blocks": [ "rich-text#not-found" ]
+    // "parent": {
+    //   "challenge": "challenge.trade-policy-condition"
+    // }
   },
 
   "rich-text#not-found": {

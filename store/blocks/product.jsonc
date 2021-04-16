@@ -1,9 +1,9 @@
 {
   "store.product": {
-    "children": ["condition-layout.product"],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
+    "children": ["condition-layout.product"]
+    // "parent": {
+    //   "challenge": "challenge.trade-policy-condition"
+    // }
   },
 
   "condition-layout.product": {
