@@ -1,37 +1,37 @@
 {
   "store.search.product-comparison": {
-    "blocks": [ "search-result-layout" ]
-    // "parent": {
-    //   "challenge": "challenge.trade-policy-condition"
-    // }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "store.search.product-comparison#brand": {
-    "blocks": [ "search-result-layout" ]
-    // "parent": {
-    //   "challenge": "challenge.trade-policy-condition"
-    // }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "store.search.product-comparison#department": {
-    "blocks": [ "search-result-layout" ]
-    // "parent": {
-    //   "challenge": "challenge.trade-policy-condition"
-    // }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "store.search.product-comparison#category": {
-    "blocks": [ "search-result-layout" ]
-    // "parent": {
-    //   "challenge": "challenge.trade-policy-condition"
-    // }
-  },
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  }, 
 
   "store.search.product-comparison#subcategory": {
-    "blocks": [ "search-result-layout" ]
-    // "parent": {
-    //   "challenge": "challenge.trade-policy-condition"
-    // }
+    "blocks": [ "search-result-layout" ], 
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "search-result-layout": {

@@ -32,7 +32,7 @@
     "props": {
       "blockClass": "col-footerMain"
     }
-  },
+  }, 
 
   "flex-layout.col#sac": {
     "children": [

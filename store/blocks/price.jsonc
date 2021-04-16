@@ -21,7 +21,7 @@
       ],
       "blockClass": "summary"
     }
-  },
+  }, 
   "flex-layout.row#selling-price": {
     "props": {
       "marginTop": 50,

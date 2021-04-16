@@ -34,7 +34,7 @@
   "rich-text#contact": {
     "props": {
       "text": "**Your Contact**",
-      "blockClass": "formReseller"
+      "blockClass": "formReseller" 
     }
   },
   "rich-text#company": {

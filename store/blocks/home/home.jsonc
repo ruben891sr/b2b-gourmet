@@ -20,7 +20,7 @@
     "blocks": ["product-summary.shelf#home"]
   },
  
-  "product-summary.shelf#home": {
+  "product-summary.shelf#home": { 
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",

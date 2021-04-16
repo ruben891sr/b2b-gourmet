@@ -17,7 +17,7 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
+        "type": "internal", 
         "href": "#",
         "noFollow": false,
         "tagTitle": "News",

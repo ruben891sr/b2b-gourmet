@@ -30,7 +30,7 @@
   },
   "flex-layout.row#topmenu-apps": {
     "children": [
-      "menu-item#quickorder",
+      "menu-item#quickorder", 
       "menu-item#orderquote"
     ]
   },
