@@ -18,7 +18,7 @@
   },
 
   // Desktop - Slider Principal
-  "list-context.image-list#slider": {
+  "list-context.image-list#slider": { 
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 550,
