@@ -1,20 +1,25 @@
 {
-  "vtex.menu@2.x:menu#category-menu": {
+
+  // Items menú de navegación
+  "vtex.menu@2.x:menu#menu-navegacion": {
     "props": {
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#catalogo",
-      "menu-item#venta-lote",
-      "menu-item#venta-sku",
-      "menu-item#cotizaciones",
-      "menu-item#contacto"
+      "menu-item#inicio",
+      "menu-item#tienda",
+      "menu-item#compras-mayor",
+      "menu-item#videos",
+      "menu-item#regalos",
+      "menu-item#food-service",
+      "menu-item#blog",
+      "menu-item#menu-semanal"
     ]
   },
 
-  "menu-item#catalogo": {
+  "menu-item#inicio": {
     "props": {
-      "id": "menu-item-catalogo",
+      "id": "menu-item-inicio",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -22,15 +27,32 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "catalogo",
-        "text": "Catálogo"
+        "tagTitle": "inicio",
+        "text": "Inicio"
       }
     }
   },
 
-  "menu-item#venta-lote": {
+  "menu-item#tienda": {
     "props": {
-      "id": "menu-item-venta-lote",
+      "id": "menu-item-tienda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "tienda",
+        "text": "Tienda"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#tienda"]
+  },
+
+  "menu-item#compras-mayor": {
+    "props": {
+      "id": "menu-item-venta-compras-mayor",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -38,15 +60,15 @@
         "type": "internal",
         "href": "/quickorder",
         "noFollow": false,
-        "tagTitle": "venta-lote",
-        "text": "Venta por lote"
+        "tagTitle": "compras-mayor",
+        "text": "Compras al por mayor"
       }
     }
   },
 
-  "menu-item#venta-sku": {
+  "menu-item#videos": {
     "props": {
-      "id": "menu-item-venta-sku",
+      "id": "menu-item-videos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -54,15 +76,15 @@
         "type": "internal",
         "href": "/quickorder",
         "noFollow": false,
-        "tagTitle": "venta-sku",
-        "text": "Venta por sku"
+        "tagTitle": "videos",
+        "text": "Videos"
       }
     }
   },
 
-  "menu-item#cotizaciones": {
+  "menu-item#regalos": {
     "props": {
-      "id": "menu-item-cotizaciones",
+      "id": "menu-item-regalos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -70,15 +92,15 @@
         "type": "internal",
         "href": "/orderquote",
         "noFollow": false,
-        "tagTitle": "cotizaciones",
-        "text": "Cotizaciones"
-      } 
+        "tagTitle": "regalos",
+        "text": "Regalos"
+      }
     }
   },
 
-  "menu-item#contacto": {
+  "menu-item#food-service": {
     "props": {
-      "id": "menu-item-contacto",
+      "id": "menu-item-food-service",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -86,103 +108,60 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "contacto",
-        "text": "Contacto"
+        "tagTitle": "food-service",
+        "text": "Food service"
+      }
+    }
+  },
+
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "blog",
+        "text": "Blog"
+      }
+    }
+  },
+
+  "menu-item#menu-semanal": {
+    "props": {
+      "id": "menu-item-menu-semanal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "menu-semanal",
+        "text": "Menu semanal"
       }
     }
   },
 
 
-
-
-  "menu-item#category-home-appliance": {
+  // Submenu Tiendas
+  "vtex.menu@2.x:submenu#tienda": {
+    "children": [
+      "menu-item#regalos",
+      "menu-item#food-service",
+      "menu-item#blog",
+      "menu-item#menu-semanal"
+    ],
     "props": {
-      "id": "menu-item-category-home-appliance",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home-appliance",
-        "noFollow": false,
-        "tagTitle": "Home Appliance",
-        "text": "Home Appliance"
-      }
-    }
-  },
-  "menu-item#category-computers": {
-    "props": {
-      "id": "menu-item-category-computers",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/gourmet",
-        "noFollow": false,
-        "tagTitle": "Gurmet",
-        "text": "Gourmet"
-      }
-    }
-  },
-  "menu-item#category-machines": {
-    "props": {
-      "id": "menu-item-category-machines",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/champion-tools",
-        "noFollow": false,
-        "tagTitle": "Machines",
-        "text": "Machines"
-      }
-    }
-  },
-  "menu-item#category-personalized": {
-    "props": {
-      "id": "menu-item-category-personalized",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/software",
-        "noFollow": false,
-        "tagTitle": "Personalized",
-        "text": "Personalized"
-      }
-    }
-  },
-  "menu-item#category-tools": {
-    "props": {
-      "id": "menu-item-category-tools",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/tools",
-        "noFollow": false,
-        "tagTitle": "Tools",
-        "text": "Tools"
-      }
-    }
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
+      "orientation": "vertical",
+      "preventVerticalStretch": true,
+      "blockClass": "wrapperSubMenuTienda"
     }
   }
+
+
+
 }

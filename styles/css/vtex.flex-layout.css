@@ -43,9 +43,9 @@
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
   color: #fff;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .flexRow--deals {
@@ -147,4 +147,62 @@
 
 .flexCol--col-footerMain {
   align-items: center;
+}
+
+/* Top Bar */
+.flexRow--row-topBar {
+  background: #474747;
+  margin: .7rem .7rem 0 .7rem;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:last-child::before,
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child::before {
+  content: '|';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: lighter;
+  color: #fff;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:last-child::before {
+  left: 0;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child::before {
+  right: 0;
+}
+
+
+.flexRowContent--row-topBar {
+  justify-content: flex-end;
+}
+
+.flexRowContent--row-topBar .flexRowContent--row-topBar:first-child {
+  padding: 0 1.8rem;
+}
+
+
+.flexRowContent--row-categoryHome {  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flexRowContent--row-categoryHome .stretchChildrenWidth {
+  width: 23.7%!important;
+  border: 1px solid #c4c4c4;
+  margin: .5rem;
 }

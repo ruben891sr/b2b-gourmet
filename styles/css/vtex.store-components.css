@@ -178,6 +178,27 @@
   font-size: 13px;
 }
 
+/*Infocard Categorias*/
+.infoCardTextContainer--info-card-example {
+  margin: 0;
+  width: 100%;
+}
+
+.infoCardCallActionContainer--info-card-example {
+  color: #1F1F1F;
+  text-decoration: none !important;
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.infoCardCallActionText--info-card-example {
+  color: #1F1F1F;
+  text-decoration: none !important;
+  text-align: center;
+  padding-top: 75%;
+}
+
 .newsletter .form .label {
   color: #fff;
   text-transform: uppercase;

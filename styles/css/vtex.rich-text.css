@@ -69,7 +69,19 @@
 
 .wrapper--shelfTitle {
   width: 100%;
-  border-bottom: 1px solid red;
+  position: relative;
+}
+
+.wrapper--shelfTitle::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .heading--shelfTitle {
@@ -77,6 +89,10 @@
   color: #1f1f1f;
   font-weight: 800;
   text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1rem;
+  background: #fff;
+  position: relative;
 }
 
 @media only screen and (min-width: 640px) {
@@ -112,4 +128,18 @@
   color: #fff;
   text-transform: uppercase;
 
+}
+
+/* Top Bar */
+.paragraph--topbar-text {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container--topbar-text {
+  display: flex;
+  align-items: center;
 }

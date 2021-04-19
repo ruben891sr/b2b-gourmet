@@ -14,7 +14,7 @@
   "assembly-option-input-values": {
     "props": {
       "optionsDisplay": "box"
-    } 
+    }
   },
   "flex-layout.row#product-assembly-options": {
     "props": {

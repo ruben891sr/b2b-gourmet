@@ -9,10 +9,18 @@
 }
 
 .styledLinkContent--menuFooterMainItem {
-    font-size: 14px;
     color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .styledLinkContainer--menuFooterMainItem {
     padding: 0 0 1.2rem 0;
+}
+
+.submenuContainer--wrapperSubMenuTienda,
+.submenuWrapper--wrapperSubMenuTienda--isOpen {
+    background: #1e1e1e;
 }

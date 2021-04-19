@@ -3,72 +3,17 @@
     "blocks": [
       "list-context.image-list#slider",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#bn-dcto",
-      // "flex-layout.row#deals",
+      // "flex-layout.row#bn-dcto",
+      "flex-layout.row#category-home-title",
+      "flex-layout.row#category-home",
       "flex-layout.row#shelf-title",
       "list-context.product-list#home",
-      "flex-layout.row#ventas-por",
-      "flex-layout.row#cotiza",
+      // "flex-layout.row#ventas-por",
+      // "flex-layout.row#cotiza",
       "newsletter"
     ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
-    }
-  },
-
-  "shelf#home": {
-    "blocks": ["product-summary.shelf#home"]
-  },
- 
-  "product-summary.shelf#home": { 
-    "children": [
-      "stack-layout#prodsum",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "flex-layout.row#prices",
-      "product-installments#summary",
-      "product-summary-sku-selector",
-      "add-to-cart-button"
-    ]
-  },
-
-  "challenge-block#show-price": {
-    "blocks": [
-      "challenge-content#show-price"
-    ]
-  },
-
-  "challenge-content#show-price": {
-    "children": [
-      "challenge-permission#show-price"
-    ]
-  },
-
-  "challenge-permission#show-price": {
-    "blocks": [
-      "allowed-content#show-price",
-      "disallowed-content#price"
-    ]
-  },
-
-
-  "allowed-content#show-price": {
-    "children": [
-      "flex-layout.col#product-home"
-    ]
-  },
-
-  "flex-layout.col#product-home": {
-    "children": [
-      "product-summary-space",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
-    ],
-    "props": {
-      "marginTop": 10,
-      "rowGap": "3"
     }
   },
 
@@ -131,6 +76,214 @@
   },
 
 
+  // Categorias Home
+  "flex-layout.row#category-home-title": {
+    "children": [
+      "rich-text#category-home-title"
+    ],
+    "props": {
+      "blockClass": "row-categoryHomeTitle"
+    }
+  },
+  "rich-text#category-home-title": {
+    "props": {
+      "text": "## Categorías",
+      "blockClass": "shelfTitle"
+
+    }
+  },
+
+  "flex-layout.row#category-home": {
+    "children": [
+      "info-card#mas-matural",
+      "info-card#alinos-ensaladas",
+      "info-card#basas-salsas",
+      "info-card#caldos",
+      "info-card#cremas-sopas",
+      "info-card#delicatesen",
+      "info-card#esencias",
+      "info-card#hiervas-especias",
+      "info-card#reposteria",
+      "info-card#salsas-condimientadas",
+      "info-card#salsas-postres",
+      "info-card#salsa-untar"
+    ],
+    "props": {
+      "blockClass": "row-categoryHome"
+    }
+  },
+
+  "info-card#mas-matural": {
+    "props": {
+      "id": "info-card-mas-matural",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Gourmet más natural",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#alinos-ensaladas": {
+    "props": {
+      "id": "info-card-alinos-ensaladas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Aliños para ensaladas",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#basas-salsas": {
+    "props": {
+      "id": "info-card-basas-salsas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Bases y salsas deshidratadas",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#caldos": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Caldos",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#cremas-sopas": {
+    "props": {
+      "id": "info-card-cremas-sopas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Cremas y sopas",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#delicatesen": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Productos delicatessen",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#esencias": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Esencias para cocinar",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#hiervas-especias": {
+    "props": {
+      "id": "info-card-hiervas-especias",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Hierbas y especias",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#reposteria": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Productos de repostería para cocinar",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsas-condimientadas": {
+    "props": {
+      "id": "info-card-salsas-condimientadas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Salsas condimientadas para cocinar",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsas-postres": {
+    "props": {
+      "id": "info-card-salsas-postres",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Salsas para postres",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsa-untar": {
+    "props": {
+      "id": "info-card-salsa-untar",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "Salsas para untar",
+      "callToActionUrl": "/sale/d",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+
+
+
   //Shelf Home
   "flex-layout.row#shelf-title": {
     "children": [
@@ -149,7 +302,7 @@
   },
 
   "list-context.product-list#home": {
-    "blocks": ["product-summary.shelf#home"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -240,11 +393,39 @@
 
   // Newsletter
   "newsletter": {
-    "props":{
+    "props": {
       "label": "Suscríbete a nuestro Newsletter",
       "submit": "Suscríbete",
       "placeholder": "Ingrese su dirección de correo electrónico"
     }
-  }
+  },
 
+
+
+
+
+
+
+
+
+
+  "flex-layout.row#shelf": {
+    "children": ["shelf"]
+    // "children": ["list-context.product-list#demo1"]
+  },
+
+
+  "rich-text#question": {
+    "props": {
+      "text": "**Esta es una muestra de como sería tu sitio.\nQuieres saber más?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Contáctanos en**\nwww.sr-consultores.com",
+      "blockClass": "link"
+    }
+  }
 }

@@ -19,7 +19,7 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png", 
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
       "maxHeight": "24px"
     }
   },

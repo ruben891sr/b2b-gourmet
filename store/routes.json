@@ -1,11 +1,14 @@
 {
-    "store.custom#about-us": {
+  "store.custom#about-us": {
     "path": "/about-us"
   },
-    "store.custom#registration": {
-    "path": "/registration"
+
+  "store.custom#faq": {
+    "path": "/faq"
   },
-    "store.custom#product-comparison-list": {
-    "path": "/product-comparison"
+
+  "store.custom#contact-us": {
+    "path": "/contact-us"
   }
-} 
+  
+}

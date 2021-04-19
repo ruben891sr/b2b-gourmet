@@ -1,12 +1,9 @@
 @font-face {
-    font-family: 'Manrope, sans-serif';
-    src: url(assets/fonts/Manrope-Light.ttf),
-    url(assets/fonts/Manrope-Bold.ttf),
-    url(assets/fonts/Manrope-ExtraBold.ttf),
-    url(assets/fonts/Manrope-ExtraLight.ttf),
-    url(assets/fonts/Manrope-Medium.ttf),
-    url(assets/fonts/Manrope-Regular.ttf),
-    url(assets/fonts/Manrope-SemiBold.ttf)
-
-
-  }  
+    font-family: 'Oswald';
+    src: url(assets/fonts/Oswald-Light.ttf),
+        url(assets/fonts/Oswald-Bold.ttf),
+        url(assets/fonts/Oswald-ExtraLight.ttf),
+        url(assets/fonts/Oswald-Medium.ttf),
+        url(assets/fonts/Oswald-Regular.ttf),
+        url(assets/fonts/Oswald-SemiBold.ttf)
+}

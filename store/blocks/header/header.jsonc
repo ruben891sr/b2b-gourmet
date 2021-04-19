@@ -1,64 +1,69 @@
 {
+
+// General
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
+
+
+  // General versiones Mobile Desktop
   "header-layout.desktop": {
     "children": [
-      // "flex-layout.row#1-desktop",
-      // "flex-layout.row#2-desktop",
-      // "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#header"
     ]
   },
-
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": false
-    }
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
   },
 
-  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": false
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": false
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "challenge-block#order-config",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
+
+  // Desktop
+  "sticky-layout#header": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "flex-layout.row#top-bar",
+      "flex-layout.row#main-header"
+    ]
   },
-  "flex-layout.row#4-desktop": {
+
+  // Desktop - Top Bar
+  "flex-layout.row#top-bar": {
+    "children": [
+      "rich-text#login-top",
+      "rich-text#sigin",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "row-topBar",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#login-top": {
+    "props": {
+      "text": "Iniciar sesión",
+      "blockClass": "topbar-text"
+    }
+  },
+  "rich-text#sigin": {
+    "props": {
+      "text": "Registrarme",
+      "blockClass": "topbar-text"
+    }
+  },
+
+  // Desktop - Main Header
+  "flex-layout.row#main-header": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -72,30 +77,35 @@
       "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      // "locale-switcher",
-      "login",
-      "minicart.v2"
+      "search-bar"
     ]
   },
 
-  "challenge-block#order-config": {
-    "blocks": [
-      "challenge-content#order-config",
-      "challenge-fallback#order-config"
-    ]
+  // Desktop - Main Header - Logo
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/logo-header.png",
+      "width": "110"
+    }
   },
 
-  "challenge-fallback#order-config": {
-    "children": []
+  // Menu de navegación
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#menu-navegacion"]
   },
 
-  "challenge-content#order-config": {
-    "children": [
-      "order-config#header"
-    ]
-  },
-
+  // Barra de búsqueda
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
@@ -103,45 +113,24 @@
       "__unstableProductOriginVtex": "true"
     }
   },
-
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary.shelf#default"],
+    "blocks": ["product-summary.shelf"],
     "props": {
       "__unstableProductOriginVtex": true
     }
   },
 
-  "flex-layout.col#logo-desktop": {
+
+
+  "flex-layout.col#spacer": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
-  "category-menu#old": {
-    "props": {
-      "showAllDepartments": true,
-      "showSubcategories": true,
-      "menuDisposition": "center",
-      "departments": []
+      "width": "grow"
     }
   },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "assets/img/logo-gourmet.png",
-      "width": "95"
-    }
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
-  },
+
+
+
+
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
   },
@@ -166,15 +155,7 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-computers",
-      "menu-item#category-home-appliance",
-      "menu-item#category-machines",
-      "menu-item#category-personalized",
-      "menu-item#category-tools",
-      "product-separator",
-      "menu-item#shop",
-      "menu-item#about-us",
-      "challenge-block#loggedIn"
+
     ],
     "props": {
       "orientation": "vertical"
@@ -189,6 +170,7 @@
       "width": "70"
     }
   },
+
 
   "login": {
     "props": {
