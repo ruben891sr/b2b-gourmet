@@ -1,3 +1,28 @@
+/*Search Bar*/
+.searchBarContainer .input {
+  color: #727273;
+  border-radius: 0;
+  background: red !important;
+}
+
+.searchBarContainer {
+  margin-left: 1.4rem;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix) {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.searchIcon {
+  color: #fff;
+}
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -18,10 +43,7 @@
 }
 
 .newsletter {
-  background-image: url(assets/img/bn-newsletter.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #E1251B;
   width: 100%;
 }
 
@@ -76,9 +98,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
 
   .label {
     font-size: 40px;
@@ -151,19 +170,6 @@
   margin-bottom: 1.5rem;
 }
 
-.infoCardHeadline--info-card-cotiza::after {
-  content: 'Cotiza con nosotros de una manera fácil y rápida';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 13px;
-  color: #fff;
-  text-transform: initial;
-  top: 110%;
-  width: 100%;
-  font-weight: 500;
-}
-
 .infoCardTextContainer--info-card-cotiza {
   padding: 4rem 0;
 }
@@ -179,6 +185,11 @@
 }
 
 /*Infocard Categorias*/
+.infoCardContainer--info-card-example {
+  background-size: 85% !important;
+  border-bottom: 0;
+}
+
 .infoCardTextContainer--info-card-example {
   margin: 0;
   width: 100%;
@@ -194,11 +205,16 @@
 
 .infoCardCallActionText--info-card-example {
   color: #1F1F1F;
-  text-decoration: none !important;
+  text-decoration: none!important;
   text-align: center;
-  padding-top: 75%;
+  text-transform: uppercase;
+  padding-top: 85%;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
 }
 
+
+/*Newsletter*/
 .newsletter .form .label {
   color: #fff;
   text-transform: uppercase;
@@ -206,20 +222,7 @@
   position: relative;
   padding: 0 3rem;
   margin-bottom: 1.5rem;
-  display: block;
-}
-
-.newsletter .form .label::after {
-  content: 'Cotiza con nosotros de una manera fácil y rápida';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 13px;
-  color: #fff;
-  text-transform: initial;
-  top: 110%;
-  width: 100%;
-  font-weight: 500;
+  display: none;
 }
 
 .newsletter .form .inputGroup {
@@ -229,19 +232,60 @@
   width: 40vw;
   margin: 0 auto;
   border-radius: 0;
+  flex-direction: column;
 }
 
 .newsletter .form .inputGroup :global(.vtex-button) {
-  background-color: #1f1f1f;
+  background-color: #fff;
   border-radius: 0;
+  margin-top: .7rem;
 }
 
 .newsletter .form .inputGroup :global(.vtex-button__label) {
   padding: 0 3rem;
-  text-transform: initial;
-  font-size: 13px;
-  color: #fff;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: #E1251B;
   font-weight: 700;
+}
+
+.newsletter .container {
+  min-width: auto;
+  padding: 0;
+}
+
+.newsletter :global(.vtex-input-prefix__group) {
+  height: 47px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.newsletter :global(.vtex-styleguide-9-x-input) {
+  height: 47px;
+  font-size: 13px;
+  text-transform: lowercase;
+  font-weight: lighter;
+}
+
+
+
+/*Footer*/
+.imageElement--lastFooter-segura {
+  width: 280px;
+}
+
+.imageElement--lastFooter-sr {
+  width: 37px;
+  opacity: .8;
+  display: block;
+  margin-right: .7rem;
+}
+
+.imageElement--lastFooter-vtex {
+  width: 70px;
+  opacity: .8;
+  margin-left: .7rem;
 }
 
 @media screen and (min-width: 80em) {

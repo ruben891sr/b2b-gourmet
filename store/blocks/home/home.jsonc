@@ -10,7 +10,7 @@
       "list-context.product-list#home",
       // "flex-layout.row#ventas-por",
       // "flex-layout.row#cotiza",
-      "newsletter"
+      "flex-layout.row#newsletter"
     ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
@@ -18,7 +18,7 @@
   },
 
   // Desktop - Slider Principal
-  "list-context.image-list#slider": { 
+  "list-context.image-list#slider": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 550,
@@ -118,7 +118,7 @@
       "id": "info-card-mas-matural",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-1-gourmet.jpg",
       "callToActionText": "Gourmet más natural",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -132,7 +132,7 @@
       "id": "info-card-alinos-ensaladas",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-2-gourmet.jpg",
       "callToActionText": "Aliños para ensaladas",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -146,7 +146,7 @@
       "id": "info-card-basas-salsas",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-3-gourmet.jpg",
       "callToActionText": "Bases y salsas deshidratadas",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -160,7 +160,7 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-4-gourmet.jpg",
       "callToActionText": "Caldos",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -174,7 +174,7 @@
       "id": "info-card-cremas-sopas",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-5-gourmet.jpg",
       "callToActionText": "Cremas y sopas",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -188,7 +188,7 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-6-gourmet.jpg",
       "callToActionText": "Productos delicatessen",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -202,7 +202,7 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-7-gourmet.jpg",
       "callToActionText": "Esencias para cocinar",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -216,7 +216,7 @@
       "id": "info-card-hiervas-especias",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-8-gourmet.jpg",
       "callToActionText": "Hierbas y especias",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -230,7 +230,7 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-9-gourmet.jpg",
       "callToActionText": "Productos de repostería para cocinar",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -244,7 +244,7 @@
       "id": "info-card-salsas-condimientadas",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-10-gourmet.jpg",
       "callToActionText": "Salsas condimientadas para cocinar",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -258,7 +258,7 @@
       "id": "info-card-salsas-postres",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-11-gourmet.jpg",
       "callToActionText": "Salsas para postres",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -272,7 +272,7 @@
       "id": "info-card-salsa-untar",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/img/cat-12-gourmet.jpg",
       "callToActionText": "Salsas para untar",
       "callToActionUrl": "/sale/d",
       "callToActionMode": "link",
@@ -392,10 +392,35 @@
   },
 
   // Newsletter
+  "flex-layout.row#newsletter": {
+    "children": [
+      "rich-text#newsletter-title",
+      "rich-text#newsletter-subtitle",
+      "newsletter"
+    ],
+    "props": {
+      "blockClass": "row-newsletter",
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props":{
+      "text": "## Suscríbete a nuestros newsletter",
+      "blockClass": "newsletter-title"
+    }
+  },
+
+  "rich-text#newsletter-subtitle": {
+    "props":{
+      "text": "y obtén un código con un 10% de descuento en tu primer compra",
+      "blockClass": "newsletter-subtitle"
+    }
+  },
+
   "newsletter": {
     "props": {
-      "label": "Suscríbete a nuestro Newsletter",
-      "submit": "Suscríbete",
+      "submit": "Suscribirme",
       "placeholder": "Ingrese su dirección de correo electrónico"
     }
   },

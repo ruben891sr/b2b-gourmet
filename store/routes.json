@@ -7,8 +7,8 @@
     "path": "/faq"
   },
 
-  "store.custom#contact-us": {
-    "path": "/contact-us"
+  "store.custom#contacto": {
+    "path": "/contacto"
   }
   
 }

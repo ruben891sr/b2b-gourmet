@@ -73,11 +73,12 @@
       "fullWidth": false
     },
     "children": [
+      "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar"
+      "search-bar",
+      "flex-layout.col#spacer"
     ]
   },
 

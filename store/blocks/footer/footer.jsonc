@@ -313,8 +313,7 @@
 
   "flex-layout.col#webpay": {
     "children": [
-      "image#transbank",
-      "image#compra-segura"
+      "image#transbank-compra-segura"
     ],
     "props": {
       "blockClass": "lastFooter-webpay"
@@ -340,32 +339,24 @@
     }
   },
 
-
-  "image#transbank": {
-    "props": {
-      "blockClass": "lastFooter-transbank",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
-    }
-  },
-
-  "image#compra-segura": {
+  "image#transbank-compra-segura": {
     "props": {
       "blockClass": "lastFooter-segura",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      "src": "assets/img/webpay-comrpa-segura.png"
     }
   },
 
   "image#sr": {
     "props": {
       "blockClass": "lastFooter-sr",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      "src": "assets/img/logo-sr-blanco.png"
     }
   },
 
   "image#vtex": {
     "props": {
       "blockClass": "lastFooter-vtex",
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      "src": "assets/img/logo-vtex-blanco.png"
     }
   },
 

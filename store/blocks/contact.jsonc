@@ -1,85 +1,276 @@
 {
-  "store.custom#contact-us": {
+  // General
+  "store.custom#contacto": {
     "children": [
-      "flex-layout.row#contact-us"
+      "flex-layout.row#contacto"
     ]
   },
-
-  "flex-layout.row#contact-us": {
-    "props": {
-      "blockClass": "contact"
-    },
+  "flex-layout.row#contacto": {
     "children": [
-      "flex-layout.col#contact-us"
-    ]
-  },
-
-  "flex-layout.col#contact-us": {
-    "children": [ 
-      "rich-text#contact-us",
-      "form#contact-us"
-    ]
-  },
-  "rich-text#contact-us": {
+      "tab-layout#contacto"
+    ],
     "props": {
-      "text": "## Contact Us"
+      "blockClass": "row-contacto"
     }
   },
 
-  "form#contact-us": {
-    "props": {
-      "entity": "contact",
-      "schema": "site-contact"
-    },
-    "blocks": [
-      "form-success#contact-us"
-    ],
+  // Tab Layout
+  "tab-layout#contacto": {
     "children": [
-      "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"
+      "tab-list#contacto",
+      "tab-content#contacto"
+    ],
+    "props": {
+      "blockClass": "contacto",
+      "defaultActiveTabId": "contacto"
+    }
+  },
+  // Titulos Pestañas
+  "tab-list#contacto": {
+    "children": [
+      "tab-list.item#pregunta-sugerencia",
+      "tab-list.item#reclamos",
+      "tab-list.item#compras-mayor"
     ]
+  },
+  "tab-list.item#pregunta-sugerencia": {
+    "props": {
+      "tabId": "contacto-p",
+      "label": "Preguntas/Sugerencias",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#reclamos": {
+    "props": {
+      "tabId": "contacto-r",
+      "label": "Reclamos"
+    }
+  },
+  "tab-list.item#compras-mayor": {
+    "props": {
+      "tabId": "contacto-c",
+      "label": "Compras al por mayor"
+    }
+  },
+  // Contenido de pestañas
+  "tab-content#contacto": {
+    "children": [
+      "tab-content.item#pregunta-sugerencia",
+      "tab-content.item#reclamos",
+      "tab-content.item#compras-mayor"
+    ]
+  },
+  "tab-content.item#pregunta-sugerencia": {
+    "children": [
+      "form#pregunta-sugerencia"
+    ],
+    "props": {
+      "tabId": "contacto-p"
+    }
+  },
+  "tab-content.item#reclamos": {
+    "children": [
+      "form#reclamos"
+    ],
+    "props": {
+      "tabId": "contacto-r"
+    }
+  },
+  "tab-content.item#compras-mayor": {
+    "children": [
+      "form#compras-mayor"
+    ],
+    "props": {
+      "tabId": "contacto-c"
+    }
   },
 
-  "form-success#contact-us": {
+  // Preguntas y sugerencias
+  "form#pregunta-sugerencia": {
+    "props": {
+      "entity": "contactos",
+      "schema": "preguntas"
+    },
     "children": [
-      "rich-text#success-submit"
+      "rich-text#formTitle-pregunta-sugerencia",
+      "form-input.text#firstName-pregunta-sugerencia",
+      "form-input.text#lastName-pregunta-sugerencia",
+      "form-field-group#address-pregunta-sugerencia",
+      "form-input.checkbox#agreement-pregunta-sugerencia",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  // Titulo Formulario
+  "rich-text#formTitle-pregunta-sugerencia": {
+    "props":{
+      "text": "Pregunta/Sugerencia"
+    }
+  },
+
+  // Reclamos
+  "form#reclamos": {
+    "props": {
+      "entity": "reclamo",
+      "schema": "reclamos"
+    },
+    "children": [
+      "rich-text#formTitle-reclamos",
+      "form-input.text#firstName-reclamos",
+      "form-input.text#lastName-reclamos",
+      "form-field-group#address-reclamos",
+      "form-input.checkbox#agreement-reclamos",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  // Titulo Formulario
+  "rich-text#formTitle-reclamos": {
+    "props":{
+      "text": "Reclamos"
+    }
+  },
+
+  // Compras por mayor
+  "form#compras-mayor": {
+    "props": {
+      "entity": "mayorista",
+      "schema": "inscripcion"
+    },
+    "children": [
+      "rich-text#formTitle-compras-mayor",
+      "form-input.text#firstName-compras-mayor",
+      "form-input.text#lastName-compras-mayor",
+      "form-field-group#address-compras-mayor",
+      "form-input.checkbox#agreement-compras-mayor",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  // Titulo Formulario
+  "rich-text#formTitle-compras-mayor": {
+    "props":{
+      "text": "Compras al por mayor"
+    }
+  },
+
+
+
+
+
+
+
+
+
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
     ]
   },
-  "rich-text#success-submit": {
+  "rich-text#successSubmit": {
     "props": {
-      "text": "Thanks for reaching out! We will come back shortly.",
+      "text": "Succesfully submitted the data!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
   },
 
-  "form-input.text#title": {
+
+
+
+  "form-input.text#firstName-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/title"
+      "pointer": "#/properties/firstName"
     }
   },
-  "form-input.text#name": {
+  "form-input.text#lastName-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/name"
+      "pointer": "#/properties/lastName"
     }
   },
-  "form-input.text#email": {
+  "form-input.checkbox#agreement-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/email"
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
     }
   },
-  "form-input.textarea#message": {
+  "form-field-group#address-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/message"
+      "pointer": "#/properties/address"
     }
   },
 
-  "form-submit#contact": {
+
+
+
+
+
+  "form-input.text#firstName-reclamos": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#lastName-reclamos": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "form-input.checkbox#agreement-reclamos": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+  "form-field-group#address-reclamos": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+
+
+
+
+
+
+
+  "form-input.text#firstName-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#lastName-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "form-input.checkbox#agreement-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+  "form-field-group#address-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+
+
+
+
+
+
+
+
+
+  "form-submit": {
     "props": {
       "label": "Submit"
     }
   }
+
+
+
+
+
 }

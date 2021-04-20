@@ -70,6 +70,7 @@
 .wrapper--shelfTitle {
   width: 100%;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .wrapper--shelfTitle::before {
@@ -142,4 +143,41 @@
 .container--topbar-text {
   display: flex;
   align-items: center;
+}
+
+/*Newsletter*/
+.container--newsletter-title,
+.container--newsletter-subtitle {
+  justify-content: center;
+  color: #fff;
+}
+
+.headingLevel2--newsletter-title {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1rem;
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+.paragraph--newsletter-subtitle {
+  margin-top: 0;
+}
+
+.paragraph--newsletter-subtitle {
+  font-family: 'Lato';
+  font-size: 15px;
+}
+
+/*Footer*/
+.paragraph--lastFooter-derecho {
+  color: #fff;
+  font-size: 13px;
+}
+
+.container--lastFooter-derecho {
+  justify-content: flex-end;
 }
