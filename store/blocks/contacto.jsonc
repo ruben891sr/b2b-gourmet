@@ -77,7 +77,7 @@
     }
   },
   "tab-content.item#compras-mayor": {
-    "children": [
+    "children": [ 
       "form#compras-mayor"
     ],
     "props": {
