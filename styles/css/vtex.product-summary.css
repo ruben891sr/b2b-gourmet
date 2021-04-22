@@ -19,7 +19,7 @@
 }
 
 .nameContainer {
-  justify-content: start;
+  justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
@@ -30,9 +30,10 @@
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 13px;
   color: #2E2E2E;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
   overflow-wrap: break-word;
 }
 
