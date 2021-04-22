@@ -1,14 +1,10 @@
 {
   // General
   "store.custom#contacto": {
-    "children": [
-      "flex-layout.row#contacto"
-    ]
+    "children": ["flex-layout.row#contacto"]
   },
   "flex-layout.row#contacto": {
-    "children": [
-      "tab-layout#contacto"
-    ],
+    "children": ["tab-layout#contacto"],
     "props": {
       "blockClass": "row-contacto"
     }
@@ -16,10 +12,7 @@
 
   // Tab Layout
   "tab-layout#contacto": {
-    "children": [
-      "tab-list#contacto",
-      "tab-content#contacto"
-    ],
+    "children": ["tab-list#contacto", "tab-content#contacto"],
     "props": {
       "blockClass": "contacto",
       "defaultActiveTabId": "contacto"
@@ -61,25 +54,19 @@
     ]
   },
   "tab-content.item#pregunta-sugerencia": {
-    "children": [
-      "form#pregunta-sugerencia"
-    ],
+    "children": ["form#pregunta-sugerencia"],
     "props": {
       "tabId": "contacto-p"
     }
   },
   "tab-content.item#reclamos": {
-    "children": [
-      "form#reclamos"
-    ],
+    "children": ["form#reclamos"],
     "props": {
       "tabId": "contacto-r"
     }
   },
   "tab-content.item#compras-mayor": {
-    "children": [
-      "form#compras-mayor"
-    ],
+    "children": ["form#compras-mayor"],
     "props": {
       "tabId": "contacto-c"
     }
@@ -99,9 +86,7 @@
       "form-input.textarea#mensaje-pregunta-sugerencia",
       "form-submit#pregunta-sugerencia"
     ],
-    "blocks": [
-      "form-success#pregunta-sugerencia"
-    ]
+    "blocks": ["form-success#pregunta-sugerencia"]
   },
   // Form - Preguntes y sugerencias - Titulo Formulario
   "rich-text#formTitle-pregunta-sugerencia": {
@@ -144,9 +129,7 @@
   },
   // Form - Preguntas y sugerencias - Form Success
   "form-success#pregunta-sugerencia": {
-    "children": [
-      "rich-text#successSubmit-pregunta-sugerencia"
-    ]
+    "children": ["rich-text#successSubmit-pregunta-sugerencia"]
   },
   "rich-text#successSubmit-pregunta-sugerencia": {
     "props": {
@@ -155,7 +138,6 @@
       "textPosition": "CENTER"
     }
   },
-
 
   // Form - Reclamos
   "form#reclamos": {
@@ -303,9 +285,7 @@
   },
   // Form - Reclamos - Form Success
   "form-success#pregunta-reclamos": {
-    "children": [
-      "rich-text#successSubmit-pregunta-sugerencia"
-    ]
+    "children": ["rich-text#successSubmit-pregunta-sugerencia"]
   },
   "rich-text#successSubmit-reclamos": {
     "props": {
@@ -314,13 +294,6 @@
       "textPosition": "CENTER"
     }
   },
-
-
-
-
-
-
-
 
   // Compras por mayor
   "form#compras-mayor": {
@@ -345,15 +318,6 @@
     }
   },
 
-
-
-
-
-
-
-
-
-
   "rich-text#successSubmit": {
     "props": {
       "text": "Succesfully submitted the data!",
@@ -361,10 +325,6 @@
       "textPosition": "CENTER"
     }
   },
-
-
-
-
 
   "form-input.text#lastName-pregunta-sugerencia": {
     "props": {
@@ -383,10 +343,6 @@
     }
   },
 
-
-
-
-
   "form-input.text#lastName-reclamos": {
     "props": {
       "pointer": "#/properties/lastName"
@@ -403,12 +359,6 @@
       "pointer": "#/properties/address"
     }
   },
-
-
-
-
-
-
 
   "form-input.text#firstName-compras-mayor": {
     "props": {
@@ -431,10 +381,4 @@
       "pointer": "#/properties/address"
     }
   }
-
-
-
-
-
-
 }
