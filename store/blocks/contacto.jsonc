@@ -77,7 +77,7 @@
     }
   },
   "tab-content.item#compras-mayor": {
-    "children": [ 
+    "children": [
       "form#compras-mayor"
     ],
     "props": {
@@ -85,7 +85,7 @@
     }
   },
 
-  // Preguntas y sugerencias
+  // Form - Preguntas y sugerencias
   "form#pregunta-sugerencia": {
     "props": {
       "entity": "contactos",
@@ -94,21 +94,70 @@
     "children": [
       "rich-text#formTitle-pregunta-sugerencia",
       "form-input.text#firstName-pregunta-sugerencia",
-      "form-input.text#lastName-pregunta-sugerencia",
-      "form-field-group#address-pregunta-sugerencia",
-      "form-input.checkbox#agreement-pregunta-sugerencia",
-      "form-submit"
+      "form-input.text#email-pregunta-sugerencia",
+      "form-input.text#telefono-pregunta-sugerencia",
+      "form-input.textarea#mensaje-pregunta-sugerencia",
+      "form-submit#pregunta-sugerencia"
     ],
-    "blocks": ["form-success"]
+    "blocks": [
+      "form-success#pregunta-sugerencia"
+    ]
   },
-  // Titulo Formulario
+  // Form - Preguntes y sugerencias - Titulo Formulario
   "rich-text#formTitle-pregunta-sugerencia": {
-    "props":{
+    "props": {
       "text": "Pregunta/Sugerencia"
     }
   },
+  // Form - Preguntes y sugerencias - Nombre
+  "form-input.text#firstName-pregunta-sugerencia": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  // Form - Preguntes y sugerencias - Email
+  "form-input.text#email-pregunta-sugerencia": {
+    "props": {
+      "pointer": "#/properties/mail",
+      "label": "correo electrónico"
+    }
+  },
+  // Form - Preguntes y sugerencias - Teléfono
+  "form-input.text#telefono-pregunta-sugerencia": {
+    "props": {
+      "pointer": "#/properties/telefono",
+      "label": "Teléfono"
+    }
+  },
+  // Form - Preguntes y sugerencias - Mensaje
+  "form-input.textarea#mensaje-pregunta-sugerencia": {
+    "props": {
+      "pointer": "#/properties/mensaje",
+      "label": "Descripción"
+    }
+  },
+  // Form - Preguntes y sugerencias - Submit
+  "form-submit#pregunta-sugerencia": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+  // Form - Preguntas y sugerencias - Form Success
+  "form-success#pregunta-sugerencia": {
+    "children": [
+      "rich-text#successSubmit-pregunta-sugerencia"
+    ]
+  },
+  "rich-text#successSubmit-pregunta-sugerencia": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
 
-  // Reclamos
+
+  // Form - Reclamos
   "form#reclamos": {
     "props": {
       "entity": "reclamo",
@@ -117,19 +166,161 @@
     "children": [
       "rich-text#formTitle-reclamos",
       "form-input.text#firstName-reclamos",
-      "form-input.text#lastName-reclamos",
-      "form-field-group#address-reclamos",
-      "form-input.checkbox#agreement-reclamos",
-      "form-submit"
+      "form-input.text#rut-reclamos",
+      "form-input.text#direccion-reclamos",
+      "form-input.text#mail-reclamos",
+      "form-input.text#telefono-reclamos",
+      "rich-text#title-info-producto-reclamos",
+      "form-input.text#producto-reclamos",
+      "form-input.text#lote-reclamos",
+      "form-input.text#anoVencimiento-reclamos",
+      "form-input.dropdown#mesVencimiento-reclamos",
+      "form-input.dropdown#diaVencimiento-reclamos",
+      "form-input.text#lugarCompra-reclamos",
+      "form-input.text#anoCompra-reclamos",
+      "form-input.dropdown#mesCompra-reclamos",
+      "form-input.dropdown#diaCompra-reclamos",
+      "form-input.upload#imagen-reclamos",
+      "form-input.textarea#comentario-reclamos",
+      "form-submit#reclamos"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#reclamos"]
   },
-  // Titulo Formulario
+  // Form - Reclamos - Titulo Formulario
   "rich-text#formTitle-reclamos": {
-    "props":{
+    "props": {
       "text": "Reclamos"
     }
   },
+  // Form - Reclamos - Nombre
+  "form-input.text#firstName-reclamos": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  // Form - Reclamos - Rut
+  "form-input.text#rut-reclamos": {
+    "props": {
+      "pointer": "#/properties/rut"
+    }
+  },
+  // Form - Reclamos - Direccion
+  "form-input.text#direccion-reclamos": {
+    "props": {
+      "pointer": "#/properties/rut"
+    }
+  },
+  // Form - Reclamos - mail
+  "form-input.text#mail-reclamos": {
+    "props": {
+      "pointer": "#/properties/mail"
+    }
+  },
+  // Form - Reclamos - Teléfono
+  "form-input.text#telefono-reclamos": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  // Form - Reclamos - Title Info Producto
+  "rich-text#title-info-producto-reclamos": {
+    "props": {
+      "text": "### Información del Producto"
+    }
+  },
+  // Form - Reclamos - Producto con problema
+  "form-input.text#producto-reclamos": {
+    "props": {
+      "pointer": "#/properties/producto"
+    }
+  },
+  // Form - Reclamos - Número de lote
+  "form-input.text#lote-reclamos": {
+    "props": {
+      "pointer": "#/properties/lote"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Año
+  "form-input.text#anoVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoVencimiento"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Mes
+  "form-input.dropdown#mesVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoVencimiento/enum"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Día
+  "form-input.dropdown#diaVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoVencimiento/enum"
+    }
+  },
+  // Form - Reclamos - Lugar de compra
+  "form-input.text#lugarCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/lugarCompra"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Año
+  "form-input.text#anoCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoCompra"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Mes
+  "form-input.dropdown#mesCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/mesCompra/enum"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Día
+  "form-input.dropdown#diaCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/diaCompra/enum"
+    }
+  },
+  // Form - Reclamos - Adjuntar imagen
+  "form-input.upload#imagen-reclamos": {
+    "props": {
+      "pointer": "#/properties/imagen"
+    }
+  },
+  // Form - Reclamos - Reclamo
+  "form-input.textarea#comentario-reclamos": {
+    "props": {
+      "pointer": "#/properties/comentario",
+      "label": "Descripción"
+    }
+  },
+  // Form - Reclamos - Submit
+  "form-submit#reclamos": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+  // Form - Reclamos - Form Success
+  "form-success#pregunta-reclamos": {
+    "children": [
+      "rich-text#successSubmit-pregunta-sugerencia"
+    ]
+  },
+  "rich-text#successSubmit-reclamos": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+
+
+
+
+
+
 
   // Compras por mayor
   "form#compras-mayor": {
@@ -143,13 +334,13 @@
       "form-input.text#lastName-compras-mayor",
       "form-field-group#address-compras-mayor",
       "form-input.checkbox#agreement-compras-mayor",
-      "form-submit"
+      "form-submit#compras-mayor"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#compras-mayor"]
   },
   // Titulo Formulario
   "rich-text#formTitle-compras-mayor": {
-    "props":{
+    "props": {
       "text": "Compras al por mayor"
     }
   },
@@ -162,11 +353,7 @@
 
 
 
-  "form-success": {
-    "children": [
-      "rich-text#successSubmit"
-    ]
-  },
+
   "rich-text#successSubmit": {
     "props": {
       "text": "Succesfully submitted the data!",
@@ -178,11 +365,7 @@
 
 
 
-  "form-input.text#firstName-pregunta-sugerencia": {
-    "props": {
-      "pointer": "#/properties/firstName"
-    }
-  },
+
   "form-input.text#lastName-pregunta-sugerencia": {
     "props": {
       "pointer": "#/properties/lastName"
@@ -204,12 +387,6 @@
 
 
 
-
-  "form-input.text#firstName-reclamos": {
-    "props": {
-      "pointer": "#/properties/firstName"
-    }
-  },
   "form-input.text#lastName-reclamos": {
     "props": {
       "pointer": "#/properties/lastName"
@@ -255,19 +432,6 @@
     }
   },
 
-
-
-
-
-
-
-
-
-  "form-submit": {
-    "props": {
-      "label": "Submit"
-    }
-  }
 
 
 
