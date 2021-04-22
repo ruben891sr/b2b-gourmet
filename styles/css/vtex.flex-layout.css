@@ -134,6 +134,14 @@
   margin-left: .5rem;
 }
 
+.flexRowContent--orderByAndSwitcher {
+  justify-content: start;
+}
+
+.flexRowContent--skuListHeader {
+  display: none!important;
+}
+
 /* Footer */
 .flexRow--row-footerMain {
   background-color: #1f1f1f;
@@ -251,4 +259,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/*MEDIA QUERY*/
+
+/*PLP*/
+
+@media screen and (min-width: 64rem) {
+  .flexRowContent--orderByAndSwitcher {
+    padding-left: 4rem;
+  }
 }
