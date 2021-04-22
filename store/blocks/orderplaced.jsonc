@@ -84,9 +84,9 @@
   "op-section#payments": {
     "props": {
       "name": "paymentMethods"
-    },
+    }, 
     "children": [
-      "op-order-payment",
+          "op-order-payment",
       "responsive-layout.mobile#order-options-mobile"
     ]
   },
