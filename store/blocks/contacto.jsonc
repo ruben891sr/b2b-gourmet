@@ -97,14 +97,13 @@
   // Form - Preguntes y sugerencias - Nombre
   "form-input.text#firstName-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/firstName"
+      "pointer": "#/properties/nombre"
     }
   },
   // Form - Preguntes y sugerencias - Email
   "form-input.text#email-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/mail",
-      "label": "correo electrónico"
+      "pointer": "#/properties/mail"
     }
   },
   // Form - Preguntes y sugerencias - Teléfono
@@ -284,7 +283,7 @@
     }
   },
   // Form - Reclamos - Form Success
-  "form-success#pregunta-reclamos": {
+  "form-success#reclamos": {
     "children": ["rich-text#successSubmit-pregunta-sugerencia"]
   },
   "rich-text#successSubmit-reclamos": {
@@ -302,12 +301,12 @@
       "schema": "inscripcion"
     },
     "children": [
-      "rich-text#formTitle-compras-mayor",
-      "form-input.text#firstName-compras-mayor",
-      "form-input.text#lastName-compras-mayor",
-      "form-field-group#address-compras-mayor",
-      "form-input.checkbox#agreement-compras-mayor",
-      "form-submit#compras-mayor"
+      // "rich-text#formTitle-compras-mayor",
+      // "form-input.text#firstName-compras-mayor",
+      // "form-input.text#lastName-compras-mayor",
+      // "form-field-group#address-compras-mayor",
+      // "form-input.checkbox#agreement-compras-mayor",
+      // "form-submit#compras-mayor"
     ],
     "blocks": ["form-success#compras-mayor"]
   },
@@ -379,6 +378,18 @@
   "form-field-group#address-compras-mayor": {
     "props": {
       "pointer": "#/properties/address"
+    }
+  },
+
+  // Form - Reclamos - Form Success
+  "form-success#compras-mayor": {
+    "children": ["rich-text#successSubmit-compras-mayor"]
+  },
+  "rich-text#successSubmit-compras-mayor": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   }
 }
