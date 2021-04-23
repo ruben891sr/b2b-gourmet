@@ -24,3 +24,8 @@
 .submenuWrapper--wrapperSubMenuTienda--isOpen {
     background: #1e1e1e;
 }
+
+.styledLinkContent {
+    font-weight: 600;
+    letter-spacing: 2px;
+}

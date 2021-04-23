@@ -1,5 +1,4 @@
 {
-
   // Items menú de navegación
   "vtex.menu@2.x:menu#menu-navegacion": {
     "props": {
@@ -13,8 +12,9 @@
       // "menu-item#regalos",
       // "menu-item#food-service",
       "menu-item#cotizacion",
-      "menu-item#blog",
-      "menu-item#menu-semanal"
+      "menu-item#contacto"
+      // "menu-item#blog",
+      // "menu-item#menu-semanal"
     ]
   },
 
@@ -131,6 +131,22 @@
     }
   },
 
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contacto",
+        "noFollow": false,
+        "tagTitle": "contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+
   "menu-item#blog": {
     "props": {
       "id": "menu-item-blog",
@@ -163,22 +179,211 @@
     }
   },
 
-
   // Submenu Tiendas
   "vtex.menu@2.x:submenu#tienda": {
     "children": [
-      "menu-item#regalos",
-      "menu-item#food-service",
-      "menu-item#blog",
-      "menu-item#menu-semanal"
+      "menu-item#hierbas-especias",
+      "menu-item#caldos",
+      "menu-item#basas-salsas",
+      "menu-item#cremas-sopas",
+      "menu-item#reposteria",
+      "menu-item#salsas-postres",
+      "menu-item#alinos-ensaladas",
+      "menu-item#salsa-untar",
+      "menu-item#salsas-condimientadas",
+      "menu-item#delicatesen",
+      "menu-item#esencias"
     ],
     "props": {
       "orientation": "vertical",
       "preventVerticalStretch": true,
       "blockClass": "wrapperSubMenuTienda"
     }
+  },
+
+  "menu-item#hierbas-especias": {
+    "props": {
+      "id": "menu-item-hierbas-especias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "hierbas-especias",
+        "text": "Hierbas especias"
+      }
+    }
+  },
+
+  "menu-item#caldos": {
+    "props": {
+      "id": "menu-item-caldos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "caldos",
+        "text": "Caldos"
+      }
+    }
+  },
+
+  "menu-item#basas-salsas": {
+    "props": {
+      "id": "menu-item-basas-salsas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "basas-salsas",
+        "text": "Bases y salsas deshidratadas"
+      }
+    }
+  },
+
+  "menu-item#cremas-sopas": {
+    "props": {
+      "id": "menu-item-cremas-sopas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "cremas-sopas",
+        "text": "Sopas y cremas"
+      }
+    }
+  },
+
+  "menu-item#reposteria": {
+    "props": {
+      "id": "menu-item-reposteria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "reposteria",
+        "text": "Productos de repostería para cocinar"
+      }
+    }
+  },
+
+  "menu-item#salsas-postres": {
+    "props": {
+      "id": "menu-item-salsas-postres",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "salsas-postres",
+        "text": "Salsas para postres"
+      }
+    }
+  },
+
+  "menu-item#alinos-ensaladas": {
+    "props": {
+      "id": "menu-item-menu-semanal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "menu-semanal",
+        "text": "Menu semanal"
+      }
+    }
+  },
+
+  "menu-item#salsa-untar": {
+    "props": {
+      "id": "menu-item-salsa-untar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "salsa-untar",
+        "text": "Salsas para untar"
+      }
+    }
+  },
+
+  "menu-item#salsas-condimientadas": {
+    "props": {
+      "id": "menu-item-salsas-condimientadas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "salsas-condimientadas",
+        "text": "Salsas condimientadas para cocinar"
+      }
+    }
+  },
+
+  "menu-item#delicatesen": {
+    "props": {
+      "id": "menu-item-delicatesen",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "delicatesen",
+        "text": "Delicatessen y otros"
+      }
+    }
+  },
+
+  "menu-item#esencias": {
+    "props": {
+      "id": "menu-item-esencias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet",
+        "noFollow": false,
+        "tagTitle": "esencias",
+        "text": "Esencias"
+      }
+    }
   }
-
-
-
 }
