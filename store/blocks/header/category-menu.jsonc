@@ -304,7 +304,7 @@
 
   "menu-item#alinos-ensaladas": {
     "props": {
-      "id": "menu-item-menu-semanal",
+      "id": "menu-item-alinos-ensaladas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -313,8 +313,8 @@
         "type": "internal",
         "href": "/gourmet",
         "noFollow": false,
-        "tagTitle": "menu-semanal",
-        "text": "Menu semanal"
+        "tagTitle": "alinos-ensaladas",
+        "text": "Aliños para ensaladas"
       }
     }
   },
