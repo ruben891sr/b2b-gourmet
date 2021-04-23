@@ -7,11 +7,12 @@
     },
     "children": [
       "menu-item#inicio",
-      "menu-item#tienda",
-      "menu-item#compras-mayor",
-      "menu-item#videos",
-      "menu-item#regalos",
-      "menu-item#food-service",
+      "menu-item#catalogo",
+      "menu-item#compras-lote",
+      // "menu-item#videos",
+      // "menu-item#regalos",
+      // "menu-item#food-service",
+      "menu-item#cotizacion",
       "menu-item#blog",
       "menu-item#menu-semanal"
     ]
@@ -33,9 +34,9 @@
     }
   },
 
-  "menu-item#tienda": {
+  "menu-item#catalogo": {
     "props": {
-      "id": "menu-item-tienda",
+      "id": "menu-item-catalogo",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -43,16 +44,16 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "tienda",
-        "text": "Tienda"
+        "tagTitle": "catalogo",
+        "text": "Catálogo"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#tienda"]
   },
 
-  "menu-item#compras-mayor": {
+  "menu-item#compras-lote": {
     "props": {
-      "id": "menu-item-venta-compras-mayor",
+      "id": "menu-item-venta-compras-lote",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -60,8 +61,8 @@
         "type": "internal",
         "href": "/quickorder",
         "noFollow": false,
-        "tagTitle": "compras-mayor",
-        "text": "Compras al por mayor"
+        "tagTitle": "compras-lote",
+        "text": "Compras por lote"
       }
     }
   },
@@ -110,6 +111,22 @@
         "noFollow": false,
         "tagTitle": "food-service",
         "text": "Food service"
+      }
+    }
+  },
+
+  "menu-item#cotizacion": {
+    "props": {
+      "id": "menu-item-cotizacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "cotizacion",
+        "text": "Cotizaciones"
       }
     }
   },
