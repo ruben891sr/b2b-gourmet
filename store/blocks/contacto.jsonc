@@ -76,7 +76,8 @@
   "form#pregunta-sugerencia": {
     "props": {
       "entity": "contactos",
-      "schema": "preguntas"
+      "schema": "preguntas",
+      "blockClass": "form-ps"
     },
     "children": [
       "rich-text#formTitle-pregunta-sugerencia",
@@ -142,7 +143,8 @@
   "form#reclamos": {
     "props": {
       "entity": "reclamo",
-      "schema": "reclamos"
+      "schema": "reclamos",
+      "blockClass": "form-re"
     },
     "children": [
       "rich-text#formTitle-reclamos",
@@ -298,7 +300,8 @@
   "form#compras-mayor": {
     "props": {
       "entity": "mayorista",
-      "schema": "inscripcion"
+      "schema": "inscripcion",
+      "blockClass": "form-cm" 
     },
     "children": [
       // "rich-text#formTitle-compras-mayor",

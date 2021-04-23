@@ -11,16 +11,18 @@
 
 .searchBarContainer .input {
     max-width: 20px;
-} 
+}
+
 
 /*TopBar*/
+
 .searchBarContainer .input {
     color: #727273;
     border-radius: 0;
     background: red !important;
-  }
+}
 
-  .input {
+.searchBarInnerContainer .input {
     background-color: transparent;
     font-weight: 700;
     border-radius: 0;
