@@ -1,7 +1,7 @@
 {
   "vendor": "b2bgourmet",
   "name": "b2bgourmet",
-  "version": "0.1.18-beta.0",
+  "version": "0.1.19-beta.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
