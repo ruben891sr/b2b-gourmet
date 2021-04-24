@@ -188,3 +188,50 @@
 .container--lastFooter-derecho {
     justify-content: flex-end;
 }
+
+
+/*Contacto*/
+
+.headingLevel2--title-contacto {
+    font-size: 1.8em;
+    color: #1f1f1f;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    background: #fff;
+    position: relative;
+}
+
+.wrapper--title-contacto {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.wrapper--title-contacto::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #1f1f1f;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.headingLevel3--subtitle-contacto {
+    font-weight: 300;
+    margin: 0 0 3rem 0;
+    font-size: 24px;
+}
+
+.headingLevel4--rich-title-cal-contacto {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #b0b0b0;
+    font-size: 19px;
+}
