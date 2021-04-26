@@ -52,7 +52,10 @@
       "tab-list.item#pregunta-sugerencia",
       "tab-list.item#reclamos",
       "tab-list.item#compras-mayor"
-    ]
+    ],
+    "props": {
+      "blockClass": "contacto-tab-list"
+    }
   },
   "tab-list.item#pregunta-sugerencia": {
     "props": {
@@ -696,28 +699,32 @@
   "flex-layout.row#redes": {
     "children": ["image#twitter", "image#face", "image#insta"],
     "props": {
-      "blockClass": "row-redes-contacto"
+      "blockClass": "row-redes-contacto",
+      "colSizing": "auto"
     }
   },
   "image#twitter": {
      "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "blockClass": "image-redes-contacto",
-      "width": 40
+      "src": "assets/img/rrss-tw.png",
+      "blockClass": "image-redes-contacto-twitter",
+      "width": 30,
+      "link": "https://twitter.com/Gourmet_cl"
     }
   },
   "image#face": {
      "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "blockClass": "image-redes-contacto",
-      "width": 40
+      "src": "assets/img/rrss-face.png",
+      "blockClass": "image-redes-contacto-face",
+      "width": 15,
+      "link": "https://www.facebook.com/GourmetChile/"
     }
   },
   "image#insta": {
      "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "blockClass": "image-redes-contacto",
-      "width": 40
+      "src": "assets/img/rrss-insta.png",
+      "blockClass": "image-redes-contacto-insta",
+      "width": 27,
+      "link": "https://www.instagram.com/gourmetchile/"
     }
   }
 }

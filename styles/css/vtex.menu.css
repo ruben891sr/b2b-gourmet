@@ -36,3 +36,14 @@
 .menuContainer--list-cal-contacto {
     flex-direction: column;
 }
+
+.styledLinkContainer--menuitem-cal-contacto {
+    padding: .4rem 0;
+}
+
+.styledLinkContent--menuitem-cal-contacto {
+    font-family: 'Lato';
+    font-size: 13px;
+    letter-spacing: inherit;
+    color: #afafaf;
+}

@@ -290,7 +290,26 @@
     background-color: #1f1f1f;
     margin: 1rem 2rem;
     width: 29% !important;
-    padding: 2rem;
+    padding: 4rem 3rem;
+}
+
+.flexRowContent--row-rrsssContacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow--row-rrsssContacto {
+    margin: 3rem 0 5rem 0;
+}
+
+.flexRowContent--row-redes-contacto {
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColChild--col-ubicacion {
+    height: auto !important;
 }
 
 

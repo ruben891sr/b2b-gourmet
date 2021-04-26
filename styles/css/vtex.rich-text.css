@@ -231,7 +231,20 @@
 
 .headingLevel4--rich-title-cal-contacto {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #b0b0b0;
     font-size: 19px;
+}
+
+.container--tambien-estamos {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph--tambien-estamos {
+    font-family: 'Lato';
+    color: #333333;
+    font-size: 13px;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
