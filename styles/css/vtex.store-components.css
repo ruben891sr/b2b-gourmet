@@ -314,3 +314,29 @@
         max-width: 102rem;
     }
 }
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .infoCardCallActionText--info-card-example {
+        font-size: 11px;
+        padding-top: 110%;
+    }
+    .newsletter .form .inputGroup {
+        width: 100%;
+    }
+    .newsletter .form .inputGroup :global(.vtex-button) {
+        display: block;
+        width: 100%;
+    }
+    .imageElement--lastFooter-segura {
+        width: 200px;
+    }
+    .imageElement--lastFooter-sr {
+        width: 25px;
+    }
+    .imageElement--lastFooter-vtex {
+        width: 51px;
+    }
+}

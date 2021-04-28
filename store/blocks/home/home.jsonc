@@ -1,6 +1,19 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+
+
+  // General versiones Mobile Desktop
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#infoBar",
       "list-context.image-list#slider",
       "__fold__.experimentalLazyAssets",
       // "flex-layout.row#bn-dcto",
@@ -11,9 +24,54 @@
       // "flex-layout.row#ventas-por",
       // "flex-layout.row#cotiza",
       "flex-layout.row#newsletter"
+    ]
+  },
+
+  "responsive-layout.mobile": {
+    "children": [
+      "flex-layout.row#infoBar-mobile",
+      "list-context.image-list#slider",
+      "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#bn-dcto",
+      "flex-layout.row#category-home-title",
+      "flex-layout.row#category-home",
+      "flex-layout.row#shelf-title",
+      "list-context.product-list#home",
+      // "flex-layout.row#ventas-por",
+      // "flex-layout.row#cotiza",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+
+
+  // Info Bar
+  "flex-layout.row#infoBar": {
+    "children": [
+      "rich-text#col-1-infobar",
+      "rich-text#col-2-infobar",
+      "rich-text#col-3-infobar"
     ],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
+    "props": {
+      "blockClass": "row-InfoBar"
+    }
+  },
+  "rich-text#col-1-infobar": {
+    "props": {
+      "text": "Estás en el portal de compras al por mayor de Gourmet. Para poder comprar bajo esta modalidad, debes cumplir con los siguientes requisitos:",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+  "rich-text#col-2-infobar": {
+    "props": {
+      "text": "- Tener RUT empresa\n- Monto mínimo de compras de $50.000\n- Cada producto debe ser comprado por caja ",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+  "rich-text#col-3-infobar": {
+    "props": {
+      "text": "Para ver información de despacho y costos, haz click acá",
+      "blockClass": "infoBarCol-text"
     }
   },
 
@@ -23,17 +81,18 @@
     "props": {
       "height": 550,
       "blockClass": "sliderImageNew",
-      "images": [{
+      "images": [
+        {
           "image": "assets/img/slider-escri-1.jpg",
-          "mobileImage": "assets/img/slider-escri-1.jpg"
+          "mobileImage": "assets/img/slider-escri-1-mobile.jpg"
         },
         {
           "image": "assets/img/slider-escri-2.jpg",
-          "mobileImage": "assets/img/slider-escri-2.jpg"
+          "mobileImage": "assets/img/slider-escri-2-mobile.jpg"
         },
         {
           "image": "assets/img/slider-escri-3.jpg",
-          "mobileImage": "assets/img/slider-escri-3.jpg"
+          "mobileImage": "assets/img/slider-escri-3-mobile.jpg"
         }
       ]
     }
@@ -52,12 +111,9 @@
     }
   },
 
-
   // Imagen Promo
   "flex-layout.row#bn-dcto": {
-    "children": [
-      "image#info-image"
-    ],
+    "children": ["image#info-image"],
     "props": {
       "fullWidth": false,
       "blockClass": "row-bn-dcto",
@@ -75,12 +131,9 @@
     }
   },
 
-
   // Categorias Home
   "flex-layout.row#category-home-title": {
-    "children": [
-      "rich-text#category-home-title"
-    ],
+    "children": ["rich-text#category-home-title"],
     "props": {
       "blockClass": "row-categoryHomeTitle"
     }
@@ -89,7 +142,6 @@
     "props": {
       "text": "## Categorías",
       "blockClass": "shelfTitle"
-
     }
   },
 
@@ -281,14 +333,9 @@
     }
   },
 
-
-
-
   //Shelf Home
   "flex-layout.row#shelf-title": {
-    "children": [
-      "rich-text#shelf-title"
-    ],
+    "children": ["rich-text#shelf-title"],
     "props": {
       "blockClass": "row-shelfTitle"
     }
@@ -322,14 +369,9 @@
     }
   },
 
-
-
   // Ventas por
   "flex-layout.row#ventas-por": {
-    "children": [
-      "info-card#lote",
-      "info-card#sku"
-    ],
+    "children": ["info-card#lote", "info-card#sku"],
     "props": {
       "blockClass": "row-ventas-por",
       "marginTop": 8
@@ -364,12 +406,9 @@
     }
   },
 
-
   // Cotiza
   "flex-layout.row#cotiza": {
-    "children": [
-      "info-card#cotiza"
-    ],
+    "children": ["info-card#cotiza"],
     "props": {
       "blockClass": "row-cotiza",
       "marginBottom": 8,
@@ -405,14 +444,14 @@
   },
 
   "rich-text#newsletter-title": {
-    "props":{
+    "props": {
       "text": "## Suscríbete a nuestros newsletter",
       "blockClass": "newsletter-title"
     }
   },
 
   "rich-text#newsletter-subtitle": {
-    "props":{
+    "props": {
       "text": "y obtén un código con un 10% de descuento en tu primer compra",
       "blockClass": "newsletter-subtitle"
     }
@@ -425,20 +464,10 @@
     }
   },
 
-
-
-
-
-
-
-
-
-
   "flex-layout.row#shelf": {
     "children": ["shelf"]
     // "children": ["list-context.product-list#demo1"]
   },
-
 
   "rich-text#question": {
     "props": {
@@ -452,5 +481,29 @@
       "text": "\n**Contáctanos en**\nwww.sr-consultores.com",
       "blockClass": "link"
     }
-  }
+  },
+
+
+    // Info Bar
+    "flex-layout.row#infoBar-mobile": {
+      "children": [
+        "rich-text#col-1-infobar-mobile",
+        "rich-text#col-2-infobar-mobile"
+      ],
+      "props": {
+        "blockClass": "row-InfoBar"
+      }
+    },
+    "rich-text#col-1-infobar-mobile": {
+      "props": {
+        "text": "Para comprar en Gourmet debes cumplir con los siguiente:",
+        "blockClass": "infoBarCol-text"
+      }
+    },
+    "rich-text#col-2-infobar-mobile": {
+      "props": {
+        "text": "- Tener RUT empresa\n- Monto mínimo de compras de $50.000\n- Cada producto debe ser comprado por caja ",
+        "blockClass": "infoBarCol-text"
+      }
+    }
 }

@@ -41,3 +41,11 @@
     height: 47px;
     font-size: 13px;
 }
+
+
+/*Contacto*/
+
+.contentItem .input {
+    border-radius: 0;
+    border: 1px solid #666;
+}

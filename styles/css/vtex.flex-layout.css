@@ -233,6 +233,19 @@
 }
 
 
+/*Info Bar*/
+
+.flexRow--row-InfoBar {
+    background: #474747;
+    margin-top: 11px;
+    padding: .7rem 0;
+}
+
+.flexRowContent--row-InfoBar .stretchChildrenWidth:last-child :global(.vtex-rich-text-0-x-paragraph--infoBarCol-text) {
+    text-align: right;
+}
+
+
 /*Categorías Home*/
 
 .flexRow--row-categoryHome {
@@ -312,6 +325,34 @@
     height: auto !important;
 }
 
+.flexRow--row-n-m-t {
+    margin-bottom: 2rem;
+}
+
+.flexRowContent--row-n-m-t .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+.flexRowContent--row-1-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-2-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-3-compras-mayor .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+.flexRowContent--row-2-compras-mayor,
+.flexRowContent--row-3-compras-mayor {
+    margin-top: 1.5rem;
+}
+
+.flexRowContent--row-4-compras-mayor {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.flexRowContent--row-4-compras-mayor .stretchChildrenWidth {
+    width: 100% !important;
+}
+
 
 /*MEDIA QUERY*/
 
@@ -321,5 +362,46 @@
 @media screen and (min-width: 64rem) {
     .flexRowContent--orderByAndSwitcher {
         padding-left: 4rem;
+    }
+}
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .flexRow--main-header-mobile {
+        background: #1f1f1f;
+    }
+    .flexRow--row-InfoBar {
+        margin-top: 0;
+    }
+    .flexRowContent--row-InfoBar .stretchChildrenWidth:last-child {
+        display: none;
+    }
+    .flexRowContent--row-categoryHome {
+        display: flex
+    }
+    .flexRowContent--row-categoryHome .stretchChildrenWidth {
+        width: 50%!important;
+        border: 1px solid #c4c4c4;
+        margin: 0;
+    }
+    .flexRowContent--row-footerMain .stretchChildrenWidth {
+        padding: 2rem 0;
+        border-bottom: 1px solid #fff;
+    }
+    .flexRow--row-footerMain {
+        background-color: #1f1f1f;
+        padding: 1rem 0 0 0;
+    }
+    .flexColChild--lastFooter-webpay {
+        justify-content: center;
+    }
+    .flexRowContent--row-lastFooter .stretchChildrenWidth {
+        margin: .7rem 0;
+    }
+    .flexRowContent--row-footerMain {
+        border-bottom: 0;
+        padding-bottom: 0;
     }
 }

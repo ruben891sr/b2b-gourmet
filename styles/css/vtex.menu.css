@@ -47,3 +47,17 @@
     letter-spacing: inherit;
     color: #afafaf;
 }
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .styledLinkContainer--menuFooterMainItem {
+        padding: 0 0 .7rem 0;
+    }
+    .styledLinkContent--menuFooterMainItem {
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}

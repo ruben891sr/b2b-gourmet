@@ -111,31 +111,35 @@
       "blockClass": "form-ps"
     },
     "children": [
-      "rich-text#formTitle-pregunta-sugerencia",
-      "form-input.text#firstName-pregunta-sugerencia",
-      "form-input.text#email-pregunta-sugerencia",
-      "form-input.text#telefono-pregunta-sugerencia",
+      "flex-layout.row#row-n-m-t",
       "form-input.textarea#mensaje-pregunta-sugerencia",
       "form-submit#pregunta-sugerencia"
     ],
     "blocks": ["form-success#pregunta-sugerencia"]
   },
-  // Form - Preguntes y sugerencias - Titulo Formulario
-  "rich-text#formTitle-pregunta-sugerencia": {
+  // Form - Preguntes y sugerencias - Row Nombre, mail, teléfono
+  "flex-layout.row#row-n-m-t": {
     "props": {
-      "text": "Pregunta/Sugerencia"
-    }
+      "blockClass": "row-n-m-t"
+    },
+    "children": [
+      "form-input.text#firstName-pregunta-sugerencia",
+      "form-input.text#email-pregunta-sugerencia",
+      "form-input.text#telefono-pregunta-sugerencia"
+    ]
   },
   // Form - Preguntes y sugerencias - Nombre
   "form-input.text#firstName-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/nombre"
+      "pointer": "#/properties/nombre",
+      "label": "Nombre Completo"
     }
   },
   // Form - Preguntes y sugerencias - Email
   "form-input.text#email-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/mail"
+      "pointer": "#/properties/mail",
+      "label": "Mail"
     }
   },
   // Form - Preguntes y sugerencias - Teléfono
@@ -149,13 +153,14 @@
   "form-input.textarea#mensaje-pregunta-sugerencia": {
     "props": {
       "pointer": "#/properties/mensaje",
-      "label": "Descripción"
+      "label": "Ingresa tu pregunta/sugerencia"
     }
   },
   // Form - Preguntes y sugerencias - Submit
   "form-submit#pregunta-sugerencia": {
     "props": {
-      "label": "Submit"
+      "label": "Enviar",
+      "blockClass": "submit-contacto"
     }
   },
   // Form - Preguntas y sugerencias - Form Success
@@ -327,6 +332,8 @@
     }
   },
 
+
+
   // Form - Compras por mayor
   "form#compras-mayor": {
     "props": {
@@ -336,29 +343,66 @@
     },
     "children": [
       "rich-text#formTitle-compras-mayor",
-      "form-input.text#razon-compras-mayor",
-      "form-input.text#rut-compras-mayor",
-      "form-input.text#nombreFantasia-compras-mayor",
-      "form-input.text#direccion-compras-mayor",
-      "form-input.text#comuna-compras-mayor",
-      "form-input.text#nombreCompleto-compras-mayor",
-      "form-input.text#telefono-compras-mayor",
-      "form-input.text#mail-compras-mayor",
-      "form-input.text#direcciónCompleta-compras-mayor",
-      "form-input.checkbox#tipoNegocio-compras-mayor",
-      "form-submit#compras-mayor",
-      "form-success#compras-mayor",
-      "rich-text#successSubmit-compras-mayor",
-      "rich-text#successSubmit-compras-mayor"
+      "flex-layout.row#row-1-compras-mayor", 
+      "flex-layout.row#row-2-compras-mayor",
+      "flex-layout.row#row-3-compras-mayor",
+      "flex-layout.row#row-4-compras-mayor",
+      "form-submit#compras-mayor"
     ],
     "blocks": ["form-success#compras-mayor"]
   },
   // Titulo Formulario
   "rich-text#formTitle-compras-mayor": {
     "props": {
-      "text": "Compras al por mayor"
+      "blockClass": "txt-mayorista",
+      "text": "Para comprar al por mayor, complete el siguiente formulario y lo contactaremos a la brevedad. Tenga en cuenta que la compra se hace por cajas cerradas y el valor total de la compra debe ser por un mínimo de $100.000 netos y con factura."
     }
   },
+  // Form - Compras por mayor - Row 1 (Razón, Rut, Nombre fantasia)
+  "flex-layout.row#row-1-compras-mayor": {
+    "props": {
+      "blockClass": "row-1-compras-mayor"
+    },
+    "children": [
+      "form-input.text#razon-compras-mayor",
+      "form-input.text#rut-compras-mayor",
+      "form-input.text#nombreFantasia-compras-mayor"
+    ]
+  },
+  // Form - Compras por mayor - Row 2 (Direccion, Comuna, Nombre Completo)
+  "flex-layout.row#row-2-compras-mayor": {
+    "props": {
+      "blockClass": "row-2-compras-mayor"
+    },
+    "children": [
+      "form-input.text#direccion-compras-mayor",
+      "form-input.text#comuna-compras-mayor",
+      "form-input.text#nombreCompleto-compras-mayor"
+    ]
+  },
+  // Form - Compras por mayor - Row 3 (Teléfono, Mail, Direccion Completa)
+  "flex-layout.row#row-3-compras-mayor": {
+    "props": { 
+      "blockClass": "row-3-compras-mayor"
+    },
+    "children": [
+      "form-input.text#telefono-compras-mayor",
+      "form-input.text#mail-compras-mayor",
+      "form-input.text#direcciónCompleta-compras-mayor"
+    ]
+  },
+// Form - Compras por mayor - Row 3 (Checkbox)
+"flex-layout.row#row-4-compras-mayor": {
+  "props": { 
+    "blockClass": "row-4-compras-mayor"
+  },
+  "children": [
+    "rich-text#formTitle-second",
+    "rich-text#formSubTitle-second",
+    "form-input.checkbox#tipoNegocio-compras-mayor"
+  ]
+},
+
   // Form - Compras por mayor - Razon Social
   "form-input.text#razon-compras-mayor": {
     "props": {
@@ -413,6 +457,20 @@
       "pointer": "#/properties/direcciónCompleta"
     }
   },
+  // Form - Compras por mayor - Checkbox Title
+  "rich-text#formTitle-second": {
+    "props": {
+      "text": "### Tipo de Negocio - Rol",
+      "blockClass": "formTitle-second"
+    }
+  },
+  // Form - Compras por mayor - Checkbox Sub Title
+  "rich-text#formSubTitle-second": {
+    "props": {
+      "text": "A continuación, seleccione aquellas opciones con las que se identifique su negocio:",
+      "blockClass": "formSubTitle-second" 
+    }
+  },
   // Form - Compras por mayor - Tipo Negocio
   "form-input.checkbox#tipoNegocio-compras-mayor": {
     "props": {
@@ -422,7 +480,7 @@
   // Form - Compras por mayor - Submit
   "form-submit#compras-mayor": {
     "props": {
-      "label": "Submit"
+      "label": "Enviar"
     }
   },
   // Form - Compras por mayor - Form Success
@@ -704,7 +762,7 @@
     }
   },
   "image#twitter": {
-     "props": {
+    "props": {
       "src": "assets/img/rrss-tw.png",
       "blockClass": "image-redes-contacto-twitter",
       "width": 30,
@@ -712,7 +770,7 @@
     }
   },
   "image#face": {
-     "props": {
+    "props": {
       "src": "assets/img/rrss-face.png",
       "blockClass": "image-redes-contacto-face",
       "width": 15,
@@ -720,7 +778,7 @@
     }
   },
   "image#insta": {
-     "props": {
+    "props": {
       "src": "assets/img/rrss-insta.png",
       "blockClass": "image-redes-contacto-insta",
       "width": 27,
