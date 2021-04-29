@@ -254,12 +254,26 @@
     font-weight: 100;
 }
 
+.headingLevel3--info-producto-form {
+    text-align: center;
+    margin: 3.5rem 0 2rem 0;
+    padding-bottom: .7rem;
+    font-weight: 300;
+    border-bottom: 1px solid #1f1f1f;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
 .paragraph--txt-mayorista {
     font-family: 'lato';
     font-weight: 600;
     font-size: 13px;
     margin: 0 0 2rem 0;
     letter-spacing: 1px;
+}
+
+.wrapper--info-producto-form {
+    width: 100%
 }
 
 

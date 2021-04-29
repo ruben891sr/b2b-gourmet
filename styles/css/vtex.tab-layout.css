@@ -1,5 +1,5 @@
 .container--contacto {
-    width: 60% !important;
+    width: 85% !important;
 }
 
 .listContainer {
@@ -61,6 +61,7 @@
     margin-top: 2rem;
 }
 
+.container--contacto :global(.vtex-dropdown__label),
 .container--contacto :global(.vtex-textarea__label),
 .container--contacto :global(.vtex-input__label) {
     color: #000;

@@ -49,6 +49,18 @@
 }
 
 
+/* Menu Nvegacion */
+
+.submenuWrapper--subSubMenu--isOpen {
+    left: 100% !important;
+    background-color: #E1251B;
+}
+
+.submenu--subSubMenu {
+    flex-direction: column;
+}
+
+
 /*Versión Mobile*/
 
 @media (max-width: 1025px) {

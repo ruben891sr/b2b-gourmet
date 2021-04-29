@@ -238,7 +238,7 @@
 .flexRow--row-InfoBar {
     background: #474747;
     margin-top: 11px;
-    padding: .7rem 0;
+    padding: 0.7rem 0;
 }
 
 .flexRowContent--row-InfoBar .stretchChildrenWidth:last-child :global(.vtex-rich-text-0-x-paragraph--infoBarCol-text) {
@@ -325,8 +325,43 @@
     height: auto !important;
 }
 
+.flexCol--col-fecha-compra-reclamos,
+.flexCol--col-fecha-vencimiento-reclamos {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.flexCol--col-fecha-compra-reclamos::before {
+    content: "Fecha de compra";
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+    letter-spacing: 1px;
+}
+
+.flexCol--col-fecha-compra-reclamos .flexColChild--col-fecha-compra-reclamos,
+.flexCol--col-fecha-vencimiento-reclamos .flexColChild--col-fecha-vencimiento-reclamos {
+    width: 33.3%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 .flexRow--row-n-m-t {
     margin-bottom: 2rem;
+}
+
+.flexCol--col-fecha-vencimiento-reclamos::before {
+    content: "Fecha de vencimiento";
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+    letter-spacing: 1px;
 }
 
 .flexRowContent--row-n-m-t .stretchChildrenWidth:nth-child(even) {
@@ -335,7 +370,24 @@
 
 .flexRowContent--row-1-compras-mayor .stretchChildrenWidth:nth-child(even),
 .flexRowContent--row-2-compras-mayor .stretchChildrenWidth:nth-child(even),
-.flexRowContent--row-3-compras-mayor .stretchChildrenWidth:nth-child(even) {
+.flexRowContent--row-3-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-1-reclamos .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-3-reclamos .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-4-reclamos .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+.flexRowContent--row-1-reclamos,
+.flexRowContent--row-3-reclamos,
+.flexRowContent--row-4-reclamos {
+    margin-bottom: 1.5rem;
+}
+
+.flexRowContent--row-2-reclamos .stretchChildrenWidth {
+    width: 31% !important;
+}
+
+.flexRowContent--row-2-reclamos .stretchChildrenWidth:last-child {
     margin: 0 2rem;
 }
 
@@ -351,6 +403,13 @@
 
 .flexRowContent--row-4-compras-mayor .stretchChildrenWidth {
     width: 100% !important;
+}
+
+.flexColChild--col-fecha-compra-reclamos :global(.vtex-input__label),
+.flexColChild--col-fecha-compra-reclamos :global(.vtex-dropdown__label),
+.flexColChild--col-fecha-vencimiento-reclamos :global(.vtex-input__label),
+.flexColChild--col-fecha-vencimiento-reclamos :global(.vtex-dropdown__label) {
+    display: none;
 }
 
 
@@ -379,10 +438,10 @@
         display: none;
     }
     .flexRowContent--row-categoryHome {
-        display: flex
+        display: flex;
     }
     .flexRowContent--row-categoryHome .stretchChildrenWidth {
-        width: 50%!important;
+        width: 50% !important;
         border: 1px solid #c4c4c4;
         margin: 0;
     }
@@ -398,7 +457,7 @@
         justify-content: center;
     }
     .flexRowContent--row-lastFooter .stretchChildrenWidth {
-        margin: .7rem 0;
+        margin: 0.7rem 0;
     }
     .flexRowContent--row-footerMain {
         border-bottom: 0;

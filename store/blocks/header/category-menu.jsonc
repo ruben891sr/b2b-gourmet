@@ -7,12 +7,12 @@
     "children": [
       "menu-item#inicio",
       "menu-item#catalogo",
-      "menu-item#compras-lote",
+      "menu-item#compras-lote"
       // "menu-item#videos",
       // "menu-item#regalos",
       // "menu-item#food-service",
-      "menu-item#cotizacion",
-      "menu-item#contacto"
+      // "menu-item#cotizacion",
+      // "menu-item#contacto"
       // "menu-item#blog",
       // "menu-item#menu-semanal"
     ]
@@ -45,7 +45,7 @@
         "href": "/",
         "noFollow": false,
         "tagTitle": "catalogo",
-        "text": "Catálogo"
+        "text": "Tienda"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#tienda"]
@@ -62,7 +62,7 @@
         "href": "/quickorder",
         "noFollow": false,
         "tagTitle": "compras-lote",
-        "text": "Compras por lote"
+        "text": "Compra rápida"
       }
     }
   },
@@ -207,12 +207,129 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/",
         "noFollow": false,
         "tagTitle": "hierbas-especias",
         "text": "Hierbas especias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#hierbas-especias"]
+  },
+  "vtex.menu@2.x:submenu#hierbas-especias": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#condimentos-premium",
+      "menu-item#hierbas-cocinar",
+      "menu-item#especias-cocinar",
+      "menu-item#pimientas",
+      "menu-item#ajo-cebolla",
+      "menu-item#otras-hierba"
+    ]
+  },
+
+  "menu-item#condimentos-premium": {
+    "props": {
+      "id": "menu-item-condimentos-premium",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "condimentos-premium",
+        "text": "Condimentos premium"
+      }
+    }
+  },
+
+  "menu-item#hierbas-cocinar": {
+    "props": {
+      "id": "menu-item-hierbas-cocinar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "hierbas-cocinar",
+        "text": "Hierbas para cocinar"
+      }
+    }
+  },
+
+  "menu-item#especias-cocinar": {
+    "props": {
+      "id": "menu-item-especias-cocinar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "especias-cocinar",
+        "text": "Especias para cocinar"
+      }
+    }
+  },
+
+  "menu-item#pimientas": {
+    "props": {
+      "id": "menu-item-pimientas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "pimientas",
+        "text": "pimientas"
+      }
+    }
+  },
+
+  "menu-item#ajo-cebolla": {
+    "props": {
+      "id": "menu-item-ajo-cebolla",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "ajo-cebolla",
+        "text": "Ajo y cebolla"
+      }
+    }
+  },
+
+  "menu-item#otras-hierba": {
+    "props": {
+      "id": "menu-item-otras-hierba",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "otras-hierba",
+        "text": "Meclas y otros hierbas y especies"
       }
     }
   },
@@ -231,6 +348,66 @@
         "tagTitle": "caldos",
         "text": "Caldos"
       }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#caldos"]
+  },
+  "vtex.menu@2.x:submenu#caldos": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#caldos-polvo-natural",
+      "menu-item#caldos-concentrados-premium",
+      "menu-item#caldos-polvos"
+    ]
+  },
+
+  "menu-item#caldos-polvo-natural": {
+    "props": {
+      "id": "menu-item-caldos-polvo-natural",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "caldos-polvo-natural",
+        "text": "Caldos en polvo más natural"
+      }
+    }
+  },
+  "menu-item#caldos-concentrados-premium": {
+    "props": {
+      "id": "menu-item-caldos-concentrados-premium",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "caldos-concentrados-premiuma",
+        "text": "Caldos concentrados premium"
+      }
+    }
+  },
+  "menu-item#caldos-polvos": {
+    "props": {
+      "id": "menu-item-caldos-polvos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "caldos-polvos",
+        "text": "Caldos en polvos"
+      }
     }
   },
 
@@ -248,6 +425,83 @@
         "tagTitle": "basas-salsas",
         "text": "Bases y salsas deshidratadas"
       }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#salsas"]
+  },
+  "vtex.menu@2.x:submenu#salsas": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#mix",
+      "menu-item#salsas-deshidratadas",
+      "menu-item#bases-deshidratadas",
+      "menu-item#sazonadores-mexicanos"
+    ]
+  },
+
+  "menu-item#mix": {
+    "props": {
+      "id": "menu-item-mix",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "mix",
+        "text": "Mix para hamburguesas de granos y legumbres"
+      }
+    }
+  },
+  "menu-item#salsas-deshidratadas": {
+    "props": {
+      "id": "menu-item-salsas-deshidratadas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "salsas-deshidratadas",
+        "text": "Salsas deshidratadas"
+      }
+    }
+  },
+  "menu-item#bases-deshidratadas": {
+    "props": {
+      "id": "menu-item-bases-deshidratadas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "bases-deshidratadas",
+        "text": "Bases deshidratadas"
+      }
+    }
+  },
+  "menu-item#sazonadores-mexicanos": {
+    "props": {
+      "id": "menu-item-sazonadores-mexicanos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "sazonadores-mexicanos",
+        "text": "Sazonadores mexicanos"
+      }
     }
   },
 
@@ -263,7 +517,67 @@
         "href": "/gourmet",
         "noFollow": false,
         "tagTitle": "cremas-sopas",
-        "text": "Sopas y cremas"
+        "text": "Cremas y sopaas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#salsas"]
+  },
+
+  "vtex.menu@2.x:submenu#sopas": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#sopas-familiares",
+      "menu-item#cremas-premium",
+      "menu-item#sopas-uno"
+    ]
+  },
+  "menu-item#sopas-familiares": {
+    "props": {
+      "id": "menu-item-sopas-familiares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "sopas-familiares",
+        "text": "Sopas y cremas familiares"
+      }
+    }
+  },
+  "menu-item#cremas-premium": {
+    "props": {
+      "id": "menu-item-cremas-premium",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "cremas-premium",
+        "text": "Cremas premium"
+      }
+    }
+  },
+  "menu-item#sopas-uno": {
+    "props": {
+      "id": "menu-item-sopas-uno",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "sopas-uno",
+        "text": "Sopas solo para uno"
       }
     }
   },
@@ -281,6 +595,100 @@
         "noFollow": false,
         "tagTitle": "reposteria",
         "text": "Productos de repostería para cocinar"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#reposteria"]
+  },
+
+  "vtex.menu@2.x:submenu#reposteria": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#mezclas-listas",
+      "menu-item#decoraciones",
+      "menu-item#bases-reposteria",
+      "menu-item#otros-reposteria",
+      "menu-item#chocolate-reposteria"
+    ]
+  },
+  "menu-item#mezclas-listas": {
+    "props": {
+      "id": "menu-item-mezclas-listas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "mezclas-listas",
+        "text": "Mezclas listas"
+      }
+    }
+  },
+  "menu-item#decoraciones": {
+    "props": {
+      "id": "menu-item-decoraciones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "decoraciones",
+        "text": "Decoraciones"
+      }
+    }
+  },
+  "menu-item#bases-reposteria": {
+    "props": {
+      "id": "menu-item-bases-reposteria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "bases-reposteria",
+        "text": "Bases de repostería"
+      }
+    }
+  },
+  "menu-item#otros-reposteria": {
+    "props": {
+      "id": "menu-item-otros-reposteria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "otros-reposteria",
+        "text": "Otros productos de repostería"
+      }
+    }
+  },
+  "menu-item#chocolate-reposteria": {
+    "props": {
+      "id": "menu-item-chocolate-reposteria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "chocolate-reposteria",
+        "text": "Chocolate para repostería"
       }
     }
   },

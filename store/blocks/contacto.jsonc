@@ -174,7 +174,7 @@
       "textPosition": "CENTER"
     }
   },
-
+ 
   // Form - Reclamos
   "form#reclamos": {
     "props": {
@@ -184,22 +184,11 @@
     },
     "children": [
       "rich-text#formTitle-reclamos",
-      "form-input.text#firstName-reclamos",
-      "form-input.text#rut-reclamos",
-      "form-input.text#direccion-reclamos",
-      "form-input.text#mail-reclamos",
-      "form-input.text#telefono-reclamos",
+      "flex-layout.row#row-1-reclamos",
+      "flex-layout.row#row-2-reclamos",
       "rich-text#title-info-producto-reclamos",
-      "form-input.text#producto-reclamos",
-      "form-input.text#lote-reclamos",
-      "form-input.text#anoVencimiento-reclamos",
-      "form-input.dropdown#mesVencimiento-reclamos",
-      "form-input.dropdown#diaVencimiento-reclamos",
-      "form-input.text#lugarCompra-reclamos",
-      "form-input.text#anoCompra-reclamos",
-      "form-input.dropdown#mesCompra-reclamos",
-      "form-input.dropdown#diaCompra-reclamos",
-      "form-input.upload#imagen-reclamos",
+      "flex-layout.row#row-3-reclamos",
+      "flex-layout.row#row-4-reclamos",      
       "form-input.textarea#comentario-reclamos",
       "form-submit#reclamos"
     ],
@@ -211,10 +200,79 @@
       "text": "Reclamos"
     }
   },
+  // Form - Reclamos - Row 1 (Nombre, Rut, Direccion)
+  "flex-layout.row#row-1-reclamos": {
+    "props":{
+      "blockClass": "row-1-reclamos"
+    },
+    "children": [
+      "form-input.text#firstName-reclamos",
+      "form-input.text#rut-reclamos",
+      "form-input.text#direccion-reclamos"
+    ]
+  },
+  // Form - Reclamos - Row 2 (Email, teléfono)
+  "flex-layout.row#row-2-reclamos": {
+    "props":{
+      "blockClass": "row-2-reclamos"
+    },
+    "children": [
+      "form-input.text#mail-reclamos",
+      "form-input.text#telefono-reclamos"
+    ]
+  },
+  // Form - Reclamos - Row 3 (Producto, Núm Lote, Fecha)
+  "flex-layout.row#row-3-reclamos": {
+    "props":{
+      "blockClass": "row-3-reclamos"
+    },
+    "children": [
+      "form-input.text#producto-reclamos",
+      "form-input.text#lote-reclamos",
+      "flex-layout.col#fecha-vencimiento-reclamos"
+    ]
+  },
+  "flex-layout.col#fecha-vencimiento-reclamos": {
+    "children": [
+      "form-input.dropdown#diaVencimiento-reclamos",
+      "form-input.dropdown#mesVencimiento-reclamos",
+      "form-input.text#anoVencimiento-reclamos"
+    ],
+    "props":{
+      "blockClass": "col-fecha-vencimiento-reclamos"
+    }
+  },
+
+
+  // Form - Reclamos - Row 4 (Lugar, Fech Compra, Upload)
+  "flex-layout.row#row-4-reclamos": {
+    "props":{
+      "blockClass": "row-3-reclamos"
+    },
+    "children": [
+      "form-input.text#lugarCompra-reclamos",
+      "flex-layout.col#fecha-compra-reclamos",
+      "form-input.upload#imagen-reclamos"
+    ]
+  },
+  "flex-layout.col#fecha-compra-reclamos": {
+    "children": [
+      "form-input.dropdown#diaCompra-reclamos",
+      "form-input.dropdown#mesCompra-reclamos",
+      "form-input.text#anoCompra-reclamos"
+    ],
+    "props":{
+      "blockClass": "col-fecha-compra-reclamos"
+    }
+  },
+
+
+
+
   // Form - Reclamos - Nombre
   "form-input.text#firstName-reclamos": {
     "props": {
-      "pointer": "#/properties/firstName"
+      "pointer": "#/properties/nombre"
     }
   },
   // Form - Reclamos - Rut
@@ -226,7 +284,7 @@
   // Form - Reclamos - Direccion
   "form-input.text#direccion-reclamos": {
     "props": {
-      "pointer": "#/properties/rut"
+      "pointer": "#/properties/direccion"
     }
   },
   // Form - Reclamos - mail
@@ -244,7 +302,8 @@
   // Form - Reclamos - Title Info Producto
   "rich-text#title-info-producto-reclamos": {
     "props": {
-      "text": "### Información del Producto"
+      "text": "### Información del Producto",
+      "blockClass": "info-producto-form"
     }
   },
   // Form - Reclamos - Producto con problema
@@ -268,13 +327,13 @@
   // Form - Reclamos - Fecha de vencimiento - Mes
   "form-input.dropdown#mesVencimiento-reclamos": {
     "props": {
-      "pointer": "#/properties/anoVencimiento"
+      "pointer": "#/properties/mesVencimiento"
     }
   },
   // Form - Reclamos - Fecha de vencimiento - Día
   "form-input.dropdown#diaVencimiento-reclamos": {
     "props": {
-      "pointer": "#/properties/anoVencimiento"
+      "pointer": "#/properties/diaVencimiento"
     }
   },
   // Form - Reclamos - Lugar de compra
@@ -317,7 +376,8 @@
   // Form - Reclamos - Submit
   "form-submit#reclamos": {
     "props": {
-      "label": "Submit"
+      "label": "Submit",
+      "blockClass": "submit-contacto"
     }
   },
   // Form - Reclamos - Form Success
@@ -399,7 +459,7 @@
   "children": [
     "rich-text#formTitle-second",
     "rich-text#formSubTitle-second",
-    "form-input.checkbox#tipoNegocio-compras-mayor"
+    "form-input.dropdown#tipoNegocio-compras-mayor"
   ]
 },
 
@@ -472,7 +532,7 @@
     }
   },
   // Form - Compras por mayor - Tipo Negocio
-  "form-input.checkbox#tipoNegocio-compras-mayor": {
+  "form-input.dropdown#tipoNegocio-compras-mayor": {
     "props": {
       "pointer": "#/properties/tipoNegocio/properties/selectTipo"
     }
@@ -480,7 +540,8 @@
   // Form - Compras por mayor - Submit
   "form-submit#compras-mayor": {
     "props": {
-      "label": "Enviar"
+      "label": "Enviar",
+      "blockClass": "submit-contacto"
     }
   },
   // Form - Compras por mayor - Form Success
