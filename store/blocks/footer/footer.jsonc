@@ -126,7 +126,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/empresa",
         "noFollow": false,
         "tagTitle": "Empresa Gourmet",
         "text": "Empresa Gourmet"
@@ -143,7 +143,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/quickorder",
         "noFollow": false,
         "tagTitle": "Compras mayor",
         "text": "Compras mayor"
@@ -160,7 +160,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/temrinos-condiciones",
         "noFollow": false,
         "tagTitle": "Terminos y condiciones",
         "text": "Términos y condiciones"
@@ -177,7 +177,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/politicas-privacidad",
         "noFollow": false,
         "tagTitle": "Politica de privacidad",
         "text": "Política de privacidad"
@@ -194,7 +194,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/preguntas-frecuentes",
         "noFollow": false,
         "tagTitle": "Preguntas frecuentes",
         "text": "Preguntas frecuentes"
@@ -211,7 +211,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/account",
         "noFollow": false,
         "tagTitle": "Seguimiento de pedido",
         "text": "Seguimiento de pedido"
@@ -228,7 +228,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/contacto",
         "noFollow": false,
         "tagTitle": "Contacto",
         "text": "Contacto"
@@ -245,7 +245,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.facebook.com/GourmetChile/",
         "noFollow": false,
         "tagTitle": "Facebook",
         "text": "Facebook"
@@ -262,7 +262,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.instagram.com/gourmetchile/",
         "noFollow": false,
         "tagTitle": "Instagram",
         "text": "Instagram"
@@ -279,7 +279,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://twitter.com/Gourmet_cl",
         "noFollow": false,
         "tagTitle": "Youtube",
         "text": "Youtube"
@@ -296,7 +296,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.pinterest.cl/Gourmet_Chile/",
         "noFollow": false,
         "tagTitle": "Pinterest",
         "text": "Pinterest"

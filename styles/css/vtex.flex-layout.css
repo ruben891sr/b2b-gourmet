@@ -413,6 +413,30 @@
 }
 
 
+/*Terminos y condiciones*/
+
+.flexRowContent--row-tyc {
+    flex-direction: column;
+    padding: 0 7rem
+}
+
+.flexRowContent--row-tyc .stretchChildrenWidth {
+    width: 100% !important
+}
+
+
+/*Politicas de privacidad*/
+
+.flexRowContent--row-privacidad {
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.flexRowContent--row-privacidad .stretchChildrenWidth {
+    width: 100% !important
+}
+
+
 /*MEDIA QUERY*/
 
 

@@ -311,6 +311,57 @@
 }
 
 
+/*Terminos y condiciones*/
+
+.wrapper--title-tyc {
+    width: 100%;
+    margin: 3rem 0 0 0;
+}
+
+.headingLevel2--title-tyc {
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.headingLevel3--subtitle-tyc {
+    font-family: 'lato';
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    margin-top: 3rem;
+}
+
+.listItem--txt-tyc,
+.paragraph--txt-tyc {
+    font-family: 'lato';
+    font-size: 14px;
+    color: #000;
+}
+
+
+/*Politicas de privacidad*/
+
+.wrapper--privacidad-t {
+    width: 100%;
+    margin: 3rem 0 2rem 0;
+}
+
+.headingLevel2--privacidad-t {
+    font-weight: 300;
+    text-align: center;
+    font-size: 26px;
+}
+
+.paragraph--privacidad-p {
+    font-size: 14px;
+    font-family: 'lato';
+    color: #000;
+    margin: 1rem 0;
+}
+
+
 /*Versión Mobile*/
 
 @media (max-width: 1025px) {

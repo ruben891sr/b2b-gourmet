@@ -1,0 +1,508 @@
+{
+  "store.custom#preguntas-frecuentes": {
+    "children": [
+      "rich-text#faq-title",
+      "flex-layout.row#faq"
+    ]
+  },
+
+  "flex-layout.row#faq": {
+    "children": [
+      "rich-text#faq1-q",
+      "rich-text#faq1-a",
+      "rich-text#faq2-q",
+      "rich-text#faq2-a",
+      "rich-text#faq3-q",
+      "rich-text#faq3-a",
+      "rich-text#faq4-q",
+      "rich-text#faq4-a",
+      "rich-text#faq5-q",
+      "rich-text#faq5-a",
+      "rich-text#faq6-q",
+      "rich-text#faq6-a",
+      "rich-text#faq7-q",
+      "rich-text#faq7-a",
+      "rich-text#faq8-q",
+      "rich-text#faq8-a",
+      "rich-text#faq9-q",
+      "rich-text#faq9-a",
+      "rich-text#faq10-q",
+      "rich-text#faq10-a",
+      "rich-text#faq11-q",
+      "rich-text#faq11-a",
+      "rich-text#faq12-q",
+      "rich-text#faq12-a",
+      "rich-text#faq13-q",
+      "rich-text#faq13-a",
+      "rich-text#faq14-q",
+      "rich-text#faq14-a", 
+      "rich-text#faq15-q",
+      "rich-text#faq15-a",
+      "rich-text#faq16-q",
+      "rich-text#faq16-a",
+      "rich-text#faq17-q",
+      "rich-text#faq17-a",
+      "rich-text#faq18-q",
+      "rich-text#faq18-a",
+      "rich-text#faq19-q",
+      "rich-text#faq19-a",
+      "rich-text#faq20-q",
+      "rich-text#faq20-a",
+      "rich-text#faq21-q",
+      "rich-text#faq21-a",
+      "rich-text#faq22-q",
+      "rich-text#faq22-a",
+      "rich-text#faq23-q",
+      "rich-text#faq23-a",
+      "rich-text#faq24-q",
+      "rich-text#faq24-a",
+      "rich-text#faq25-q",
+      "rich-text#faq25-a",
+      "rich-text#faq26-q",
+      "rich-text#faq26-a",
+      "rich-text#faq27-q",
+      "rich-text#faq27-a",
+      "rich-text#faq28-q",
+      "rich-text#faq28-a",
+      "rich-text#faq29-q",
+      "rich-text#faq29-a",
+      "rich-text#faq30-q",
+      "rich-text#faq30-a"
+    ],
+    "props": {
+      "blocksClass": "row-faq"
+    }
+  },
+  "rich-text#faq-title": {
+    "props": {
+      "text": "Preguntas Frecuentes",
+      "blockClass": "faq-title"
+    }
+  },
+
+
+
+// faq1
+  "rich-text#faq1-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq1-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq2-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq2-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq3-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq3-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq4-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq4-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq5-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq5-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq6-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq6-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq7-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq7-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq8-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq8-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq9-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq9-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq10-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq10-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq11-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq11-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq12-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq12-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq13-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq13-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq14-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq14-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq15-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq15-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq16-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq16-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq17-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq17-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq18-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq18-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq19-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq19-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq20-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq20-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq21-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq21-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq22-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq22-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq23-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq23-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq24-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq24-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq25-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq25-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq26-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq26-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq27-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq27-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq28-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq28-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq29-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq29-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq30-q": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq30-a": {
+    "props": {
+      "text": "",
+      "blockClass": "faq-a"
+    }
+  }
+
+
+  
+
+}

@@ -3,8 +3,8 @@
         "path": "/empresa"
     },
 
-    "store.custom#faq": {
-        "path": "/faq"
+    "store.custom#preguntas-frecuentes": {
+        "path": "/preguntas-frecuentes"
     },
 
     "store.custom#politicas-sustentabilidad": {

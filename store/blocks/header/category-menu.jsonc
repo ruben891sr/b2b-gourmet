@@ -182,6 +182,8 @@
   // Submenu Tiendas
   "vtex.menu@2.x:submenu#tienda": {
     "children": [
+      "menu-item#gourmet-natural",
+      "menu-item#regalos-cocina",
       "menu-item#hierbas-especias",
       "menu-item#caldos",
       "menu-item#basas-salsas",
@@ -201,6 +203,166 @@
     }
   },
 
+  "menu-item#gourmet-natural": {
+    "props": {
+      "id": "menu-item-gourmet-natural",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet-mas-natural",
+        "noFollow": false,
+        "tagTitle": "gourmet-natural",
+        "text": "Gourmet más natural"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#gourmet-natural"]
+  },
+
+  "vtex.menu@2.x:submenu#gourmet-natural": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#caldos-polvo-mas-natural",
+      "menu-item#hamburguesas-granos-legumbres"
+    ]
+  },
+
+  "menu-item#caldos-polvo-mas-natural": {
+    "props": {
+      "id": "menu-item-caldos-polvo-mas-natural",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet-mas-natural/",
+        "noFollow": false,
+        "tagTitle": "caldos-polvo-mas-natural",
+        "text": "Caldos en polvo más natural"
+      }
+    }
+  },
+
+  "menu-item#hamburguesas-granos-legumbres": {
+    "props": {
+      "id": "menu-item-hamburguesas-granos-legumbres",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet-mas-natural/",
+        "noFollow": false,
+        "tagTitle": "hamburguesas-granos-legumbres",
+        "text": "Mix para hamburguesas de granos y legumbres"
+      }
+    }
+  },
+
+  "menu-item#regalos-cocina": {
+    "props": {
+      "id": "menu-item-regalos-cocina",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "regalos-cocina",
+        "text": "Regalos para la cocina"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#regalos-cocina"]
+  },
+
+  "vtex.menu@2.x:submenu#regalos-cocina": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#articulos-accesorios",
+      "menu-item#accesorios-mesa",
+      "menu-item#delantales-bolsos",
+      "menu-item#packs-regalos"
+    ]
+  },
+
+  "menu-item#articulos-accesorios": {
+    "props": {
+      "id": "menu-item-articulos-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "articulos-accesorios",
+        "text": "Artículos y accesorios de cocina"
+      }
+    }
+  },
+
+  "menu-item#accesorios-mesa": {
+    "props": {
+      "id": "menu-item-accesorios-mesa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "accesorios-mesa",
+        "text": "Accesorios para la mesam"
+      }
+    }
+  },
+
+  "menu-item#delantales-bolsos": {
+    "props": {
+      "id": "menu-item-delantales-bolsos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "delantales-bolsos",
+        "text": "Delantales de cocina y bolsos"
+      }
+    }
+  },
+
+  "menu-item#packs-regalos": {
+    "props": {
+      "id": "menu-item-packs-regalos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "packs-regalos",
+        "text": "Packs de regalos premium"
+      }
+    }
+  },
+
   "menu-item#hierbas-especias": {
     "props": {
       "id": "menu-item-hierbas-especias",
@@ -210,7 +372,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias",
         "noFollow": false,
         "tagTitle": "hierbas-especias",
         "text": "Hierbas especias"
@@ -218,6 +380,7 @@
     },
     "blocks": ["vtex.menu@2.x:submenu#hierbas-especias"]
   },
+
   "vtex.menu@2.x:submenu#hierbas-especias": {
     "props": {
       "blockClass": "subSubMenu"
@@ -238,10 +401,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias/condimentos-premium",
         "noFollow": false,
         "tagTitle": "condimentos-premium",
         "text": "Condimentos premium"
@@ -255,10 +418,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias/hierbas",
         "noFollow": false,
         "tagTitle": "hierbas-cocinar",
         "text": "Hierbas para cocinar"
@@ -272,12 +435,12 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/especias-para-cocinar",
         "noFollow": false,
-        "tagTitle": "especias-cocinar",
+        "tagTitle": "/hierbas-y-especias/especias-cocinar",
         "text": "Especias para cocinar"
       }
     }
@@ -289,10 +452,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias/pimientas",
         "noFollow": false,
         "tagTitle": "pimientas",
         "text": "pimientas"
@@ -306,10 +469,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias/ajos-y-cebollas",
         "noFollow": false,
         "tagTitle": "ajo-cebolla",
         "text": "Ajo y cebolla"
@@ -323,10 +486,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/hierbas-y-especias/hierbas",
         "noFollow": false,
         "tagTitle": "otras-hierba",
         "text": "Meclas y otros hierbas y especies"
@@ -343,7 +506,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/caldos",
         "noFollow": false,
         "tagTitle": "caldos",
         "text": "Caldos"
@@ -368,10 +531,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/caldos/caldos-en-polvo-mas-natural",
         "noFollow": false,
         "tagTitle": "caldos-polvo-natural",
         "text": "Caldos en polvo más natural"
@@ -384,10 +547,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/caldos/caldos-concentrados-premium",
         "noFollow": false,
         "tagTitle": "caldos-concentrados-premiuma",
         "text": "Caldos concentrados premium"
@@ -400,10 +563,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/caldos/caldos-en-polvo",
         "noFollow": false,
         "tagTitle": "caldos-polvos",
         "text": "Caldos en polvos"
@@ -420,7 +583,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/bases-y-salsas-deshidratadas",
         "noFollow": false,
         "tagTitle": "basas-salsas",
         "text": "Bases y salsas deshidratadas"
@@ -446,10 +609,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/bases-y-salsas-deshidratadas/mix-para-hamburguesas-de-granos-y-legumbres",
         "noFollow": false,
         "tagTitle": "mix",
         "text": "Mix para hamburguesas de granos y legumbres"
@@ -462,10 +625,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/bases-y-salsas-deshidratadas/salsas-deshidratadas",
         "noFollow": false,
         "tagTitle": "salsas-deshidratadas",
         "text": "Salsas deshidratadas"
@@ -478,10 +641,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/bases-y-salsas-deshidratadas/bases-deshidratadas",
         "noFollow": false,
         "tagTitle": "bases-deshidratadas",
         "text": "Bases deshidratadas"
@@ -494,10 +657,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/bases-y-salsas-deshidratadas/sazonadores-mexicanos",
         "noFollow": false,
         "tagTitle": "sazonadores-mexicanos",
         "text": "Sazonadores mexicanos"
@@ -514,13 +677,13 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/sopas-y-cremas",
         "noFollow": false,
         "tagTitle": "cremas-sopas",
-        "text": "Cremas y sopaas"
+        "text": "Cremas y sopas"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu#salsas"]
+    "blocks": ["vtex.menu@2.x:submenu#sopas"]
   },
 
   "vtex.menu@2.x:submenu#sopas": {
@@ -539,11 +702,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
-        "noFollow": false,
+        "href": "/sopas-y-cremas/sopas-y-cremas-familiares",
         "tagTitle": "sopas-familiares",
         "text": "Sopas y cremas familiares"
       }
@@ -555,10 +717,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/sopas-y-cremas/cremas-premium",
         "noFollow": false,
         "tagTitle": "cremas-premium",
         "text": "Cremas premium"
@@ -571,10 +733,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/sopas-y-cremas/sopas-solo-para-uno",
         "noFollow": false,
         "tagTitle": "sopas-uno",
         "text": "Sopas solo para uno"
@@ -591,7 +753,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/reposteria-para-cocinar/",
         "noFollow": false,
         "tagTitle": "reposteria",
         "text": "Productos de repostería para cocinar"
@@ -618,10 +780,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/reposteria-para-cocinar/mezclas-listas",
         "noFollow": false,
         "tagTitle": "mezclas-listas",
         "text": "Mezclas listas"
@@ -634,10 +796,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/reposteria-para-cocinar/decoraciones",
         "noFollow": false,
         "tagTitle": "decoraciones",
         "text": "Decoraciones"
@@ -650,10 +812,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/reposteria-para-cocinar/bases-de-reposteria",
         "noFollow": false,
         "tagTitle": "bases-reposteria",
         "text": "Bases de repostería"
@@ -666,10 +828,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/reposteria-para-cocinar/otros-productos-de-reposteria",
         "noFollow": false,
         "tagTitle": "otros-reposteria",
         "text": "Otros productos de repostería"
@@ -682,10 +844,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menuSubitemsTienda",
+      "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/reposteria-para-cocinar/chocolate-para-reposteria",
         "noFollow": false,
         "tagTitle": "chocolate-reposteria",
         "text": "Chocolate para repostería"
@@ -702,7 +864,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/salsas-para-postres",
         "noFollow": false,
         "tagTitle": "salsas-postres",
         "text": "Salsas para postres"
@@ -719,7 +881,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/alinos-para-ensaladas",
         "noFollow": false,
         "tagTitle": "alinos-ensaladas",
         "text": "Aliños para ensaladas"
@@ -736,7 +898,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/salsas-para-untar",
         "noFollow": false,
         "tagTitle": "salsa-untar",
         "text": "Salsas para untar"
@@ -753,7 +915,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/salsas-condimentadas-para-cocinar",
         "noFollow": false,
         "tagTitle": "salsas-condimientadas",
         "text": "Salsas condimientadas para cocinar"
@@ -770,7 +932,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/delicatessen-y-otros",
         "noFollow": false,
         "tagTitle": "delicatesen",
         "text": "Delicatessen y otros"
@@ -787,7 +949,7 @@
       "blockClass": "menuSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/gourmet",
+        "href": "/esencias-para-cocinar",
         "noFollow": false,
         "tagTitle": "esencias",
         "text": "Esencias"

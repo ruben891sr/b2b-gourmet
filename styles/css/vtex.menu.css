@@ -60,6 +60,45 @@
     flex-direction: column;
 }
 
+.styledLink--menuSubSubitemsTienda,
+.styledLink--menuSubitemsTienda {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.styledLinkContainer--menuSubSubitemsTienda,
+.styledLinkContainer--menuSubitemsTienda {
+    margin: 0;
+    padding: 0;
+}
+
+.styledLinkContent--menuSubSubitemsTienda,
+.styledLinkContent--menuSubitemsTienda {
+    transition: all .5s ease;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .7rem;
+}
+
+.styledLinkContent--menuSubitemsTienda:hover {
+    background-color: #E1251B;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.styledLinkContent--menuSubSubitemsTienda:hover {
+    background-color: #1f1f1f;
+    ;
+    transition: all .5s ease;
+}
+
+.submenuWrapper--subSubMenu--isOpen {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 
 /*Versión Mobile*/
 
