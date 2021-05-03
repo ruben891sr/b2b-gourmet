@@ -152,7 +152,7 @@
     "children": [
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
+      // "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
@@ -182,7 +182,8 @@
     "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
-      "colJustify": "around"
+      "colJustify": "around",
+      "blockClass": "rowSearchInfoMobile"
     }
   },
 
@@ -193,12 +194,12 @@
     }
   },
 
-  "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
-    "props": {
-      "blockClass": "productCountMobileRow"
-    }
-  },
+  // "flex-layout.row#productCountMobile": {
+  //   "children": ["total-products.v2"],
+  //   "props": {
+  //     "blockClass": "productCountMobileRow"
+  //   }
+  // },
 
   "flex-layout.col#filterMobile": {
     "children": ["filter-navigator.v3"],
