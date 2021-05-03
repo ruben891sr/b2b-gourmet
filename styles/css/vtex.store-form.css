@@ -1,3 +1,17 @@
-.formSubmitButton{
+.formSubmitButton {
     text-align: right;
+}
+
+.formSubmitButton--submit-contacto :global(.vtex-button) {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #ad0215;
+    border-radius: 0;
+    padding: .7rem;
+}
+
+.formSubmitButton--submit-contacto :global(.vtex-button__label) {
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }

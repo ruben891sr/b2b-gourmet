@@ -1,17 +1,26 @@
-
-.options{
+.options {
     display: none;
 }
 
-.termsAndConditions{
+.termsAndConditions {
     display: none;
 }
 
-.dontHaveAccount{
+.dontHaveAccount {
     display: none;
 }
 
 .label {
     text-transform: capitalize;
     color: #fff;
+}
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .profileIcon--userColHeader {
+        color: #fff;
+        width: 12px;
+    }
 }

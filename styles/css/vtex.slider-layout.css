@@ -1,30 +1,38 @@
 .sliderLayoutContainer {
-  justify-content: center;
+    justify-content: center;
 }
+
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
-  margin-bottom: 4rem;
+    background-color: #F0F0F0;
+    margin-bottom: 4rem;
 }
 
-.sliderLayoutContainer--carousel
-
-.sliderTrackContainer {
-  max-width: 100vw;
+.sliderLayoutContainer--carousel .sliderTrackContainer {
+    max-width: 100vw;
 }
 
 .paginationDotsContainer {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .layoutContainer--shelf {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 96rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 96rem;
 }
 
 .slide--shelf {
-  margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
+    margin-bottom: 25px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .sliderLayoutContainer--carousel {
+        margin-bottom: 2rem;
+    }
 }

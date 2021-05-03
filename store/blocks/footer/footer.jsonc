@@ -11,8 +11,14 @@
       "flex-layout.row#footer-last"
     ]
   },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-main",
+      "flex-layout.row#footer-last"
+    ]
+  },
 
-  // Footer Main
+  // Footer Main 
   "flex-layout.row#footer-main": {
     "children": [
       "flex-layout.col#corporativo",
@@ -120,7 +126,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/empresa",
         "noFollow": false,
         "tagTitle": "Empresa Gourmet",
         "text": "Empresa Gourmet"
@@ -137,7 +143,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/quickorder",
         "noFollow": false,
         "tagTitle": "Compras mayor",
         "text": "Compras mayor"
@@ -154,7 +160,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/temrinos-condiciones",
         "noFollow": false,
         "tagTitle": "Terminos y condiciones",
         "text": "Términos y condiciones"
@@ -171,7 +177,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/politicas-privacidad",
         "noFollow": false,
         "tagTitle": "Politica de privacidad",
         "text": "Política de privacidad"
@@ -188,7 +194,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/preguntas-frecuentes",
         "noFollow": false,
         "tagTitle": "Preguntas frecuentes",
         "text": "Preguntas frecuentes"
@@ -205,7 +211,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/account",
         "noFollow": false,
         "tagTitle": "Seguimiento de pedido",
         "text": "Seguimiento de pedido"
@@ -222,7 +228,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "/contacto",
         "noFollow": false,
         "tagTitle": "Contacto",
         "text": "Contacto"
@@ -239,7 +245,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.facebook.com/GourmetChile/",
         "noFollow": false,
         "tagTitle": "Facebook",
         "text": "Facebook"
@@ -256,7 +262,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.instagram.com/gourmetchile/",
         "noFollow": false,
         "tagTitle": "Instagram",
         "text": "Instagram"
@@ -273,7 +279,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://twitter.com/Gourmet_cl",
         "noFollow": false,
         "tagTitle": "Youtube",
         "text": "Youtube"
@@ -290,7 +296,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "https://www.pinterest.cl/Gourmet_Chile/",
         "noFollow": false,
         "tagTitle": "Pinterest",
         "text": "Pinterest"
@@ -365,52 +371,6 @@
       "blockClass": "lastFooter-derecho",
       "text": "Gourmet todos los derechos reservados "
     }
-  },
-
-  "footer-layout.mobile": {
-    "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
-    ]
-  },
-
-  "flex-layout.row#footer-mobile": {
-
-  },
-
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
   }
+
 }

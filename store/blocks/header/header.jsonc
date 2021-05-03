@@ -51,13 +51,13 @@
   },
   "rich-text#login-top": {
     "props": {
-      "text": "Iniciar sesión",
+      "text": "[Iniciar sesión](/account)",
       "blockClass": "topbar-text"
     }
   },
   "rich-text#sigin": {
     "props": {
-      "text": "Registrarme",
+      "text": "[Registrarme](/account)",
       "blockClass": "topbar-text"
     }
   },
@@ -73,12 +73,11 @@
       "fullWidth": false
     },
     "children": [
-      "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
-      "search-bar",
-      "flex-layout.col#spacer"
+      "flex-layout.col#spacer",
+      "search-bar"
     ]
   },
 
@@ -167,7 +166,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "assets/img/logo-header.png",
       "width": "70"
     }
   },

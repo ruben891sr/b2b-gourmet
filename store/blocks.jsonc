@@ -57,6 +57,13 @@
     "props": {
       "redirectPath": "/account"
     }
+  },
+
+  "flex-layout.row#spacer-height": {
+    "props": {
+      "marginTop": "10",
+      "blockClass": "spacer-height"
+    }
   }
 
 }
