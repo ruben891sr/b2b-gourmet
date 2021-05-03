@@ -1,0 +1,31 @@
+/* Vitrina PDP */
+
+.relatedProducts--pdpProductosRelacionados {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.relatedProducts--pdpProductosRelacionados::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 100%;
+    left: 0;
+    top: 2%;
+    transform: translateY(-50%);
+}
+.title--pdpProductosRelacionados {
+    font-size: 1.2em;
+    color: #1f1f1f;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 1rem;
+    background: #fff;
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }

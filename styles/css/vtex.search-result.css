@@ -49,11 +49,55 @@
     height: 24px;
 }
 
+.filterBreadcrumbsText {
+    font-weight: 600;
+    letter-spacing: .2px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.filterBreadcrumbsText::before {
+    content: "<";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.accordionFilterItemTag :global(.vtex-tag),
+.filterApplyButtonWrapper :global(.vtex-button) {
+    background: #E1251B;
+    border: none;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button__label) {
+    color: white;
+}
+
+.filterClearButtonWrapper :global(.vtex-button) {
+    border: 1px solid #E1251B;
+}
+
 /*MEDIA QUERY*/
 
 /*PLP*/
 @media screen and (max-width: 64rem) {
     .galleryLayoutSwitcher {
         display: none;
+    }
+    .orderByButton,
+    .filterPopupButton {
+        background: #e9e9e9;
+        margin: 8px 0;
+        padding: 8px 4px;
+        height: auto;
+        min-width: 120px;
+    }
+
+    .orderByText,
+    .filterPopupTitle::after {
+        background: none;
     }
 }

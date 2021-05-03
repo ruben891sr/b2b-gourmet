@@ -223,6 +223,26 @@
     margin-bottom: 1.5rem;
 }
 
+/*PDP*/
+.content--productDescription {
+  letter-spacing: .5px;
+  color: #474747;
+}
+
+.productDescriptionTitle--productDescription {
+  position: relative;
+}
+
+.productDescriptionTitle--productDescription::before {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: url(/assets/img/icono-info.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /*Newsletter*/
 
@@ -324,6 +344,18 @@
 }
 
 @media screen and (min-width: 80em) {
+
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 102rem;
+  }
+  /*PDP*/
+  .container--productDescription {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
     .container {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -355,4 +387,5 @@
     .imageElement--lastFooter-vtex {
         width: 51px;
     }
+
 }
