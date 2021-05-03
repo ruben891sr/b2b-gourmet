@@ -169,7 +169,7 @@
   },
   "rich-text#successSubmit-pregunta-sugerencia": {
     "props": {
-      "text": "Succesfully submitted the data!",
+      "text": "Datos enviados con éxito!!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
@@ -386,7 +386,7 @@
   },
   "rich-text#successSubmit-reclamos": {
     "props": {
-      "text": "Succesfully submitted the data!",
+      "text": "Datos enviados con éxito!!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
@@ -550,7 +550,7 @@
   },
   "rich-text#successSubmit-compras-mayor": {
     "props": {
-      "text": "Succesfully submitted the data!",
+      "text": "Datos enviados con éxito!!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }

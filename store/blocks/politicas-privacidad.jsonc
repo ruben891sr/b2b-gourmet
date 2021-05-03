@@ -1,6 +1,6 @@
 {
   "store.custom#politicas-privacidad": {
-    "blocks": ["rich-text#tprivacidad-title", "flex-layout.row#privcidad"]
+    "blocks": ["rich-text#tprivacidad-title", "flex-layout.row#privcidad","flex-layout.row#spacer-height"]
   },
 
   "flex-layout.row#privcidad": {

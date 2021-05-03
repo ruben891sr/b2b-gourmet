@@ -27,7 +27,10 @@
     }
   },
   "flex-layout.col#inicios-text": {
-    "children": ["rich-text#title-inicios", "rich-text#text-inicios"]
+    "children": ["rich-text#title-inicios", "rich-text#text-inicios"],
+    "props": {
+      "blockClass": "col-inicios-text"
+    }
   },
   "rich-text#title-inicios": {
     "props": {
@@ -37,7 +40,7 @@
   },
   "rich-text#text-inicios": {
     "props": {
-      "text": "Nuestra historia parte bajo el alero de Cramer, empresa dedicada a la elaboración de sabores y fragancias, en la comuna de Cerrillos. Fue aquí donde en 1958 elaboramos nuestro primer producto: la Esencia de Vainilla. En 1986, y gracias a la visión de un grupo de personas que creyeron en este incipiente proyecto culinario, nace Good Food S.A. Con tan solo 11 trabajadores, Las Encinas 268, Cerrillos, se transformó en nuestra casa.\nCon el pasar de los años, fruto del trabajo de todos nuestros colaboradores y de nuestros fieles consumidores, nos transformamos en una reconocida marca nacional, presente en los principales supermercados del país, entregando soluciones culinarias a todos los amantes de la cocina.\nEn el año 2013 nos embarcamos en el proceso de internacionalización de nuestros productos en Sudamérica. Es así como actualmente estamos presentes en los mejores supermercados de México, Ecuador, Panamá, Costa Rica y Perú, bajo la marca BonGourmet.",
+      "text": "Nuestra historia parte bajo el alero de Cramer, empresa dedicada a la elaboración de sabores y fragancias, en la comuna de Cerrillos. Fue aquí donde en 1958 elaboramos nuestro primer producto: la Esencia de Vainilla. En 1986, y gracias a la visión de un grupo de personas que creyeron en este incipiente proyecto culinario, nace Good Food S.A. Con tan solo 11 trabajadores, Las Encinas 268, Cerrillos, se transformó en nuestra casa.\n\n\nCon el pasar de los años, fruto del trabajo de todos nuestros colaboradores y de nuestros fieles consumidores, nos transformamos en una reconocida marca nacional, presente en los principales supermercados del país, entregando soluciones culinarias a todos los amantes de la cocina.\n\n\nEn el año 2013 nos embarcamos en el proceso de internacionalización de nuestros productos en Sudamérica. Es así como actualmente estamos presentes en los mejores supermercados de México, Ecuador, Panamá, Costa Rica y Perú, bajo la marca BonGourmet.",
       "blockClass": "text-seccion-empresa"
     }
   },
@@ -76,16 +79,13 @@
 
   // calidad
   "flex-layout.row#calidad": {
-    "children": [
-      "image#image-calidad",
-      "flex-layout.col#calidad-text"
-    ],
+    "children": ["image#image-calidad", "flex-layout.col#calidad-text"],
     "props": {
       "blockClass": "row-calidad"
     }
   },
   "flex-layout.col#calidad-text": {
-    "children": ["rich-text#title-inicios", "rich-text#text-inicios"],
+    "children": ["rich-text#title-calidad", "rich-text#text-calidad"],
     "props": {
       "blockClass": "col-calidad"
     }
@@ -98,7 +98,7 @@
   },
   "rich-text#text-calidad": {
     "props": {
-      "text": "Somos reconocidos por la calidad de nuestros productos y trabajamos constantemente para garantizarla. En todas nuestras áreas nos exigimos los más altos estándares de calidad para entregarle al consumidor la mejor experiencia con nuestros productos.\nCHacemos productos únicos con ingredientes de primer nivel y por eso, sólo nos abastecemos de las mejores materias primas que se ofrecen en el mercado nacional e internacional.",
+      "text": "Somos reconocidos por la calidad de nuestros productos y trabajamos constantemente para garantizarla. En todas nuestras áreas nos exigimos los más altos estándares de calidad para entregarle al consumidor la mejor experiencia con nuestros productos.\n\n\nHacemos productos únicos con ingredientes de primer nivel y por eso, sólo nos abastecemos de las mejores materias primas que se ofrecen en el mercado nacional e internacional.",
       "blockClass": "text-seccion-empresa"
     }
   },
@@ -111,7 +111,7 @@
 
   // instalaciones
   "flex-layout.row#instalaciones": {
-    "children": [],
+    "children": ["flex-layout.col#instalaciones"],
     "props": {
       "blockClass": "row-instalaciones"
     }
@@ -119,7 +119,7 @@
   "flex-layout.col#instalaciones": {
     "children": [
       "rich-text#title-instalaciones",
-"rich-text#text-instalaciones"
+      "rich-text#text-instalaciones"
     ],
     "props": {
       "blockClass": "col-instalaciones"
@@ -133,14 +133,14 @@
   },
   "rich-text#text-instalaciones": {
     "props": {
-      "text": "Dado el crecimiento obtenido, nuestra casa en Cerrillos se nos hizo chica, por lo que el 2013 inauguramos nuestra nueva planta ubicada en Balmaceda 3050, Peñaflor. La mayor parte de nuestra producción se trasladó hacia el sur de Santiago, a esta nueva planta que cuenta con modernas y amplias instalaciones y goza de los más altos estándares de calidad.\nLa familia Gourmet sigue creciendo, y hoy ya somos más de 350 personas las que trabajamos aquí, sumado a los miles de consumidores que nos han probado y que nos prefieren cada día.",
+      "text": "Dado el crecimiento obtenido, nuestra casa en Cerrillos se nos hizo chica, por lo que el 2013 inauguramos nuestra nueva planta ubicada en Balmaceda 3050, Peñaflor. La mayor parte de nuestra producción se trasladó hacia el sur de Santiago, a esta nueva planta que cuenta con modernas y amplias instalaciones y goza de los más altos estándares de calidad.\n\n\nLa familia Gourmet sigue creciendo, y hoy ya somos más de 350 personas las que trabajamos aquí, sumado a los miles de consumidores que nos han probado y que nos prefieren cada día.",
       "blockClass": "text-seccion-empresa"
     }
   },
 
   // compromiso
   "flex-layout.row#compromiso": {
-    "children": [],
+    "children": ["flex-layout.col#compromiso-text", "image#image-compromiso"],
     "props": {
       "blockClass": "row-compromiso"
     }
@@ -170,27 +170,28 @@
     }
   },
 
-
-
   // somos
   "flex-layout.row#somos": {
-    "children": [
-      "rich-text#somos"
-    ],
+    "children": ["flex-layout.col#somos"],
     "props": {
       "blockClass": "row-somos"
     }
   },
-  "rich-text#somos": {
-    "props":{
-      "text": "¡Somos Gourmet, el placer de comer bien!",
-      "blockClass": "text-somos"
+  "flex-layout.col#somos": {
+    "children": [
+      "rich-text#somos"
+    ],
+    "props": {
+      "blockClass": "col-somos"
     }
   },
 
-
-
-
+  "rich-text#somos": {
+    "props": {
+      "text": "¡Somos Gourmet,\n el placer de comer bien!",
+      "blockClass": "text-somos"
+    }
+  },
 
 
   "flex-layout.row#about-us": {

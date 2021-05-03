@@ -278,6 +278,11 @@
     align-items: center;
 }
 
+.flexRowContent--row-socialMedia-newsletter {
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
 
 /*Contacto*/
 
@@ -417,11 +422,11 @@
 
 .flexRowContent--row-tyc {
     flex-direction: column;
-    padding: 0 7rem
+    padding: 0 7rem;
 }
 
 .flexRowContent--row-tyc .stretchChildrenWidth {
-    width: 100% !important
+    width: 100% !important;
 }
 
 
@@ -433,7 +438,81 @@
 }
 
 .flexRowContent--row-privacidad .stretchChildrenWidth {
-    width: 100% !important
+    width: 100% !important;
+}
+
+
+/*Preguntas Frecuentes*/
+
+.flexRowContent--row-faqq {
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.flexRowContent--row-faqq .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+
+/*La empresa*/
+
+.flexRow--row-inicios :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+}
+
+.flexRow--row-inicios {
+    margin-left: 7rem;
+}
+
+.flexColChild--col-compromiso,
+.flexColChild--col-inicios-text {
+    height: auto !important;
+    margin-right: 5rem;
+}
+
+.flexColChild--col-calidad {
+    height: auto !important;
+    margin-left: 5rem;
+}
+
+.flexColChild--col-compromiso :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa),
+.flexColChild--col-inicios-text :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa) {
+    justify-content: left !important;
+}
+
+.flexColChild--col-calidad :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa) {
+    justify-content: right !important;
+}
+
+.flexRow--row-innovacion,
+.flexRow--row-instalaciones,
+.flexRow--row-somos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4rem 0;
+    padding: 5rem;
+    box-sizing: content-box;
+}
+
+.flexRow--row-innovacion {
+    background-image: url(assets/img/empresa-bg-innovacion.jpg);
+}
+
+.flexRow--row-instalaciones {
+    background-image: url(assets/img/empresa-bg-instalaciones.jpg);
+}
+
+.flexRow--row-somos {
+    background-image: url(assets/img/empresa-bg-somos.jpg);
+}
+
+.flexCol--col-somos,
+.flexCol--col-instalaciones,
+.flexCol--col-innovacion {
+    background: #fff;
+    padding: 3rem;
+    width: 80%;
 }
 
 
@@ -486,5 +565,33 @@
     .flexRowContent--row-footerMain {
         border-bottom: 0;
         padding-bottom: 0;
+    }
+    .flexRow--row-calidad,
+    .flexRow--row-compromiso,
+    .flexRow--row-inicios {
+        margin: 0 2rem;
+    }
+    .flexColChild--col-calidad {
+        margin-left: auto;
+    }
+    .flexColChild--col-compromiso,
+    .flexColChild--col-inicios-text {
+        margin-right: auto;
+    }
+    .flexRow--row-innovacion,
+    .flexRow--row-instalaciones,
+    .flexRow--row-somos {
+        margin: 6rem 0;
+        padding: 2rem 1rem;
+    }
+    .flexRowContent--row-calidad {
+        flex-direction: column-reverse !important;
+        display: flex;
+    }
+    .flexRowContent--row-faqq,
+    .flexRowContent--row-privacidad,
+    .flexRowContent--row-tyc {
+        flex-direction: column;
+        padding: 0 2rem;
     }
 }

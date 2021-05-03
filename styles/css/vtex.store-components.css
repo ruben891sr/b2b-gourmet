@@ -279,6 +279,15 @@
     font-weight: lighter;
 }
 
+.imageElementLink--newsletter-yt,
+.imageElementLink--newsletter-face,
+.imageElementLink--newsletter-insta,
+.imageElementLink--newsletter-pinter {
+    display: block;
+    justify-content: center;
+    display: flex;
+}
+
 
 /*Footer*/
 
@@ -297,6 +306,13 @@
     width: 70px;
     opacity: .8;
     margin-left: .7rem;
+}
+
+
+/*Empresa*/
+
+.imageElement--image-half-col {
+    width: 100%;
 }
 
 
