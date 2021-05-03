@@ -15,5 +15,22 @@
                 "titleText": "Productos"
             }
         }
+    },
+    "shelf#pdp": {
+        "blocks": ["product-summary.shelf#pdp"],
+        "props": {
+            "visibleVariations": ["Talla", "Color"],
+            "category": 12,
+            "orderBy": "OrderByTopSaleDESC",
+            "blockClass": "vitrinaPDP",
+            "productList": {
+                "maxItems": 12,
+                "itemsPerPage": 5,
+                "minItemsPerPage": 2,
+                "scroll": "BY_PAGE",
+                "arrows": true,
+                "titleText": "Productos"
+            }
+        }
     }
 }
