@@ -149,18 +149,6 @@
       "fullWidth": false
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
 
   "logo#mobile": {
     "props": {

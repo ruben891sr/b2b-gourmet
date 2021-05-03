@@ -15,3 +15,22 @@
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+
+.formSubmitButton--submit-newsletter {
+    text-align: center;
+}
+
+.formSubmitButton :global(.vtex-button) {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 0;
+    margin-top: 1rem;
+}
+
+.formSubmitButton :global(.vtex-button__label) {
+    text-transform: lowercase;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}

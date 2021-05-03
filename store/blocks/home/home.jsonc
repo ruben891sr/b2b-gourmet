@@ -454,8 +454,8 @@
 
   "form#newsletter": {
     "props": {
-      "entity": "newsletter",
-      "schema": "newsletter",
+      "entity": "newsltter",
+      "schema": "newsltter",
       "blockClass": "form-newsletter"
     },
     "children": [
@@ -473,32 +473,38 @@
       "form-input.text#mail-newsletter"
     ],
     "props": {
-      "blockClass": "row-newsletter"
+      "blockClass": "row-newsletter-presonal"
     }
   },
 
   "flex-layout.row#row-newsletter-suscribeme": {
     "children": ["form-input.dropdown#suscribeme-newsletter"],
     "props": {
-      "blockClass": "row-newsletter"
+      "blockClass": "row-newsletter-suscribeme"
     }
   },
 
   "form-input.text#nombre-newsletter": {
     "props": {
-      "pointer": "#/properties/nombre"
+      "pointer": "#/properties/nombre",
+      "placeholder": "ingresa tu nombre",
+      "blockClass": "newsletter-input"
     }
   },
 
   "form-input.text#apellido-newsletter": {
     "props": {
-      "pointer": "#/properties/apellido"
+      "pointer": "#/properties/apellido",
+      "placeholder": "ingresa tu apellido",
+      "blockClass": "newsletter-input"
     }
   },
 
   "form-input.text#mail-newsletter": {
     "props": {
-      "pointer": "#/properties/mail"
+      "pointer": "#/properties/mail",
+      "placeholder": "ingresa tu email",
+      "blockClass": "newsletter-input"
     }
   },
 

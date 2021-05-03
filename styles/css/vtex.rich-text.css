@@ -529,4 +529,12 @@
     .listOrdered--txt-tyc {
         padding-left: .7rem;
     }
+    .paragraph--text-social-media-newsletter {
+        color: #fff;
+        font-family: 'lato';
+        font-size: 14px;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+    }
 }
