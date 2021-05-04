@@ -128,6 +128,30 @@
 }
 
 
+/*Categorias Home*/
+
+.wrapper--category-vertodo {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 4rem 0
+}
+
+.link--category-vertodo {
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    padding: .7rem 6rem;
+    transition: all .5s ease;
+}
+
+.link--category-vertodo:hover {
+    background: #fff;
+    color: #1f1f1f;
+    transition: all .5s ease;
+}
+
+
 /* Top Bar */
 
 .paragraph--topbar-text {

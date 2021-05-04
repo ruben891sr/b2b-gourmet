@@ -19,6 +19,11 @@
     }
   },
 
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
+  },
+
+
   "store.login": {
     "blocks": ["login-content#default"]
   },
