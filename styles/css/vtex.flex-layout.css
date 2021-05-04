@@ -140,6 +140,10 @@
 
 /*Titulos de detalle de producto PDP*/
 
+.flexRow--rowSpecifications {
+    display: none !important
+}
+
 
 /* .flexRowContent--skuListHeader {
   display: none!important;

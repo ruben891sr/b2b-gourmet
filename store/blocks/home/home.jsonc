@@ -166,7 +166,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-1-gourmet.jpg",
       "callToActionText": "Gourmet más natural",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/gourmet-mas-natural",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -180,7 +180,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-2-gourmet.jpg",
       "callToActionText": "Aliños para ensaladas",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "alinos-para-ensaladas",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -194,7 +194,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-3-gourmet.jpg",
       "callToActionText": "Bases y salsas deshidratadas",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/bases-y-salsas-deshidratadas",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -208,7 +208,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-4-gourmet.jpg",
       "callToActionText": "Caldos",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/caldos",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -222,7 +222,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-5-gourmet.jpg",
       "callToActionText": "Cremas y sopas",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/sopas-y-cremas",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -236,7 +236,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-6-gourmet.jpg",
       "callToActionText": "Productos delicatessen",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/delicatessen-y-otros",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -264,7 +264,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-8-gourmet.jpg",
       "callToActionText": "Hierbas y especias",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/esencias-para-cocinar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -278,7 +278,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-9-gourmet.jpg",
       "callToActionText": "Productos de repostería para cocinar",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/reposteria-para-cocinar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -292,7 +292,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-10-gourmet.jpg",
       "callToActionText": "Salsas condimientadas para cocinar",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/salsas-condimentadas-para-cocinar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -306,7 +306,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-11-gourmet.jpg",
       "callToActionText": "Salsas para postres",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/salsas-para-postres",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -320,7 +320,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-12-gourmet.jpg",
       "callToActionText": "Salsas para untar",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/salsas-para-untar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
