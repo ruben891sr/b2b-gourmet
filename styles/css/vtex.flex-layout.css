@@ -262,6 +262,10 @@
     padding: 0 1.8rem;
 }
 
+.flexRowContent--row-InfoBar .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
 
 /*Info Bar*/
 

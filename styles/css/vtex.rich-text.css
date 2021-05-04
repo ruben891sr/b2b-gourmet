@@ -31,7 +31,7 @@
     max-width: 540px;
     margin: 0 16px;
     padding-top: 120px;
-    color: #03034E;
+    color: #03034e;
 }
 
 .container--question .strong {
@@ -45,7 +45,7 @@
     max-width: 540px;
     padding-top: 36px;
     padding-bottom: 84px;
-    color: #03034E;
+    color: #03034e;
 }
 
 .container--link .strong {
@@ -58,11 +58,11 @@
     text-decoration: none;
     font-size: 36px;
     font-weight: 300;
-    color: #03034E;
+    color: #03034e;
 }
 
 .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 28px;
     font-weight: 700;
 }
@@ -74,7 +74,7 @@
 }
 
 .wrapper--shelfTitle::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 1px;
@@ -105,7 +105,7 @@
         max-width: 85%;
     }
     .container--title {
-        color: #03034E;
+        color: #03034e;
         font-size: 40px;
         font-weight: 700;
         max-width: 100%;
@@ -148,6 +148,52 @@
     text-decoration: none;
 }
 
+.listItem--infoBarCol-text {
+    margin: 0 2rem;
+}
+
+.list--infoBarCol-text .listItem--infoBarCol-text,
+.list--infoBarCol-text .listItem--infoBarCol-text:last-child,
+.list--infoBarCol-text .listItem--infoBarCol-text:nth-child(even) {
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.list--infoBarCol-text .listItem--infoBarCol-text::before,
+.list--infoBarCol-text .listItem--infoBarCol-text:last-child::before,
+.list--infoBarCol-text .listItem--infoBarCol-text:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+.list--infoBarCol-text .listItem--infoBarCol-text::before {
+    background-image: url(assets/img/topbar-rut.png);
+    width: 15px;
+    height: 15px;
+    right: 105%;
+}
+
+.list--infoBarCol-text .listItem--infoBarCol-text:last-child::before {
+    background-image: url(assets/img/topbar-minimo.png);
+    width: 15px;
+    height: 15px;
+    right: 105%;
+}
+
+.list--infoBarCol-text .listItem--infoBarCol-text:nth-child(even)::before {
+    background-image: url(assets/img/topbar-caja.png);
+    width: 15px;
+    height: 15px;
+    right: 105%;
+}
+
 
 /*Newsletter*/
 
@@ -165,7 +211,7 @@
     display: inline-block;
     padding: 0 1rem;
     position: relative;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .paragraph--newsletter-subtitle {
@@ -173,13 +219,13 @@
 }
 
 .paragraph--newsletter-subtitle {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-size: 15px;
 }
 
 .paragraph--text-social-media-newsletter {
     color: #fff;
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 14px;
     font-weight: 600;
     font-style: italic;
@@ -220,7 +266,7 @@
 }
 
 .wrapper--title-contacto::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 1px;
@@ -250,7 +296,7 @@
 }
 
 .paragraph--tambien-estamos {
-    font-family: 'Lato';
+    font-family: "Lato";
     color: #333333;
     font-size: 13px;
     margin-bottom: 1rem;
@@ -265,7 +311,7 @@
 .headingLevel3--info-producto-form {
     text-align: center;
     margin: 3.5rem 0 2rem 0;
-    padding-bottom: .7rem;
+    padding-bottom: 0.7rem;
     font-weight: 300;
     border-bottom: 1px solid #1f1f1f;
     font-size: 26px;
@@ -273,7 +319,7 @@
 }
 
 .paragraph--txt-mayorista {
-    font-family: 'lato';
+    font-family: "lato";
     font-weight: 600;
     font-size: 13px;
     margin: 0 0 2rem 0;
@@ -281,7 +327,7 @@
 }
 
 .wrapper--info-producto-form {
-    width: 100%
+    width: 100%;
 }
 
 
@@ -299,7 +345,7 @@
 .list--infoBarCol-text {
     width: 100%;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .list--infoBarCol-text {
@@ -334,7 +380,7 @@
 }
 
 .headingLevel3--subtitle-tyc {
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 13px;
     font-weight: 700;
     color: #000;
@@ -343,7 +389,7 @@
 
 .listItem--txt-tyc,
 .paragraph--txt-tyc {
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 13px;
     color: #000;
     line-height: 1.8;
@@ -365,7 +411,7 @@
 
 .paragraph--privacidad-p {
     font-size: 13px;
-    font-family: 'lato';
+    font-family: "lato";
     color: #000;
     margin: 1rem 0;
 }
@@ -388,7 +434,7 @@
 }
 
 .paragraph--faq-q {
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 13px;
     color: #000;
     font-weight: 700;
@@ -397,18 +443,18 @@
 
 .listItem--faq-a,
 .paragraph--faq-a {
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 12px;
     color: #000;
     font-weight: 400;
     line-height: 1.9;
     margin: 0;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
 }
 
 .listOrdered--faq-a {
     margin: 0;
-    padding: 0 .7rem;
+    padding: 0 0.7rem;
 }
 
 
@@ -422,7 +468,7 @@
 }
 
 .wrapper--title-empresa::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 1px;
@@ -456,18 +502,18 @@
     font-size: 25px;
     font-weight: 300;
     color: #000;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #1f1f1f;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .paragraph--text-seccion-empresa {
-    font-family: 'lato';
+    font-family: "lato";
     font-size: 12px;
     line-height: 1.8;
     margin: 1.5rem 0;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
 }
 
 .wrapper--title-seccion-empresa {
@@ -527,11 +573,11 @@
         margin-bottom: 0;
     }
     .listOrdered--txt-tyc {
-        padding-left: .7rem;
+        padding-left: 0.7rem;
     }
     .paragraph--text-social-media-newsletter {
         color: #fff;
-        font-family: 'lato';
+        font-family: "lato";
         font-size: 14px;
         font-weight: 600;
         font-style: italic;

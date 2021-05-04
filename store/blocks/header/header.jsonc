@@ -137,7 +137,7 @@
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
+      "logo#mobile", 
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
