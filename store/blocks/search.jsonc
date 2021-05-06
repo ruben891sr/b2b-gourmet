@@ -149,7 +149,10 @@
     ]
   },
   "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
+    "children": [
+      "order-by.v2"
+      // "gallery-layout-switcher"
+    ],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -201,7 +204,7 @@
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
-      }
+      } 
     }
   },
   "flex-layout.row#contentmobile": {
@@ -214,8 +217,8 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#filterMobile"
+      // "flex-layout.col#switcherMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
@@ -245,12 +248,12 @@
       "blockClass": "filterMobileCol"
     }
   },
-  "flex-layout.col#switcherMobile": {
-    "children": ["gallery-layout-switcher"],
-    "props": {
-      "verticalAlign": "middle"
-    }
-  },
+  // "flex-layout.col#switcherMobile": {
+  //   "children": ["gallery-layout-switcher"],
+  //   "props": {
+  //     "verticalAlign": "middle"
+  //   }
+  // },
   "search-not-found-layout": {
     "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
   },
@@ -269,50 +272,30 @@
   },
 
   "gallery": {
-    "props": {
-      "layouts": [
-        {
-          "name": "grid",
-          "component": "GridSummary",
-          "itemsPerRow": {
-            "(min-width:1300px)": 4,
-            "desktop": 3,
-            "tablet": 3,
-            "phone": 2
-          }
-        },
-        {
-          "name": "list",
-          "component": "ListSummary",
-          "itemsPerRow": 1
-        }
-      ],
-      "ListSummary": "product-summary.shelf#listLayout",
-      "GridSummary": "product-summary.shelf"
-    }
+    "blocks": ["product-summary.shelf"]
   },
-  "gallery-layout-switcher": {
-    "children": [
-      /*
-       * For accessbility to work properly,
-       * It's important to define the options in the same order as the layouts
-       */
-      "gallery-layout-option#grid",
-      "gallery-layout-option#list"
-    ]
-  },
-  "gallery-layout-option#grid": {
-    "props": {
-      "name": "grid"
-    },
-    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
-  },
-  "gallery-layout-option#list": {
-    "props": {
-      "name": "list"
-    },
-    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
-  },
+  // "gallery-layout-switcher": {
+  //   "children": [
+  //     /*
+  //      * For accessbility to work properly,
+  //      * It's important to define the options in the same order as the layouts
+  //      */
+  //     "gallery-layout-option#grid",
+  //     "gallery-layout-option#list"
+  //   ]
+  // },
+  // "gallery-layout-option#grid": {
+  //   "props": {
+  //     "name": "grid"
+  //   },
+  //   "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
+  // },
+  // "gallery-layout-option#list": {
+  //   "props": {
+  //     "name": "list"
+  //   },
+  //   "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
+  // },
   "responsive-layout.desktop#textOptionGrid": {
     "children": ["rich-text#option-grid"]
   },

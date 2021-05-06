@@ -11,7 +11,8 @@
 }
 
 .opened--drawerGeneralContainer {
-    width: 95% !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 .menuContainerNav--drawerContainer {
@@ -25,4 +26,13 @@
 
 .closeIconButton {
     padding: 0;
+}
+
+.closeIcon {
+    color: #fff;
+}
+
+.childrenContainer--drawerGeneralContainer {
+    display: flex;
+    flex-direction: column;
 }

@@ -1,12 +1,13 @@
 {
   "drawer": {
-    "children": ["vtex.menu@2.x:menu#drawer"],
+    "children": [
+      "flex-layout.row#drawer-search",
+      "vtex.menu@2.x:menu#drawer"
+    ],
     "props": {
       "blockClass": "drawerGeneralContainer"
     },
-    "blocks": [
-      "drawer-header#my-drawer"
-    ]
+    "blocks": ["drawer-header#my-drawer"]
   },
 
   "vtex.menu@2.x:menu#drawer": {
@@ -23,7 +24,7 @@
       "menu-item#salsa-untar-mobile",
       "menu-item#salsas-condimientadas-mobile",
       "menu-item#delicatesen-mobile",
-      "menu-item#esencias-mobile" 
+      "menu-item#esencias-mobile"
     ],
     "props": {
       "orientation": "vertical",
@@ -32,19 +33,14 @@
   },
 
   "drawer-header#my-drawer": {
-    "children": [
-      "flex-layout.row#drawer-row"
-    ],
+    "children": ["flex-layout.row#drawer-row"],
     "props": {
       "colSizing": "auto"
     }
   },
 
   "flex-layout.row#drawer-row": {
-    "children": [
-      "flex-layout.col#logo-drawer",
-      "flex-layout.col#close-drawer"
-    ],
+    "children": ["flex-layout.col#logo-drawer", "flex-layout.col#close-drawer"],
     "props": {
       "blockClass": "rowDrawer",
       "colSizing": "auto"
@@ -52,9 +48,7 @@
   },
 
   "flex-layout.col#logo-drawer": {
-    "children": [
-      "logo#mobile"
-    ],
+    "children": ["logo#mobile"],
     "props": {
       "width": "50%",
       "blockClass": "colDrawer"
@@ -62,9 +56,7 @@
   },
 
   "flex-layout.col#close-drawer": {
-    "children": [
-      "drawer-close-button"
-    ],
+    "children": ["drawer-close-button"],
     "props": {
       "width": "50%",
       "blockClass": "colDrawer"
@@ -369,6 +361,25 @@
         "tagTitle": "esencias-mobile",
         "text": "Esencias"
       }
+    }
+  },
+
+  // Search Bar
+  "flex-layout.row#drawer-search": {
+    "props": {
+      "blockClass": "rowSearchMobile"
+    },
+    "children": [
+      "search-bar#mobile"
+    ]
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "__unstableProductOriginVtex": "true",
+      "blockClass": "searchmobile"
     }
   }
 }

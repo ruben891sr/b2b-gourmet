@@ -87,11 +87,11 @@
 
   "vtex.menu@2.x:menu#sac": {
     "children": [
-      "menu-item#tyc",
-      "menu-item#politica-privacidad",
-      "menu-item#faq",
+      "menu-item#contacto-footer",
       "menu-item#seguimiento",
-      "menu-item#contacto-footer"
+      "menu-item#faq",
+      "menu-item#tyc",
+      "menu-item#politica-privacidad"
     ],
     "props": {
       "blockClass": "footerMainMenu"
@@ -238,7 +238,7 @@
 
   "menu-item#face": {
     "props": {
-      "blockClass": "menuFooterMainItem",
+      "blockClass": "menuFooterMainItem-face", 
       "id": "menu-item-face",
       "type": "custom",
       "iconId": null,
@@ -255,7 +255,7 @@
 
   "menu-item#insta": {
     "props": {
-      "blockClass": "menuFooterMainItem",
+      "blockClass": "menuFooterMainItem-insta",
       "id": "menu-item-insta",
       "type": "custom",
       "iconId": null,
@@ -272,7 +272,7 @@
 
   "menu-item#yt": {
     "props": {
-      "blockClass": "menuFooterMainItem",
+      "blockClass": "menuFooterMainItem-yt",
       "id": "menu-item-yt",
       "type": "custom",
       "iconId": null,
@@ -289,7 +289,7 @@
 
   "menu-item#pinter": {
     "props": {
-      "blockClass": "menuFooterMainItem",
+      "blockClass": "menuFooterMainItem-pinter",
       "id": "menu-item-pinter",
       "type": "custom",
       "iconId": null,
