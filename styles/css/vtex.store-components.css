@@ -237,17 +237,22 @@
 
 .productDescriptionTitle--productDescription {
     position: relative;
+    display: block;
+    padding-left: 30px;
 }
 
 .productDescriptionTitle--productDescription::before {
-    position: absolute;
-    left: 0;
-    width: 15px;
-    height: 15px;
+    content: "";
     display: block;
-    background: url(/assets/img/icono-info.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: url(https://b2bgourmet.vteximg.com.br/arquivos/icono-descripcion.png);
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 9;
 }
 
 
@@ -351,21 +356,23 @@
 }
 
 @media screen and (min-width: 80em) {
-    .container {
-        padding-left: 4rem;
-        padding-right: 4rem;
-        max-width: 102rem;
-    }
+
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 102rem;
+  }
+  /*PDP*/
+  .container--productDescription {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
     /*PDP*/
     .container--productDescription {
         padding-left: 0;
         padding-right: 0;
     }
-    .container {
-        padding-left: 4rem;
-        padding-right: 4rem;
-        max-width: 102rem;
-    }
+
 }
 
 

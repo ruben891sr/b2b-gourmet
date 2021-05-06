@@ -39,12 +39,6 @@
   color: #79B03A;
 }
 
-.sellingPriceValue--summary {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #E1251B;
-}
-
 .savings--summary {
   background: #8BC34A;
   border-radius: 1000px;
@@ -98,9 +92,9 @@
 }
 
 .sellingPriceValue--summary {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: #2E2E2E;
+  color: #E1251B;
 }
 
 .savings--summary {

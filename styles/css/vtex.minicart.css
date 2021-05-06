@@ -10,3 +10,16 @@
     color: #fff;
     width: 12px;
 }
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+    font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::before {
+    content: 'Finalizar Compra';
+    text-transform: uppercase!important;
+    font-size: 15px;
+    text-transform: initial;
+    font-weight: 700;
+    color: #ffffff;
+}

@@ -40,8 +40,8 @@
 
   "flex-layout.col#sku-list": {
     "children": [
-      // "flex-layout.row#sku-list-header",
       "sku-list#details-sku-pdp",
+      "flex-layout.row#buy-button",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title"
     ],
@@ -52,7 +52,7 @@
     }
   },
 
-  // Lista con opciones en el header de detalle del producto
+  // Lista con opciones en el header de detalle del producto Desktop
   "flex-layout.row#sku-list-header": {
     "props": {
       "preventHorizontalStretch": false,
@@ -174,8 +174,7 @@
       // "flex-layout.col#sku-highlight-expiry-date",
       "flex-layout.col#sku-inventory",
       "flex-layout.col#sku-price",
-      "flex-layout.col#sku-quantity-selector",
-      "flex-layout.col#buy-button"
+      "flex-layout.col#sku-quantity-selector"
     ]
   },
 
@@ -254,21 +253,101 @@
   // Header de detalle de productos MOBILE
   "sku-content.mobile": {
     "children": [
+      "flex-layout.row#sku-name-mobile",
+      "flex-layout.row#sku-list-header-mobile",
+      // "flex-layout.row#product-identifier",
       "flex-layout.row#item-main-mobile"
     ]
   },
-  "flex-layout.row#item-main-mobile": {
+
+  // SKU Name Mobile
+  "flex-layout.row#sku-name-mobile": {
+    "props":{
+      "preventHorizontalStretch": false,
+      "blockClass": "rowSkuName"
+    },
+    "children": ["flex-layout.col#sku-name-mobile"]
+  },
+  "flex-layout.col#sku-name-mobile":{
     "props": {
-      "preventHorizontalStretch": false
+      "width": "100%"
+    },
+    "children": ["sku-name#mobile"] 
+  },
+  "sku-name#mobile":{
+    "props":{
+      "blockClass": "nameProduct"
+    }
+  },
+
+  // Lista con opciones en el header de detalle del producto Mobile
+  "flex-layout.row#sku-list-header-mobile": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "skuListHeaderMobile"
     },
     "children": [
-      "flex-layout.col#sku-highlight-certificates-mobile",
-      "flex-layout.col#sku-highlight-expiry-date-mobile",
-      "flex-layout.col#sku-inventory-mobile",
-      "flex-layout.col#sku-price-mobile",
-      "flex-layout.col#sku-quantity-selector-mobile"
+      // "rich-text#certificates-mobile",
+      // "rich-text#expiry-date-mobile",
+      "rich-text#inventory-mobile",
+      "rich-text#price-mobile",
+      "rich-text#quantity-selector-mobile"
     ]
   },
+
+  "rich-text#certificates-mobile": {
+    "props": {
+      "text": "**Es Certificado?**",
+      "blockClass": "skuListMobile",
+      "width": "20%"
+    }
+  },
+
+
+  "rich-text#expiry-date-mobile": {
+    "props": {
+      "text": "**Expires hasta**",
+      "blockClass": "skuListMobile",
+      "width": "20%"
+    }
+  },
+
+  "rich-text#inventory-mobile": {
+    "props": {
+      "text": "**Stock**",
+      "blockClass": "skuListMobile",
+      "width": "20%"
+    }
+  },
+
+  "rich-text#price-mobile": {
+    "props": {
+      "text": "**Precio Un.**",
+      "blockClass": "skuListMobile",
+      "width": "20%"
+    }
+  },
+
+  "rich-text#quantity-selector-mobile": {
+    "props": {
+      "text": "**Cantidad**",
+      "blockClass": "skuListMobile",
+      "width": "20%"
+    }
+  },
+  
+  // "flex-layout.row#item-main-mobile": {
+  //   "props": {
+  //     "preventHorizontalStretch": false
+  //   },
+  //   "children": [
+  //     "flex-layout.col#sku-highlight-certificates-mobile",
+  //     "flex-layout.col#sku-highlight-expiry-date-mobile",
+  //     "flex-layout.col#sku-inventory-mobile",
+  //     "flex-layout.col#sku-price-mobile",
+  //     "flex-layout.col#sku-quantity-selector-mobile"
+  //   ]
+  // },
   
   "flex-layout.col#sku-highlight-certificates-mobile": {
     "props": {
@@ -359,16 +438,29 @@
     }
   },
 
+  "flex-layout.row#item-main-mobile": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowItemMainDesktop"
+    },
+    "children": [
+      // "flex-layout.col#sku-highlight-certificates",
+      // "flex-layout.col#sku-highlight-expiry-date",
+      "flex-layout.col#sku-inventory",
+      "flex-layout.col#sku-price",
+      "flex-layout.col#sku-quantity-selector"
+    ]
+  },
 
   // Contenido extra fuera de la documentacion
 
   // Buy Button
-  "flex-layout.col#buy-button": {
+  "flex-layout.row#buy-button": {
     "props": {
       "blockClass": "colBuyButton",
       "marginTop": 4,
       "marginBottom": 7,
-      "width": "30%"
+      "width": "grow"
     },
     "children": [
       "add-to-cart-button#comprarPDP"
@@ -376,7 +468,7 @@
   },
   "add-to-cart-button#comprarPDP": {
     "props":{
-      "text": "Agregar"
+      "text": "Comprar"
     }
   },
 
