@@ -4,7 +4,7 @@
       "position": "bottom",
       "blockClass": "buyButton"
     },
-    "children": ["flex-layout.col#buy-button"]
+    "children": ["flex-layout.row#buy-button"]
   },
   "product-assembly-options": {
     "children": [

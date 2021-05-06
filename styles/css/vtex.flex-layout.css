@@ -144,11 +144,6 @@
     display: none !important
 }
 
-
-/* .flexRowContent--skuListHeader {
-  display: none!important;
-} */
-
 .flexRow--skuListHeader {
     border-bottom: 1px solid #c4c4c4;
 }
@@ -167,12 +162,18 @@
 }
 
 .flexRow--rowDescription,
-.flexRow--rowSpecifications {
+.flexRow--rowSpecifications,
+.flexRow--colBuyButton {
     padding: 1rem;
 }
 
-.flexRowContent--skuListHeader {
-    display: none !important;
+/*Version Mobile*/
+
+.flexRowContent--skuListHeaderMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 
