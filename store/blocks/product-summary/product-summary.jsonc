@@ -8,6 +8,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
+      "product-summary-sku-selector",
       "add-to-cart-button"
     ]
   },
@@ -31,6 +32,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
+      "product-summary-sku-selector",
       "add-to-cart-button"
     ]
   },
@@ -74,6 +76,19 @@
       "message": "{highlightName}"
     }
   },
+
+
+  "product-summary-sku-selector": {
+    "props": {
+      "hideImpossibleCombinations": true,
+      "showVariationsErrorMessage": true,
+      "showVariationsLabels": true,
+      "initialSelection": "empty",
+      // "visibleVariations": ["Talla", "Color"],
+      "maxItems": 14
+    }
+  },
+
 
   "product-list-price#summary": {
     "props": {

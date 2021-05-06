@@ -113,14 +113,6 @@
       "__unstableProductOriginVtex": "true"
     }
   },
-  "autocomplete-result-list.v2": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "__unstableProductOriginVtex": true
-    }
-  },
-
-
 
   "flex-layout.col#spacer": {
     "props": {

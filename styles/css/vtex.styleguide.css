@@ -53,3 +53,12 @@
 .flexRow--row-newsletter-presonal .flexRowContent--row-newsletter-presonal .input {
     background: transparent !important;
 }
+
+
+/* Versión mobile */
+
+@media (max-width: 1025px) {
+    .searchBarInnerContainer .input {
+        max-width: none;
+    }
+}

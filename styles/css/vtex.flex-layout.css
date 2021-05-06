@@ -287,10 +287,6 @@
 
 /*Categorías Home*/
 
-.flexRow--row-categoryHome {
-    margin-bottom: 4rem;
-}
-
 .flexRowContent--row-categoryHome {
     flex-wrap: wrap;
     justify-content: center;
@@ -586,6 +582,21 @@
     background: #fff;
     padding: 3rem;
     width: 80%;
+}
+
+
+/*Header Mobile MN*/
+
+.flexRow--rowDrawer {
+    width: 100%;
+}
+
+.flexRowContent--rowDrawer {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 1.3rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
 }
 
 

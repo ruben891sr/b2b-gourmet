@@ -124,7 +124,32 @@
     margin: 0 0 2rem 0;
     font-size: 16px;
     color: #fff;
+    letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+
+/*Categorias Home*/
+
+.wrapper--category-vertodo {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 4rem 0
+}
+
+.link--category-vertodo {
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    padding: .7rem 6rem;
+    transition: all .5s ease;
+}
+
+.link--category-vertodo:hover {
+    background: #fff;
+    color: #1f1f1f;
+    transition: all .5s ease;
 }
 
 
@@ -537,6 +562,32 @@
     color: #000;
     font-weight: 300;
     letter-spacing: 3px;
+}
+
+
+/*Minicart*/
+
+.paragraph--emptycart {
+    text-align: center;
+}
+
+.link--emptycart {
+    background: red;
+    border: 1px solid red;
+    color: #fff;
+    text-decoration: none;
+    padding: .3rem 2rem;
+    display: inline-block;
+    margin-top: .5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+
+.link--emptycart {
+    background: #fff;
+    color: red;
+    transition: all .5s ease;
 }
 
 

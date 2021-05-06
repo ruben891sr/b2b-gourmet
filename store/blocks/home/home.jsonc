@@ -15,6 +15,7 @@
       // "flex-layout.row#bn-dcto",
       "flex-layout.row#category-home-title",
       "flex-layout.row#category-home",
+      "flex-layout.row#category-home-vertodo",
       "flex-layout.row#shelf-title",
       "list-context.product-list#home",
       // "flex-layout.row#ventas-por",
@@ -326,6 +327,20 @@
       "textAlignment": "center"
     }
   },
+
+  "flex-layout.row#category-home-vertodo": {
+    "children": ["rich-text#category-home-vertodo"],
+    "props": {
+      "blockClass": "row-category-vertodo"
+    }
+  },
+  "rich-text#category-home-vertodo": {
+    "props": {
+      "text": "[Ver todos los productos](/137?map=productClusterIds)",
+      "blockClass": "category-vertodo"
+    }
+  },
+
 
   //Shelf Home
   "flex-layout.row#shelf-title": {

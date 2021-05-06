@@ -1,6 +1,6 @@
 .styledLinkContainer {
-    margin-left: .7rem;
-    margin-right: .7rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
 }
 
 .menuContainer--footerMainMenu {
@@ -8,6 +8,10 @@
     flex-direction: column;
 }
 
+.styledLinkContent--menuFooterMainItem-face,
+.styledLinkContent--menuFooterMainItem-insta,
+.styledLinkContent--menuFooterMainItem-yt,
+.styledLinkContent--menuFooterMainItem-pinter,
 .styledLinkContent--menuFooterMainItem {
     color: #fff;
     font-size: 14px;
@@ -16,6 +20,74 @@
     font-weight: 600;
 }
 
+.styledLinkContent--menuFooterMainItem-face,
+.styledLinkContent--menuFooterMainItem-insta,
+.styledLinkContent--menuFooterMainItem-yt,
+.styledLinkContent--menuFooterMainItem-pinter {
+    padding-left: 1.7rem;
+    position: relative;
+}
+
+.styledLinkContent--menuFooterMainItem-face::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/img/footer-rrss-face.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.styledLinkContent--menuFooterMainItem-insta::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/img/footer-rrss-insta.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.styledLinkContent--menuFooterMainItem-yt::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/img/footer-rrss-yt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.styledLinkContent--menuFooterMainItem-pinter::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/img/footer-rrss-pinter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.styledLinkContainer--menuFooterMainItem-face,
+.styledLinkContainer--menuFooterMainItem-insta,
+.styledLinkContainer--menuFooterMainItem-yt,
+.styledLinkContainer--menuFooterMainItem-pinter,
 .styledLinkContainer--menuFooterMainItem {
     padding: 0 0 1.2rem 0;
 }
@@ -26,7 +98,7 @@
 }
 
 .styledLinkContent {
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -38,11 +110,11 @@
 }
 
 .styledLinkContainer--menuitem-cal-contacto {
-    padding: .4rem 0;
+    padding: 0.4rem 0;
 }
 
 .styledLinkContent--menuitem-cal-contacto {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-size: 13px;
     letter-spacing: inherit;
     color: #afafaf;
@@ -53,7 +125,7 @@
 
 .submenuWrapper--subSubMenu--isOpen {
     left: 100% !important;
-    background-color: #E1251B;
+    background-color: #e1251b;
 }
 
 .submenu--subSubMenu {
@@ -75,23 +147,22 @@
 
 .styledLinkContent--menuSubSubitemsTienda,
 .styledLinkContent--menuSubitemsTienda {
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     display: block;
     width: 100%;
     height: 100%;
-    padding: .7rem;
+    padding: 0.7rem;
 }
 
 .styledLinkContent--menuSubitemsTienda:hover {
-    background-color: #E1251B;
+    background-color: #e1251b;
     color: #fff;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .styledLinkContent--menuSubSubitemsTienda:hover {
     background-color: #1f1f1f;
-    ;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .submenuWrapper--subSubMenu--isOpen {
@@ -99,16 +170,51 @@
     padding: 0 !important;
 }
 
+.styledLinkContent--menu-mobile-item {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.styledLinkContainer--menu-mobile-item {
+    padding: 0.7rem 0;
+    margin: 0 1.3rem;
+}
+
+.submenuAccordion .menuContainerNav {
+    width: 100% !important;
+}
+
+
+/*Footer*/
+
 
 /*Versión Mobile*/
 
 @media (max-width: 1025px) {
+    .styledLinkContent--menuFooterMainItem-face,
+    .styledLinkContent--menuFooterMainItem-insta,
+    .styledLinkContent--menuFooterMainItem-yt,
+    .styledLinkContent--menuFooterMainItem-pinter,
     .styledLinkContainer--menuFooterMainItem {
-        padding: 0 0 .7rem 0;
+        padding: 0 0 0.7rem 0;
     }
+    .styledLinkContent--menuFooterMainItem-face,
+    .styledLinkContent--menuFooterMainItem-insta,
+    .styledLinkContent--menuFooterMainItem-yt,
+    .styledLinkContent--menuFooterMainItem-pinter,
     .styledLinkContent--menuFooterMainItem {
         font-weight: 500;
         font-size: 13px;
         letter-spacing: 2px;
+    }
+    .styledLinkContent--menuSubSubitemsTienda {
+        background: red;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding: 0.7rem 0.5rem 0.7rem 1rem;
     }
 }
