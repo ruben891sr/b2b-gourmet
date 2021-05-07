@@ -162,7 +162,8 @@
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": true,
       "blockClass": "userColHeader",
-      "iconLabel": "Entra o regístrate"
+      "iconLabel": "Entra o regístrate",
+      "acessCodePlaceholder": "Ingresa tu código de acceso"
     }
   }
 

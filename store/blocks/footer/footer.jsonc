@@ -70,8 +70,8 @@
 
   "vtex.menu@2.x:menu#corporativo": {
     "children": [
-      "menu-item#empresa-gourmet",
-      "menu-item#compras-mayor"
+      "menu-item#empresa-gourmet"
+      // "menu-item#compras-mayor"
     ],
     "props": {
       "blockClass": "footerMainMenu"

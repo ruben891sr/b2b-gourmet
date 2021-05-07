@@ -6,8 +6,8 @@
     },
     "children": [
       "menu-item#inicio",
-      "menu-item#catalogo",
-      "menu-item#compras-lote"
+      "menu-item#catalogo"
+      // "menu-item#compras-lote"
       // "menu-item#videos",
       // "menu-item#regalos",
       // "menu-item#food-service",
