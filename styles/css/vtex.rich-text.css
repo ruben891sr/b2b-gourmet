@@ -406,7 +406,7 @@
 
 .headingLevel3--subtitle-tyc {
     font-family: "lato";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: #000;
     margin-top: 3rem;
@@ -415,7 +415,7 @@
 .listItem--txt-tyc,
 .paragraph--txt-tyc {
     font-family: "lato";
-    font-size: 13px;
+    font-size: 14px;
     color: #000;
     line-height: 1.8;
 }
@@ -435,7 +435,7 @@
 }
 
 .paragraph--privacidad-p {
-    font-size: 13px;
+    font-size: 14px;
     font-family: "lato";
     color: #000;
     margin: 1rem 0;
@@ -460,7 +460,7 @@
 
 .paragraph--faq-q {
     font-family: "lato";
-    font-size: 13px;
+    font-size: 15px;
     color: #000;
     font-weight: 700;
     margin-top: 3rem;
@@ -469,7 +469,7 @@
 .listItem--faq-a,
 .paragraph--faq-a {
     font-family: "lato";
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
     font-weight: 400;
     line-height: 1.9;
@@ -535,7 +535,7 @@
 
 .paragraph--text-seccion-empresa {
     font-family: "lato";
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     margin: 1.5rem 0;
     letter-spacing: 0.04em;

@@ -1,4 +1,4 @@
-.options {
+/* .options {
     display: none;
 }
 
@@ -8,10 +8,18 @@
 
 .dontHaveAccount {
     display: none;
-}
+} */
 
 .label {
-    text-transform: capitalize;
+    text-transform: inherit;
+    color: #fff;
+}
+
+.profileIcon--userColHeader {
+    color: #fff;
+}
+
+.profile {
     color: #fff;
 }
 

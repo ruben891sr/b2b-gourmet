@@ -189,5 +189,11 @@
       "text": "Tu carrito está vacío :(\nPuedes ver nuestro productos\n[Aquí](/)",
       "blockClass": "emptycart"
     }
+  },
+
+  "quantity-selector": {
+    "props": {
+      "mode": "stepper"
+    }
   }
 }

@@ -40,8 +40,9 @@
   // Desktop - Top Bar
   "flex-layout.row#top-bar": {
     "children": [
-      "rich-text#login-top",
-      "rich-text#sigin",
+      "login",
+      // "rich-text#login-top",
+      // "rich-text#sigin",
       "minicart.v2"
     ],
     "props": {
@@ -160,7 +161,8 @@
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": true,
-      "blockClass": "userColHeader"
+      "blockClass": "userColHeader",
+      "iconLabel": "Entra o regístrate"
     }
   }
 
