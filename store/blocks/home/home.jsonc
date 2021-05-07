@@ -251,7 +251,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-7-gourmet.jpg",
       "callToActionText": "Esencias para cocinar",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/esencias-para-cocinar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -265,7 +265,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-8-gourmet.jpg",
       "callToActionText": "Hierbas y especias",
-      "callToActionUrl": "/esencias-para-cocinar",
+      "callToActionUrl": "/hierbas-y-especias",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
