@@ -59,7 +59,7 @@
 }
 
 .newsletter {
-    background-color: #E1251B;
+    background-color: #e1251b;
     width: 100%;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .infoCardCallActionContainer--info-card-cotiza :global(.vtex-button__label) {
-    padding: .7rem 3rem;
+    padding: 0.7rem 3rem;
     font-weight: 700;
     font-size: 13px;
 }
@@ -210,7 +210,7 @@
 }
 
 .infoCardCallActionContainer--info-card-example {
-    color: #1F1F1F;
+    color: #1f1f1f;
     text-decoration: none !important;
     display: block;
     margin: 0;
@@ -218,8 +218,8 @@
 }
 
 .infoCardCallActionText--info-card-example {
-    color: #1F1F1F;
-    text-decoration: none!important;
+    color: #1f1f1f;
+    text-decoration: none !important;
     text-align: center;
     text-transform: uppercase;
     padding-top: 85%;
@@ -231,7 +231,7 @@
 /*PDP*/
 
 .content--productDescription {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     color: #474747;
 }
 
@@ -281,14 +281,14 @@
 .newsletter .form .inputGroup :global(.vtex-button) {
     background-color: #fff;
     border-radius: 0;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
 }
 
 .newsletter .form .inputGroup :global(.vtex-button__label) {
     padding: 0 3rem;
     text-transform: lowercase;
     font-size: 14px;
-    color: #E1251B;
+    color: #e1251b;
     font-weight: 700;
 }
 
@@ -329,15 +329,15 @@
 
 .imageElement--lastFooter-sr {
     width: 37px;
-    opacity: .8;
+    opacity: 0.8;
     display: block;
-    margin-right: .7rem;
+    margin-right: 0.7rem;
 }
 
 .imageElement--lastFooter-vtex {
     width: 70px;
-    opacity: .8;
-    margin-left: .7rem;
+    opacity: 0.8;
+    margin-left: 0.7rem;
 }
 
 
@@ -356,18 +356,15 @@
 }
 
 @media screen and (min-width: 80em) {
-
     .container {
         padding-left: 4rem;
         padding-right: 4rem;
         max-width: 102rem;
     }
-
-
     /*PDP*/
     .container--productDescription {
-        padding-left: 0!important;
-        padding-right: 0!important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
@@ -397,7 +394,7 @@
     }
     .searchBarContainer {
         border: 1px solid #fff;
-        margin: .7rem 1rem 1rem 1.4rem;
+        margin: 0.7rem 1rem 1rem 1.4rem;
     }
     .autoCompleteOuterContainer--searchmobile :global(.vtex-styleguide-9-x-input) {
         max-width: none;
