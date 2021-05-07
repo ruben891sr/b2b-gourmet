@@ -590,6 +590,12 @@
     transition: all .5s ease;
 }
 
+/*PDP*/
+
+.container--skuListQuantity {
+    justify-content: center;
+}
+
 
 /*Versión Mobile*/
 
