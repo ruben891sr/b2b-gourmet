@@ -15,6 +15,14 @@
     .flexRowContent--main-header {
         padding: 0 0.25rem;
     }
+    
+    .flexRow--rowSearchBread,
+    .flexRow--rowSearchTitle,
+    .flexRow--rowSearchResult {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        max-width: 102rem;
+    }
 }
 
 .flexRowContent--menu-link {
@@ -172,7 +180,7 @@
 
 .flexRowContent--skuListHeaderMobile {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid #c4c4c4;
 }

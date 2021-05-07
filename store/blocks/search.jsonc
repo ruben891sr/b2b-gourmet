@@ -70,6 +70,8 @@
 
   "search-result-layout.desktop": {
     "children": [
+      "search-banner#one",
+      // "flex-layout.row#banner-PLP",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -80,6 +82,32 @@
       "defaultGalleryLayout": "grid"
     }
   },
+  // Banner PLP
+  "flex-layout.row#banner-PLP":{
+    "props": {
+      "blockClass": "rowBannerPLP",
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.col#banner-one"]
+  },
+  // Banner
+  "flex-layout.col#banner-one": {
+    "props": {
+      "blockClass": "colBannerPrincipal"
+    },
+    "children": ["search-banner#one"]
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "bannerPrincipal",
+      "horizontalAlignment": "center"
+    }
+  },
+
+  // Migas de pan
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -89,13 +117,17 @@
     }
   },
   "flex-layout.row#searchtitle": {
+    "props": {
+      "blockClass": "rowSearchTitle"
+    },
     "children": ["search-title.v2"]
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
       "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "rowSearchResult"
     }
   },
   "flex-layout.col#filter": {
@@ -164,6 +196,7 @@
  //Mobile
   "search-result-layout.mobile": {
     "children": [
+      "flex-layout.row#banner-PLP",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       // "flex-layout.row#productCountMobile",

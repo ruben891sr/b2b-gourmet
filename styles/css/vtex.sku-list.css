@@ -5,9 +5,9 @@
     display: none!important;
 }
 
-.selectedSkuContentWrapper {
+/* .selectedSkuContentWrapper {
     border: none;
-}
+} */
 
 /* .skuContentWrapper :global(.vtex-button),
 .quantitySelectorContainer {
@@ -30,7 +30,7 @@
 .inventoryContainer,
 .currencyContainer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .priceContainer,
