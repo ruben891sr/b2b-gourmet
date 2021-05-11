@@ -84,6 +84,27 @@
     border: 1px solid #E1251B;
 }
 
+.buttonShowMore :global(.vtex-button) {
+    background-color: #000;
+    border-color: #000;
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.buttonShowMore :global(.vtex-button__label) {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonShowMore :global(.vtex-button__label)::after {
+    content: "VER MÁS";
+    font-size: 13px;
+    font-weight: 700;
+}
+
 /*MEDIA QUERY*/
 
 

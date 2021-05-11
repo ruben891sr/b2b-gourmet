@@ -8,7 +8,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
-      "product-summary-sku-selector",
+      // "product-summary-sku-selector",
       "add-to-cart-button"
     ]
   },
@@ -16,9 +16,9 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "flex-layout.col#productRating",
-      "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
+      "product-list-price#summary",
+      // "flex-layout.col#productRating",
       "product-installments#summary",
       "add-to-cart-button#btnPLP"
     ]
@@ -27,10 +27,10 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
+      "flex-layout.row#selling-price-savings",
+      "product-list-price#summary",
       "flex-layout.col#productRating",
       "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "product-summary-sku-selector",
       "add-to-cart-button"
