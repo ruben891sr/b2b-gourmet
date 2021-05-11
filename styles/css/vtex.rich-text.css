@@ -596,6 +596,11 @@
     justify-content: center;
 }
 
+.paragraph--skuList,
+.paragraph--skuListQuantity {
+    margin-bottom: 2px;
+}
+
 
 /*Versión Mobile*/
 
@@ -639,5 +644,8 @@
         font-weight: 600;
         font-style: italic;
         text-align: center;
+    }
+    .paragraph--skuListMobile {
+        margin-bottom: 2px;
     }
 }

@@ -1,0 +1,12 @@
+/*Carrito de compra lateral*/
+.summarySmallDisclaimer::before {
+    content: "MONTO MÍNIMO de compra de $50.000";
+    display: flex!important;
+    font-weight: 800;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #e0251b;
+    color: #e0251b;
+    padding: 6px;
+    margin-bottom: 2px;
+}
