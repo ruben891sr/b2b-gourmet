@@ -15,7 +15,6 @@
     .flexRowContent--main-header {
         padding: 0 0.25rem;
     }
-    
     .flexRow--rowSearchBread,
     .flexRow--rowSearchTitle,
     .flexRow--rowSearchResult {
@@ -469,6 +468,10 @@
     margin: 0 2rem;
 }
 
+.flexRowContent--rowMobileImageDetail {
+    align-items: center
+}
+
 .flexRowContent--row-2-compras-mayor,
 .flexRowContent--row-3-compras-mayor {
     margin-top: 1.5rem;
@@ -603,14 +606,15 @@
     margin-bottom: 1rem;
 }
 
-.flexRowContent--qttyPrice-row {
+
+/* .flexRowContent--qttyPrice-row {
     display: flex;
     flex-direction: column;
 }
 
 .flexRowContent--qttyPrice-row .stretchChildrenWidth:last-child {
     margin-top: 1rem;
-}
+} */
 
 
 /*MEDIA QUERY*/

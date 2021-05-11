@@ -2,6 +2,10 @@
     padding: 0;
 }
 
+.opened {
+    max-width: 500px !important;
+}
+
 .openIconContainer :global(.vtex-button__label) {
     padding: 0 !important;
 }

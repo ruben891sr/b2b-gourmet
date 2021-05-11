@@ -156,7 +156,7 @@
   "login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Ingresa tu código de acceso",
+      "accessCodeTitle": "Ingresa tu email",
       "emailPlaceholder": "e-mail",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,

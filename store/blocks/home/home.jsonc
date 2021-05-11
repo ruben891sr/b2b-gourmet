@@ -446,7 +446,7 @@
       "rich-text#newsletter-subtitle",
       "form#newsletter",
       "flex-layout.row#social-media-newsletter"
-    ],
+    ], 
     "props": {
       "blockClass": "row-newsletter",
       "colSizing": "auto"
