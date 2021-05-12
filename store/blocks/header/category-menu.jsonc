@@ -183,7 +183,7 @@
   "vtex.menu@2.x:submenu#tienda": {
     "children": [
       "menu-item#gourmet-natural",
-      "menu-item#regalos-cocina",
+      // "menu-item#regalos-cocina",
       "menu-item#hierbas-especias",
       "menu-item#caldos",
       "menu-item#basas-salsas",

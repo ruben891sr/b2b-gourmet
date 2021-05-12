@@ -13,7 +13,7 @@
   "vtex.menu@2.x:menu#drawer": {
     "children": [
       "menu-item#gourmet-natural-mobile",
-      "menu-item#regalos-cocina-mobile",
+      // "menu-item#regalos-cocina-mobile",
       "menu-item#hierbas-especias-mobile",
       "menu-item#caldos-mobile",
       "menu-item#basas-salsas-mobile",
