@@ -107,7 +107,8 @@
     "children": ["quantity-selector"],
     "props": {
       "marginTop": "5",
-      "preventHorizontalStretch": "true"
+      "preventHorizontalStretch": "true",
+      "blockClass": "colQuantitySelectorMobile"
     }
   },
 

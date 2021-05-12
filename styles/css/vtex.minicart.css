@@ -27,3 +27,8 @@
     font-weight: 700;
     color: #ffffff;
 }
+
+.minicartProductListContainer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
