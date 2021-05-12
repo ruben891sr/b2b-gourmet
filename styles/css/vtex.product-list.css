@@ -5,3 +5,20 @@
 .vtex-product-list-0-x-inputContainer {
     width: 4rem;
 }
+
+.unitPriceMeasurementUnit {
+    position: relative;
+    color: transparent;
+}
+
+.unitPriceMeasurementUnit::before {
+    content: 'Por caja';
+    position: absolute;
+    left: 50%;
+    color: #727273!important;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: .5rem;
+}
