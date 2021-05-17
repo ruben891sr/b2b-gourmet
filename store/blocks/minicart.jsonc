@@ -188,7 +188,7 @@
   },
   "rich-text#minicart-default-empty-state": {
     "props": {
-      "text": "Tu carrito está vacío :(\nPuedes ver nuestro productos\n[Aquí](/)",
+      "text": "Tu carrito está vacío :(\nPuedes ver nuestros productos\n[Aquí](/)",
       "blockClass": "emptycart"
     }
   },
@@ -197,5 +197,5 @@
     "props": {
       "mode": "stepper"
     }
-  }
+  } 
 }
