@@ -437,9 +437,9 @@
       "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/especias-para-cocinar",
+        "href": "/hierbas-y-especias/especias-para-cocinar",
         "noFollow": false,
-        "tagTitle": "/hierbas-y-especias/especias-para-cocinar",
+        "tagTitle": "especias-para-cocinar",
         "text": "Especias para cocinar"
       }
     }
