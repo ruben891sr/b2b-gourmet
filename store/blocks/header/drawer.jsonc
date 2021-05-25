@@ -12,17 +12,15 @@
 
   "vtex.menu@2.x:menu#drawer": {
     "children": [
-      "menu-item#gourmet-natural-mobile",
-      // "menu-item#regalos-cocina-mobile",
+      "menu-item#reposteria-mobile",
       "menu-item#hierbas-especias-mobile",
-      "menu-item#caldos-mobile",
       "menu-item#basas-salsas-mobile",
       "menu-item#cremas-sopas-mobile",
-      "menu-item#reposteria-mobile",
-      "menu-item#salsas-postres-mobile",
+      "menu-item#caldos-mobile",
+      "menu-item#salsas-condimientadas-mobile",
       "menu-item#alinos-ensaladas-mobile",
       "menu-item#salsa-untar-mobile",
-      "menu-item#salsas-condimientadas-mobile",
+      "menu-item#salsas-postres-mobile",
       "menu-item#delicatesen-mobile",
       "menu-item#esencias-mobile"
     ],
@@ -168,6 +166,85 @@
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#reposteria-mobile"]
   },
+  "menu-item#salsas-condimientadas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "salsas-condimientadas-mobile",
+        "text": "Salsas condimientadas para cocinar"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile"]
+  },
+  "menu-item#alinos-ensaladas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "alinos-ensaladas-mobile",
+        "text": "Aliños para ensaladas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile"]
+  },
+  "menu-item#salsas-postres-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "salsas-postres-mobile",
+        "text": "Salsas para postres"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-postres-mobile"]
+  },
+  "menu-item#delicatesen-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "delicatesen-mobile",
+        "text": "Delicatesen y otros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#delicatesen-mobile"]
+  },
+  "menu-item#esencias-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "esencias-mobile",
+        "text": "Esencias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#esencias-mobile"]
+  },
+
+
+
+
 
   "vtex.menu@2.x:submenu.accordion#gourmet-natural-mobile": {
     "children": ["vtex.menu@2.x:menu#gourmet-natural-mobile"]
@@ -190,6 +267,25 @@
   "vtex.menu@2.x:submenu.accordion#reposteria-mobile": {
     "children": ["vtex.menu@2.x:menu#reposteria-mobile"]
   },
+  "vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile": {
+    "children": ["vtex.menu@2.x:menu#salsas-condimientadas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile": {
+    "children": ["vtex.menu@2.x:menu#alinos-ensaladas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#salsas-postres-mobile": {
+    "children": ["vtex.menu@2.x:menu#salsas-postres-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#delicatesen-mobile": {
+    "children": ["vtex.menu@2.x:menu#delicatesen-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#esencias-mobile": {
+    "children": ["vtex.menu@2.x:menu#esencias-mobile"]
+  },
+
+
+
+
 
   "vtex.menu@2.x:menu#gourmet-natural-mobile": {
     "children": [
@@ -200,7 +296,6 @@
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#regalos-cocina-mobile": {
     "children": [
       "menu-item#articulos-accesorios",
@@ -212,31 +307,31 @@
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#hierbas-especias-mobile": {
     "children": [
       "menu-item#condimentos-premium",
       "menu-item#hierbas-cocinar",
       "menu-item#especias-cocinar",
       "menu-item#pimientas",
-      "menu-item#ajo-cebolla"
+      "menu-item#ajo-cebolla",
+      "menu-item#sales-cocinar",
+      "menu-item#mezclas-otras"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#caldos-mobile": {
     "children": [
       "menu-item#caldos-polvo-natural",
       "menu-item#caldos-concentrados-premium",
-      "menu-item#caldos-polvos"
+      "menu-item#caldos-polvos",
+      "menu-item#sofrito"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#basas-salsas-mobile": {
     "children": [
       "menu-item#mix",
@@ -248,7 +343,6 @@
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#cremas-sopas-mobile": {
     "children": [
       "menu-item#sopas-familiares",
@@ -259,49 +353,64 @@
       "orientation": "vertical"
     }
   },
-
   "vtex.menu@2.x:menu#reposteria-mobile": {
     "children": [
       "menu-item#mezclas-listas",
       "menu-item#decoraciones",
       "menu-item#bases-reposteria",
       "menu-item#otros-reposteria",
-      "menu-item#chocolate-reposteria"
+      "menu-item#chocolate-reposteria",
+      "menu-item#foodservice-reposteria"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#salsas-condimientadas-mobile": {
+    "children": [
+      "menu-item#foodservice-salsascondi",
+      "menu-item#productos-primera-foodservice"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#alinos-ensaladas-mobile": {
+    "children": [
+      "menu-item#foodservice-alinos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#salsas-postres-mobile": {
+    "children": [
+      "menu-item#foodservice-salsas-postres"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#delicatesen-mobile": {
+    "children": [
+      "menu-item#foodservice-delicatesen"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#esencias-mobile": {
+    "children": [
+      "menu-item#foodservice-esencias",
+      "menu-item#primera-foodservice-esencias"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
 
-  "menu-item#salsas-postres-mobile": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "menu-mobile-item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/salsas-para-postres",
-        "noFollow": false,
-        "tagTitle": "salsas-postres-mobile",
-        "text": "Salsas para postres"
-      }
-    }
-  },
 
-  "menu-item#alinos-ensaladas-mobile": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "menu-mobile-item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/alinos-para-ensaladas",
-        "noFollow": false,
-        "tagTitle": "alinos-ensaladas-mobile",
-        "text": "Aliños para ensaladas"
-      }
-    }
-  },
+
 
   "menu-item#salsa-untar-mobile": {
     "props": {
@@ -318,50 +427,6 @@
     }
   },
 
-  "menu-item#salsas-condimientadas-mobile": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "menu-mobile-item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/salsas-condimentadas-para-cocinar",
-        "noFollow": false,
-        "tagTitle": "salsas-condimientadas-mobile",
-        "text": "Salsas condimientadas para cocinar"
-      }
-    }
-  },
-
-  "menu-item#delicatesen-mobile": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "menu-mobile-item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/delicatessen-y-otros",
-        "noFollow": false,
-        "tagTitle": "delicatesen-mobile",
-        "text": "Delicatesen y otros"
-      }
-    }
-  },
-
-  "menu-item#esencias-mobile": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "menu-mobile-item",
-      "itemProps": {
-        "type": "internal",
-        "href": "/esencias-para-cocinar",
-        "noFollow": false,
-        "tagTitle": "esencias-mobile",
-        "text": "Esencias"
-      }
-    }
-  },
 
   // Search Bar
   "flex-layout.row#drawer-search": {

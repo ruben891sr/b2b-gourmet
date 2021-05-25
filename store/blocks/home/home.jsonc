@@ -364,7 +364,7 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
-
+ 
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
