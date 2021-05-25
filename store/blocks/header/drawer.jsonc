@@ -219,8 +219,7 @@
       "menu-item#hierbas-cocinar",
       "menu-item#especias-cocinar",
       "menu-item#pimientas",
-      "menu-item#ajo-cebolla",
-      "menu-item#otras-hierba"
+      "menu-item#ajo-cebolla"
     ],
     "props": {
       "orientation": "vertical"
