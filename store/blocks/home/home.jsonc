@@ -336,7 +336,7 @@
   },
   "rich-text#category-home-vertodo": {
     "props": {
-      "text": "[Ver todos los productos](/137?map=productClusterIds)",
+      "text": "[Ver todos los productos](/138?map=productClusterIds)",
       "blockClass": "category-vertodo"
     }
   },
