@@ -142,24 +142,39 @@
 
   "flex-layout.row#category-home": {
     "children": [
-      "info-card#mas-matural",
-      "info-card#alinos-ensaladas",
-      "info-card#basas-salsas",
+      "info-card#food-service",
+      "info-card#reposteria",
+      "info-card#esencias",
+      "info-card#salsas-postres",
+      "info-card#salsas-condimientadas",
+      "info-card#hiervas-especias",
       "info-card#caldos",
       "info-card#cremas-sopas",
-      "info-card#delicatesen",
-      "info-card#esencias",
-      "info-card#hiervas-especias",
-      "info-card#reposteria",
-      "info-card#salsas-condimientadas",
-      "info-card#salsas-postres",
-      "info-card#salsa-untar"
+      "info-card#basas-salsas",
+      "info-card#alinos-ensaladas",
+      "info-card#salsa-untar",
+      "info-card#delicatesen"
+      // "info-card#mas-matural",
     ],
     "props": {
       "blockClass": "row-categoryHome"
     }
   },
 
+  "info-card#food-service": {
+    "props": {
+      "id": "info-card-food-service",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-1-gourmet.jpg",
+      "callToActionText": "Food Service",
+      "callToActionUrl": "/food-service",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  
   "info-card#mas-matural": {
     "props": {
       "id": "info-card-mas-matural",
@@ -223,12 +238,12 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-5-gourmet.jpg",
       "callToActionText": "Cremas y sopas",
-      "callToActionUrl": "/sopas-y-cremas",
+      "callToActionUrl": "/cremas-y-sopas",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
     }
-  },
+  }, 
 
   "info-card#delicatesen": {
     "props": {
@@ -251,7 +266,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-7-gourmet.jpg",
       "callToActionText": "Esencias para cocinar",
-      "callToActionUrl": "/esencias-para-cocinar",
+      "callToActionUrl": "/esencias",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -279,7 +294,7 @@
       "textPosition": "center",
       "imageUrl": "assets/img/cat-9-gourmet.jpg",
       "callToActionText": "Productos de repostería para cocinar",
-      "callToActionUrl": "/reposteria-para-cocinar",
+      "callToActionUrl": "/productos-de-reposteria-para-cocinar",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -361,7 +376,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "140"
     }
   },
  
@@ -370,7 +386,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 1 
       },
       "infinite": true,
       "fullWidth": false,
