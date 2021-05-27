@@ -22,6 +22,12 @@
         padding-right: 4rem;
         max-width: 102rem;
     }
+    .flexRow--rowSearchBread {
+        margin: 15px 0 30px;
+    }
+    .flexCol--productosRecomendados {
+        margin-bottom: 30px!important;
+    }
 }
 
 .flexRowContent--menu-link {
@@ -147,7 +153,8 @@
 
 /*Titulos de detalle de producto PDP*/
 
-.flexRow--rowSpecifications {
+.flexRow--rowSpecifications,
+.flexRow--rowSearchTitle {
     display: none !important
 }
 
@@ -172,6 +179,13 @@
 .flexRow--rowSpecifications,
 .flexRow--colBuyButton {
     padding: 1rem;
+}
+
+.flexRowContent--rowSkuName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -589,6 +603,12 @@
     background: #fff;
     padding: 3rem;
     width: 80%;
+}
+
+/*Carrito*/
+
+.flexColChild--colQuantitySelectorMobile {
+    margin-top: 15px;
 }
 
 

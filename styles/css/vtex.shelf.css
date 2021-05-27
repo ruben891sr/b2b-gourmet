@@ -28,4 +28,11 @@
     width: auto;
     left: 50%;
     transform: translateX(-50%);
-  }
+}
+
+@media screen and (min-width:80rem) {
+    .slide--pdpProductosRelacionados {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
