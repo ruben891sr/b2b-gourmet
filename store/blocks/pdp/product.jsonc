@@ -61,25 +61,34 @@
     "children": [
       // "rich-text#certificates",
       // "rich-text#expiry-date",
+      "rich-text#quantity-box",
       "rich-text#inventory",
       "rich-text#price",
       "rich-text#quantity-selector"
     ]
-  },
+  }, 
 
-  "rich-text#certificates": {
-    "props": {
-      "text": "**Has Certificates?**",
-      "blockClass": "skuList",
-      "width": "20%"
-    }
-  },
+  // "rich-text#certificates": {
+  //   "props": {
+  //     "text": "**Has Certificates?**",
+  //     "blockClass": "skuList",
+  //     "width": "20%"
+  //   }
+  // },
 
-  "rich-text#expiry-date": {
+  // "rich-text#expiry-date": {
+  //   "props": {
+  //     "text": "**Expires at**",
+  //     "blockClass": "skuList",
+  //     "width": "20%"
+  //   }
+  // },
+
+  "rich-text#quantity-box": {
     "props": {
-      "text": "**Expires at**",
+      "text": "**Cantidad x Caja**",
       "blockClass": "skuList",
-      "width": "20%"
+      "width": "15%"
     }
   },
 
@@ -103,7 +112,7 @@
     "props": {
       "text": "**Cantidad**",
       "blockClass": "skuListQuantity",
-      "width": "60%"
+      "width": "55%"
     }
   },
 
@@ -130,7 +139,10 @@
       "preventHorizontalStretch": false,
       "blockClass": "rowSkuName"
     },
-    "children": ["flex-layout.col#sku-name"]
+    "children": [
+      "flex-layout.col#sku-name",
+      "flex-layout.col#sku-identificador"
+    ]
   },
   "flex-layout.col#sku-name":{
     "props": {
@@ -141,6 +153,19 @@
   "sku-name":{
     "props":{
       "blockClass": "nameProduct"
+    }
+  },
+  "flex-layout.col#sku-identificador":{
+    "props":{
+      "width": "100%",
+      "blockClass": "colSkuIdentificador"
+    },
+    "children":["rich-text#skuIdentificador"]
+  },
+  "rich-text#skuIdentificador":{
+    "props":{
+      "blockClass": "textSkuIdentificador",
+      "text": "**SKU:**"
     }
   },
 
@@ -172,6 +197,7 @@
     "children": [
       // "flex-layout.col#sku-highlight-certificates",
       // "flex-layout.col#sku-highlight-expiry-date",
+      "flex-layout.col#sku-quantity-box",
       "flex-layout.col#sku-inventory",
       "flex-layout.col#sku-price",
       "flex-layout.col#sku-quantity-selector",
@@ -215,13 +241,18 @@
   //     "showLabel": true
   //   }
   // },
+
+  "flex-layout.col#sku-quantity-box":{
+    "props":{
+      "width": "15%",
+      "blockClass": "skuQuantityBox"
+    }
+  },
   "flex-layout.col#sku-inventory": {
     "props": {
       "width": "15%"
     },
-    "children": [
-      "sku-inventory#default"
-    ]
+    "children": ["sku-inventory#default"]
   },
   "sku-inventory#default": {
     "props": {
@@ -229,26 +260,20 @@
     }
   },
   "sku-seller#inventory": {
-    "children": [
-      "seller-inventory"
-    ]
+    "children": ["seller-inventory"]
   },
   "flex-layout.col#sku-price": {
     "props": {
       "width": "15%"
     },
-    "children": [
-      "sku-price"
-    ] 
+    "children": ["sku-price"]
   },
   "flex-layout.col#sku-quantity-selector": {
     "props": {
       "width": "35%",
       "blockClass": "colSkuQuantitySelector"
     },
-    "children": [
-      "sku-quantity-selector"
-    ]
+    "children": ["sku-quantity-selector"]
   },
   
   // Header de detalle de productos MOBILE
@@ -267,7 +292,10 @@
       "preventHorizontalStretch": false,
       "blockClass": "rowSkuName"
     },
-    "children": ["flex-layout.col#sku-name-mobile"]
+    "children": [
+      "flex-layout.col#sku-name-mobile",
+      "flex-layout.col#sku-identificador-mobile"
+    ]
   },
   "flex-layout.col#sku-name-mobile":{
     "props": {
@@ -280,6 +308,13 @@
       "blockClass": "nameProduct"
     }
   },
+  "flex-layout.col#sku-identificador-mobile": {
+    "props":{
+      "width": "100%",
+      "blockClass": "colSkuIdentificador"
+    },
+    "children":["rich-text#skuIdentificador"]
+  },
 
   // Lista con opciones en el header de detalle del producto Mobile
   "flex-layout.row#sku-list-header-mobile": {
@@ -290,26 +325,35 @@
     "children": [
       // "rich-text#certificates-mobile",
       // "rich-text#expiry-date-mobile",
+      "rich-text#quantity-box-mobile",
       "rich-text#inventory-mobile",
       "rich-text#price-mobile",
       "rich-text#quantity-selector-mobile"
     ]
   },
 
-  "rich-text#certificates-mobile": {
-    "props": {
-      "text": "**Es Certificado?**",
-      "blockClass": "skuListMobile",
-      "width": "20%"
-    }
-  },
+  // "rich-text#certificates-mobile": {
+  //   "props": {
+  //     "text": "**Es Certificado?**",
+  //     "blockClass": "skuListMobile",
+  //     "width": "20%"
+  //   }
+  // },
 
 
-  "rich-text#expiry-date-mobile": {
+  // "rich-text#expiry-date-mobile": {
+  //   "props": {
+  //     "text": "**Expires hasta**",
+  //     "blockClass": "skuListMobile",
+  //     "width": "20%"
+  //   }
+  // },
+
+  "rich-text#quantity-box-mobile":{
     "props": {
-      "text": "**Expires hasta**",
+      "text": "**Cant. x Caja**",
       "blockClass": "skuListMobile",
-      "width": "20%"
+      "width": "15%"
     }
   },
 
@@ -333,7 +377,7 @@
     "props": {
       "text": "**Cantidad**",
       "blockClass": "skuListMobile",
-      "width": "70%"
+      "width": "55%"
     }
   },
   
@@ -447,6 +491,7 @@
     "children": [
       // "flex-layout.col#sku-highlight-certificates",
       // "flex-layout.col#sku-highlight-expiry-date",
+      "flex-layout.col#sku-quantity-box",
       "flex-layout.col#sku-inventory",
       "flex-layout.col#sku-price",
       "flex-layout.col#sku-quantity-selector",
