@@ -1,27 +1,35 @@
 /*Elementos display none*/
+
 .filter__container--brand {
     display: none!important;
 }
 
+
 /*PLP B2B*/
+
 .filter__container {
     border-bottom: 1px solid #E1251B;
 }
+
 .filterMessage {
     font-weight: 800;
     text-transform: uppercase;
 }
+
 .filterTitle {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .searchResultContainer {
     max-width: 100%!important;
     padding: 0!important;
 }
 
+
 /*ORDENAR POR*/
+
 .orderByText {
     color: #000000!important;
     font-weight: 500;
@@ -47,7 +55,7 @@
     position: absolute;
     top: -4px;
     right: -55px;
-    background: rgba(64,64,64,.11);
+    background: rgba(64, 64, 64, .11);
     border-radius: 3px;
     width: 85%;
     height: 24px;
@@ -105,10 +113,12 @@
     font-weight: 700;
 }
 
+
 /*MEDIA QUERY*/
 
 
 /*PLP*/
+
 @media screen and (max-width: 64rem) {
     .galleryLayoutSwitcher {
         display: none;
@@ -119,14 +129,12 @@
         margin: 8px 0;
         padding: 8px 4px;
         height: auto;
-        min-width: 120px;
+        min-width: 100%;
     }
-
     .orderByText,
     .filterPopupTitle::after {
         background: none;
     }
-
     .orderByText {
         display: inline-block;
     }

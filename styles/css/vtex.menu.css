@@ -193,10 +193,10 @@
 /*Versión Mobile*/
 
 @media (max-width: 1025px) {
-    .styledLinkContent--menuFooterMainItem-face,
+    /* .styledLinkContent--menuFooterMainItem-face,
     .styledLinkContent--menuFooterMainItem-insta,
     .styledLinkContent--menuFooterMainItem-yt,
-    .styledLinkContent--menuFooterMainItem-pinter,
+    .styledLinkContent--menuFooterMainItem-pinter, */
     .styledLinkContainer--menuFooterMainItem {
         padding: 0 0 0.7rem 0;
     }

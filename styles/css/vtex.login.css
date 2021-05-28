@@ -23,6 +23,10 @@
     color: #fff;
 }
 
+.inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #333;
+}
+
 
 /*Versión Mobile*/
 

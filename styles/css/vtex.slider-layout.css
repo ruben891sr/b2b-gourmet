@@ -35,4 +35,7 @@
     .sliderLayoutContainer--carousel {
         margin-bottom: 2rem;
     }
+    .sliderLayoutContainer--shelf {
+        margin-bottom: 3rem;
+    }
 }

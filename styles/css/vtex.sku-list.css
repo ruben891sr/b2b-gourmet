@@ -1,13 +1,16 @@
 /*PDP*/
+
 .skuImage,
 .sellerName,
 .sellerInventoryWrapper {
     display: none!important;
 }
 
+
 /* .selectedSkuContentWrapper {
     border: none;
 } */
+
 
 /* .skuContentWrapper :global(.vtex-button),
 .quantitySelectorContainer {
@@ -23,7 +26,7 @@
     margin-bottom: 7px;
 }
 
-.specificationsTableContainer  {
+.specificationsTableContainer {
     padding-left: 0;
 }
 
@@ -43,11 +46,22 @@
     margin-bottom: 0;
 }
 
+
 /*MEDIA QUERY*/
+
+
 /*PDP*/
-@media (max-width:80rem) {    
+
+@media (max-width:80rem) {
     .skuName {
         font-size: 25px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .vtex-sku-list-1-x-skuName {
+        font-size: 19px;
         margin-bottom: 0;
     }
 }

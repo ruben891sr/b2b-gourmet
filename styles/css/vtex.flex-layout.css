@@ -605,6 +605,7 @@
     width: 80%;
 }
 
+
 /*Carrito*/
 
 .flexColChild--colQuantitySelectorMobile {
@@ -638,6 +639,10 @@
 
 
 /*MEDIA QUERY*/
+
+.flexRowContent--rowSearchInfoMobile {
+    flex-direction: column;
+}
 
 
 /*PLP*/
@@ -730,5 +735,14 @@
     }
     .flexRowContent--row-socialmedia-images {
         display: flex;
+    }
+    .flexRow--row-shelfTitle {
+        margin-top: 2rem;
+    }
+    .flexRowContent--rowImagesAndItems {
+        margin: 0;
+    }
+    .flexCol--productosRecomendados {
+        margin: 2rem 0 4rem 0;
     }
 }

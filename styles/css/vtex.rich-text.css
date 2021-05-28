@@ -590,11 +590,14 @@
     transition: all .5s ease;
 }
 
+
 /*PDP*/
 
+
+/*
 .container--skuListQuantity {
     justify-content: center;
-}
+}*/
 
 .paragraph--skuList,
 .paragraph--skuListQuantity {
@@ -651,5 +654,8 @@
     }
     .paragraph--skuListMobile {
         margin-bottom: 2px;
+    }
+    .strong--skuListMobile {
+        font-size: 12px;
     }
 }
