@@ -314,7 +314,7 @@
       "menu-item#especias-cocinar",
       "menu-item#pimientas",
       "menu-item#ajo-cebolla",
-      "menu-item#sales-cocinar",
+      // "menu-item#sales-cocinar",
       "menu-item#mezclas-otras"
     ],
     "props": {
@@ -401,8 +401,8 @@
   },
   "vtex.menu@2.x:menu#esencias-mobile": {
     "children": [
-      "menu-item#foodservice-esencias",
-      "menu-item#primera-foodservice-esencias"
+      "menu-item#foodservice-esencias"
+      // "menu-item#primera-foodservice-esencias"
     ],
     "props": {
       "orientation": "vertical"
